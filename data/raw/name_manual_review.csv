@@ -1,0 +1,331 @@
+player_name,suggested_full_name,team,season,scout_grade,pa,ops,iso,master_team,position,bats_throws,height,weight,match_status
+D Tatum,NA,Oakland Ballers,2025,80,275,1.139,0.346,NA,NA,NA,NA,NA,manual_needed
+C Estrada,NA,Idaho Falls Chukars,2022,79.6288806113154,249,1.236,0.298,NA,NA,NA,NA,NA,manual_needed
+M Handron,NA,Modesto Roadsters,2026,79.5929536830265,155,1.145,0.302,NA,NA,NA,NA,NA,manual_needed
+M Jung-Goldberg,NA,Boise Hawks,2025,79.5365211670106,447,1.154,0.317,NA,NA,NA,NA,NA,manual_needed
+R Alexiades,NA,Ogden Raptors,2023,79.098894920705,443,1.104,0.345,NA,NA,NA,NA,NA,manual_needed
+K Figueiredo,NA,Grand Junction Jackalopes,2023,78.3116796054286,200,1.134,0.291,NA,NA,NA,NA,NA,manual_needed
+T Rogers,NA,Idaho Falls Chukars,2025,78.0083742645276,460,1.183,0.326,NA,NA,NA,NA,NA,manual_needed
+C Bagnieski,NA,Ogden Raptors,2025,77.9185000142506,424,1.074,0.257,NA,NA,NA,NA,NA,manual_needed
+K Dugan,NA,Grand Junction Jackalopes,2024,77.7184189042323,277,1.18,0.342,NA,NA,NA,NA,NA,manual_needed
+B Bishop,NA,RedPocket Mobiles,2026,77.2363744675764,109,1.233,0.379,NA,NA,NA,NA,NA,manual_needed
+A Fogel,NA,Missoula PaddleHeads,2024,77.0659624140131,428,1.268,0.385,NA,NA,NA,NA,NA,manual_needed
+R Pena,NA,Missoula PaddleHeads,2025,76.5025919186964,460,1.241,0.431,NA,NA,NA,NA,NA,manual_needed
+D Perez,NA,Colorado Springs Sky Sox,2023,76.4375082999459,245,1.013,0.234,NA,NA,NA,NA,NA,manual_needed
+J Trimble,NA,Idaho Falls Chukars,2026,75.9087334571746,179,1.277,0.389,NA,NA,NA,NA,NA,manual_needed
+J O'Dowd,NA,Billings Mustangs,2025,75.5363922726596,395,1.091,0.309,NA,NA,NA,NA,NA,manual_needed
+J Newman,NA,Missoula PaddleHeads,2022,75.4657645911088,410,1.145,0.335,NA,NA,NA,NA,NA,manual_needed
+S Canton,NA,Idaho Falls Chukars,2026,75.3033204856222,236,1.201,0.327,NA,NA,NA,NA,NA,manual_needed
+C Sargent Jr.,NA,Ogden Raptors,2025,74.9370839010627,398,1.184,0.357,NA,NA,NA,NA,NA,manual_needed
+Z Almond,NA,Missoula PaddleHeads,2021,74.839760637497207,355,1.036,0.243,NA,NA,NA,NA,NA,manual_needed
+C Almanza,NA,Oakland Ballers,2025,74.4816189977136,406,1.047,0.338,NA,NA,NA,NA,NA,manual_needed
+B Nigh,NA,Boise Hawks,2026,74.2512097621633,110,1.115,0.278,NA,NA,NA,NA,NA,manual_needed
+M Minzey,NA,Grand Junction Jackalopes,2025,74.208878258957,396,1.075,0.309,NA,NA,NA,NA,NA,manual_needed
+C Hall,NA,Ogden Raptors,2025,73.8769088872035,268,1.042,0.284,NA,NA,NA,NA,NA,manual_needed
+E Berkey,NA,Yuba-Sutter Freebirds,2025,73.7496888489636,354,1.136,0.301,NA,NA,NA,NA,NA,manual_needed
+J Barfield,NA,Rocky Mountain Vibes,2023,73.6120550813879,349,1.131,0.325,NA,NA,NA,NA,NA,manual_needed
+J Harrison-Dudley,NA,RedPocket Mobiles,2026,73.486904213506,180,1.22,0.433,NA,NA,NA,NA,NA,manual_needed
+B Barrera,NA,Oakland Ballers,2024,73.3236849902346,407,1.058,0.262,NA,NA,NA,NA,NA,manual_needed
+R Washington Jr.,NA,Grand Junction Jackalopes,2023,73.1120187158101,420,1.056,0.266,NA,NA,NA,NA,NA,manual_needed
+S Baumgardt,NA,Idaho Falls Chukars,2025,72.9166145876802,341,1.097,0.292,NA,NA,NA,NA,NA,manual_needed
+T Darden,NA,Boise Hawks,2025,72.8203401416823,452,1.209,0.256,NA,NA,NA,NA,NA,manual_needed
+J Jablonski,NA,Idaho Falls Chukars,2025,72.7471725261472,299,1.039,0.289,NA,NA,NA,NA,NA,manual_needed
+B Roberts,NA,Colorado Springs Sky Sox,2025,72.4166789436225,317,1.108,0.299,NA,NA,NA,NA,NA,manual_needed
+D Gomez,NA,Colorado Springs Sky Sox,2024,72.0166240139007,381,1.142,0.348,NA,NA,NA,NA,NA,manual_needed
+D Stroup,NA,Rocky Mountain Vibes,2023,71.7432877044168,450,1.064,0.266,NA,NA,NA,NA,NA,manual_needed
+O Johnson,NA,Modesto Roadsters,2026,71.6904833527216,212,1.114,0.262,NA,NA,NA,NA,NA,manual_needed
+S Kuchinski,NA,Grand Junction Jackalopes,2024,71.6831350609531,224,1.011,0.289,NA,NA,NA,NA,NA,manual_needed
+C Kirtley,NA,Glacier Range Riders,2023,71.6523931013495,267,1.017,0.285,NA,NA,NA,NA,NA,manual_needed
+R McCarthy,NA,Glacier Range Riders,2024,71.3805676146666,144,1.16,0.288,NA,NA,NA,NA,NA,manual_needed
+B Rosengard,NA,Idaho Falls Chukars,2025,71.2656115162942,284,1.274,0.253,NA,NA,NA,NA,NA,manual_needed
+H George,NA,Colorado Springs Sky Sox,2023,71.2381758500668,410,1.048,0.25,NA,NA,NA,NA,NA,manual_needed
+G Brusa,NA,Yuba-Sutter Freebirds,2025,71.2293714754539,407,1.044,0.309,NA,NA,NA,NA,NA,manual_needed
+D Matthews,NA,Colorado Springs Sky Sox,2024,71.2261899891786,406,1.089,0.247,NA,NA,NA,NA,NA,manual_needed
+J Gonzalez,NA,Yuba-Sutter Freebirds,2024,71.1906856533544,392,1.113,0.27,NA,NA,NA,NA,NA,manual_needed
+A Pimentel,NA,Grand Junction Jackalopes,2025,71.0960030452933,394,1.04,0.262,NA,NA,NA,NA,NA,manual_needed
+N Martinez,NA,Oakland Ballers,2024,70.8518015302883,400,1.017,0.255,NA,NA,NA,NA,NA,manual_needed
+K Liniak,NA,Glacier Range Riders,2024,70.7634074484367,115,1.15,0.377,NA,NA,NA,NA,NA,manual_needed
+J Pappas,NA,Idaho Falls Chukars,2025,70.1783993430913,283,1.064,0.209,NA,NA,NA,NA,NA,manual_needed
+L Sparks,NA,Missoula PaddleHeads,2022,69.9186188364497,406,1.126,0.266,NA,NA,NA,NA,NA,manual_needed
+M Feinstein,NA,Idaho Falls Chukars,2021,69.7671862206246,348,1.034,0.211,NA,NA,NA,NA,NA,manual_needed
+C Denning,NA,Billings Mustangs,2023,69.7668446432957,353,1.008,0.232,NA,NA,NA,NA,NA,manual_needed
+C Bess,NA,Long Beach Coast,2026,69.3385548439807,214,1.025,0.266,NA,NA,NA,NA,NA,manual_needed
+D Brutcher,NA,Ogden Raptors,2024,69.2591884757648,152,1.085,0.242,NA,NA,NA,NA,NA,manual_needed
+M Hogan,NA,Rocky Mountain Vibes,2023,69.2462348124447,187,0.975,0.277,NA,NA,NA,NA,NA,manual_needed
+B Fitzgerald,NA,Glacier Range Riders,2024,69.1073354570733,315,1.014,0.299,NA,NA,NA,NA,NA,manual_needed
+A Baeza,NA,Boise Hawks,2023,69.0472287951732,319,1.012,0.229,NA,NA,NA,NA,NA,manual_needed
+D Leach,NA,Billings Mustangs,2024,68.8933766732682,163,1.006,0.256,NA,NA,NA,NA,NA,manual_needed
+B Norman,NA,Great Falls Voyagers,2021,68.7991648288335,175,1.006,0.247,NA,NA,NA,NA,NA,manual_needed
+A Redahan,NA,Great Falls Voyagers,2026,68.7828939241458,124,1.234,0.271,NA,NA,NA,NA,NA,manual_needed
+K Greenwalt,NA,Missoula PaddleHeads,2023,68.6693413582596,420,1.017,0.258,NA,NA,NA,NA,NA,manual_needed
+E Scavotto,NA,Grand Junction Jackalopes,2025,68.5758411332602,465,1.084,0.246,NA,NA,NA,NA,NA,manual_needed
+A Sanchez,NA,Missoula PaddleHeads,2024,68.3378931108925,353,1.023,0.281,NA,NA,NA,NA,NA,manual_needed
+C Vest,NA,Long Beach Coast,2026,67.9548513596694,237,1.048,0.243,NA,NA,NA,NA,NA,manual_needed
+J Hubbard,NA,Grand Junction Jackalopes,2023,67.9403803047534,460,1.006,0.283,NA,NA,NA,NA,NA,manual_needed
+J Faile,NA,Billings Mustangs,2023,67.8685023625948,227,1.175,0.408,NA,NA,NA,NA,NA,manual_needed
+T Viola,NA,Boise Hawks,2024,67.6109136438137,445,1.066,0.296,NA,NA,NA,NA,NA,manual_needed
+B Cannon,NA,Modesto Roadsters,2026,67.4634595280314,221,1.01,0.204,NA,NA,NA,NA,NA,manual_needed
+J Kirby,NA,Yuba-Sutter Freebirds,2024,67.2638732672204,117,0.958,0.271,NA,NA,NA,NA,NA,manual_needed
+J Chavez,NA,RedPocket Mobiles,2026,66.9874496241865,175,1.06,0.25,NA,NA,NA,NA,NA,manual_needed
+C Halvorson,NA,Grand Junction Jackalopes,2024,66.8700543133498,274,0.948,0.245,NA,NA,NA,NA,NA,manual_needed
+K Clark,NA,Rocky Mountain Vibes,2025,66.7751768310434,289,1.099,0.251,NA,NA,NA,NA,NA,manual_needed
+H Nieves,NA,RedPocket Mobiles,2026,66.4798284902278,115,0.96,0.283,NA,NA,NA,NA,NA,manual_needed
+M Backstrom,NA,Great Falls Voyagers,2024,66.3743533523315,202,1.132,0.356,NA,NA,NA,NA,NA,manual_needed
+Z Roos,NA,Grand Junction Jackalopes,2025,66.3574474641478,446,1.038,0.231,NA,NA,NA,NA,NA,manual_needed
+S Rivas,NA,Rocky Mountain Vibes,2024,66.0076810377178,443,1.064,0.331,NA,NA,NA,NA,NA,manual_needed
+M Bardowell,NA,Long Beach Coast,2026,65.6385563730502,214,1.059,0.27,NA,NA,NA,NA,NA,manual_needed
+J Coutts,NA,Colorado Springs Sky Sox,2024,65.5642019952568,412,1.052,0.25,NA,NA,NA,NA,NA,manual_needed
+D Henderson,NA,Ogden Raptors,2023,65.4806097023946,113,1.147,0.258,NA,NA,NA,NA,NA,manual_needed
+C Petersen,NA,Grand Junction Jackalopes,2022,65.2662020509456,323,1.09,0.261,NA,NA,NA,NA,NA,manual_needed
+R Orsak,NA,Yuba-Sutter Freebirds,2025,65.0494340125698,426,0.986,0.213,NA,NA,NA,NA,NA,manual_needed
+J Valdez,NA,Ogden Raptors,2022,65.0100234334455,437,1.045,0.243,NA,NA,NA,NA,NA,manual_needed
+G Howell,NA,Glacier Range Riders,2023,64.9873326266527,455,0.936,0.219,NA,NA,NA,NA,NA,manual_needed
+M O'Connor,NA,Missoula PaddleHeads,2023,64.8096007460983,391,0.959,0.261,NA,NA,NA,NA,NA,manual_needed
+A Fritz,NA,Great Falls Voyagers,2025,64.7062298121321,335,0.945,0.213,NA,NA,NA,NA,NA,manual_needed
+A Rios,NA,Grand Junction Jackalopes,2024,64.6817041219954,399,1.01,0.22,NA,NA,NA,NA,NA,manual_needed
+J Cruce,NA,Grand Junction Jackalopes,2023,64.6320221374223,437,1.064,0.243,NA,NA,NA,NA,NA,manual_needed
+J Day,NA,Rocky Mountain Vibes,2024,64.3386728998204,425,1.023,0.237,NA,NA,NA,NA,NA,manual_needed
+I Nunez,NA,Grand Junction Jackalopes,2025,64.3033503006519,415,1.006,0.199,NA,NA,NA,NA,NA,manual_needed
+A Guadalupe,NA,Colorado Springs Sky Sox,2023,64.1099168109582,366,0.985,0.241,NA,NA,NA,NA,NA,manual_needed
+S Rich,NA,Idaho Falls Chukars,2025,63.7515956241171,221,1.085,0.245,NA,NA,NA,NA,NA,manual_needed
+E Sleight,NA,Missoula PaddleHeads,2025,63.6799629169638,352,0.998,0.246,NA,NA,NA,NA,NA,manual_needed
+P Chung,NA,Missoula PaddleHeads,2024,63.6705782988113,434,1.061,0.21,NA,NA,NA,NA,NA,manual_needed
+E Pelc,NA,Long Beach Coast,2026,63.6240121125657,259,1.123,0.182,NA,NA,NA,NA,NA,manual_needed
+J Teixeira,NA,Boise Hawks,2022,63.6116343135885,406,0.976,0.224,NA,NA,NA,NA,NA,manual_needed
+P Robertson,NA,Colorado Springs Sky Sox,2023,63.3396489862324,408,1.012,0.219,NA,NA,NA,NA,NA,manual_needed
+J Hjelle,NA,Boise Hawks,2025,63.0888786764404,428,1.016,0.297,NA,NA,NA,NA,NA,manual_needed
+D Hubbard,NA,Oakland Ballers,2024,62.6350099902245,396,0.922,0.217,NA,NA,NA,NA,NA,manual_needed
+L Navarro,NA,Missoula PaddleHeads,2023,62.5805546814395,300,1.007,0.191,NA,NA,NA,NA,NA,manual_needed
+M Clayton,NA,Glacier Range Riders,2023,62.5768892939483,320,0.926,0.21,NA,NA,NA,NA,NA,manual_needed
+K Moody,NA,Colorado Springs Sky Sox,2025,62.413411698082,335,0.971,0.193,NA,NA,NA,NA,NA,manual_needed
+T Kelly,NA,Idaho Falls Chukars,2022,61.9992579451489,161,0.981,0.196,NA,NA,NA,NA,NA,manual_needed
+D Glancy,NA,Yuba-Sutter Freebirds,2024,61.9443603375149,123,0.92,0.192,NA,NA,NA,NA,NA,manual_needed
+E Lopez,NA,Rocky Mountain Vibes,2023,61.9362938575164,335,0.983,0.212,NA,NA,NA,NA,NA,manual_needed
+J Boyd,NA,Modesto Roadsters,2026,61.9229657728933,169,1.015,0.212,NA,NA,NA,NA,NA,manual_needed
+G Wurtz,NA,Billings Mustangs,2023,61.6997537468314,402,0.996,0.239,NA,NA,NA,NA,NA,manual_needed
+T Wyatt,NA,Idaho Falls Chukars,2024,61.6114231633294,431,0.967,0.22,NA,NA,NA,NA,NA,manual_needed
+D Stuart,NA,Oakland Ballers,2024,61.483263787435,163,0.938,0.192,NA,NA,NA,NA,NA,manual_needed
+D Nevarez,NA,Missoula PaddleHeads,2021,61.2163079672875,180,0.916,0.208,NA,NA,NA,NA,NA,manual_needed
+S Macias,NA,Rocky Mountain Vibes,2021,61.2029273323063,125,0.949,0.213,NA,NA,NA,NA,NA,manual_needed
+J Broughton,NA,Ogden Raptors,2022,61.1571515910333,412,1.045,0.227,NA,NA,NA,NA,NA,manual_needed
+L Williams,NA,Ogden Raptors,2023,60.8165661501173,360,0.957,0.218,NA,NA,NA,NA,NA,manual_needed
+D Miller,NA,Glacier Range Riders,2023,60.8077245523339,431,1.019,0.211,NA,NA,NA,NA,NA,manual_needed
+C Taylor,NA,Glacier Range Riders,2023,60.7296478574945,299,0.937,0.209,NA,NA,NA,NA,NA,manual_needed
+B Blackford,NA,Yuba-Sutter Freebirds,2024,60.603382484097,343,0.975,0.235,NA,NA,NA,NA,NA,manual_needed
+D Poteet,NA,Boise Hawks,2023,60.5168232855893,292,1.001,0.244,NA,NA,NA,NA,NA,manual_needed
+J Elvir,NA,Grand Junction Jackalopes,2022,60.4456263084902,354,0.948,0.246,NA,NA,NA,NA,NA,manual_needed
+M Yonamine,NA,Boise Hawks,2024,60.4127210258034,467,0.979,0.236,NA,NA,NA,NA,NA,manual_needed
+C Sepulveda,NA,Billings Mustangs,2021,60.169666860288,210,0.932,0.162,NA,NA,NA,NA,NA,manual_needed
+D Tofteland,NA,Rocky Mountain Vibes,2025,60.0823325439953,429,1.012,0.217,NA,NA,NA,NA,NA,manual_needed
+Q Landis,NA,Colorado Springs Sky Sox,2025,60.0151118773408,323,0.958,0.161,NA,NA,NA,NA,NA,manual_needed
+Z Denton,NA,Colorado Springs Sky Sox,2025,59.9981819035762,228,0.973,0.224,NA,NA,NA,NA,NA,manual_needed
+E Paton,NA,Glacier Range Riders,2025,59.8503380393031,137,0.991,0.227,NA,NA,NA,NA,NA,manual_needed
+T Clarkson,NA,Glacier Range Riders,2025,59.6610363215304,435,0.891,0.187,NA,NA,NA,NA,NA,manual_needed
+B Ryan,NA,Billings Mustangs,2024,59.6574628971662,411,0.981,0.196,NA,NA,NA,NA,NA,manual_needed
+J Goldfarb,NA,Ogden Raptors,2021,59.6061562306825,320,0.93,0.174,NA,NA,NA,NA,NA,manual_needed
+C Sargent,NA,Ogden Raptors,2024,59.5408098601405,401,0.914,0.226,NA,NA,NA,NA,NA,manual_needed
+R Paller,NA,Idaho Falls Chukars,2023,58.9593839375524,126,0.93,0.202,NA,NA,NA,NA,NA,manual_needed
+L Navigato,NA,Missoula PaddleHeads,2021,58.940369466242,159,0.901,0.134,NA,NA,NA,NA,NA,manual_needed
+S Ullian,NA,Ogden Raptors,2022,58.7121892417228,233,0.991,0.255,NA,NA,NA,NA,NA,manual_needed
+G Lora Gonzalez,NA,Rocky Mountain Vibes,2025,58.3241223624875,376,0.925,0.194,NA,NA,NA,NA,NA,manual_needed
+B Lada,NA,Yuba-Sutter Freebirds,2025,58.1290729492761,433,0.902,0.22,NA,NA,NA,NA,NA,manual_needed
+E Blum,NA,Billings Mustangs,2024,57.8566015311058,142,0.918,0.227,NA,NA,NA,NA,NA,manual_needed
+F Rojas Jr.,NA,Great Falls Voyagers,2024,57.7631932692333,364,0.934,0.184,NA,NA,NA,NA,NA,manual_needed
+T McKenzie,NA,Oakland Ballers,2025,57.2158637707867,389,0.904,0.212,NA,NA,NA,NA,NA,manual_needed
+R Gil,NA,Boise Hawks,2022,56.8807610839198,373,0.883,0.233,NA,NA,NA,NA,NA,manual_needed
+S Coffman,NA,Grand Junction Jackalopes,2025,56.7585114337354,378,1.007,0.19,NA,NA,NA,NA,NA,manual_needed
+C Farmer,NA,Grand Junction Jackalopes,2022,56.5578216154002,169,0.906,0.182,NA,NA,NA,NA,NA,manual_needed
+C Hext,NA,Yuba-Sutter Freebirds,2025,56.3732319130881,392,0.902,0.204,NA,NA,NA,NA,NA,manual_needed
+B Daniel,NA,Great Falls Voyagers,2022,56.3711320883545,410,0.943,0.189,NA,NA,NA,NA,NA,manual_needed
+X Washington,NA,Great Falls Voyagers,2024,56.3461553409757,438,1.036,0.211,NA,NA,NA,NA,NA,manual_needed
+S Linscott,NA,Rocky Mountain Vibes,2025,56.2173215688165,423,1.033,0.191,NA,NA,NA,NA,NA,manual_needed
+M Rosario,NA,Missoula PaddleHeads,2025,56.0251492877219,415,1.014,0.201,NA,NA,NA,NA,NA,manual_needed
+U Cantu,NA,Rocky Mountain Vibes,2022,56.0245055458327,386,0.954,0.193,NA,NA,NA,NA,NA,manual_needed
+V Esposito,NA,Grand Junction Jackalopes,2021,55.9946284775428,306,0.857,0.168,NA,NA,NA,NA,NA,manual_needed
+D Stengren,NA,Idaho Falls Chukars,2026,55.8628978668824,102,0.959,0.147,NA,NA,NA,NA,NA,manual_needed
+D Woodcox,NA,Boise Hawks,2025,55.7541886923526,193,0.88,0.189,NA,NA,NA,NA,NA,manual_needed
+T Williams,NA,Modesto Roadsters,2026,55.7372477705967,105,0.998,0.176,NA,NA,NA,NA,NA,manual_needed
+C Gordon,NA,Missoula PaddleHeads,2025,55.7288791260379,431,0.904,0.179,NA,NA,NA,NA,NA,manual_needed
+B Carson,NA,Oakland Ballers,2024,55.6126114583064,413,0.931,0.197,NA,NA,NA,NA,NA,manual_needed
+A Atwood,NA,Great Falls Voyagers,2022,55.5879697194617,107,0.933,0.185,NA,NA,NA,NA,NA,manual_needed
+C Middleton,NA,Grand Junction Jackalopes,2022,55.5400897742586,176,0.894,0.214,NA,NA,NA,NA,NA,manual_needed
+T Carranza,NA,Billings Mustangs,2021,55.4670119322522,317,0.829,0.151,NA,NA,NA,NA,NA,manual_needed
+B Smith,NA,Boise Hawks,2021,55.4292742062004,175,0.703,0.156,NA,NA,NA,NA,NA,manual_needed
+N Marcelo,NA,Boise Hawks,2025,55.2854307379526,486,0.973,0.201,NA,NA,NA,NA,NA,manual_needed
+R Martinez,NA,Grand Junction Jackalopes,2021,54.9878752820887,168,0.841,0.127,NA,NA,NA,NA,NA,manual_needed
+J Akins,NA,Missoula PaddleHeads,2021,54.7464282816978,291,0.861,0.154,NA,NA,NA,NA,NA,manual_needed
+C Castillo,NA,Glacier Range Riders,2024,54.6972258191442,376,0.987,0.213,NA,NA,NA,NA,NA,manual_needed
+B Watkins,NA,Great Falls Voyagers,2025,54.6109534580088,121,1.014,0.192,NA,NA,NA,NA,NA,manual_needed
+A Figueredo,NA,Yuba-Sutter Freebirds,2024,54.5448582448611,286,0.872,0.158,NA,NA,NA,NA,NA,manual_needed
+D Macaluso,NA,Ogden Raptors,2022,53.833499371786,146,0.908,0.206,NA,NA,NA,NA,NA,manual_needed
+J Lojewski,NA,Modesto Roadsters,2026,53.7813913123383,240,0.911,0.178,NA,NA,NA,NA,NA,manual_needed
+J Rooks,NA,Billings Mustangs,2024,53.64954465297,131,0.957,0.189,NA,NA,NA,NA,NA,manual_needed
+T McCaffrey,NA,Idaho Falls Chukars,2025,53.2489598404688,240,0.917,0.192,NA,NA,NA,NA,NA,manual_needed
+K Quiggle,NA,Idaho Falls Chukars,2021,53.2063217935058,261,0.973,0.164,NA,NA,NA,NA,NA,manual_needed
+T Bouchard,NA,Colorado Springs Sky Sox,2023,52.7704428466135,316,0.895,0.186,NA,NA,NA,NA,NA,manual_needed
+N Gatewood,NA,Missoula PaddleHeads,2022,52.4982385594312,436,0.91,0.204,NA,NA,NA,NA,NA,manual_needed
+J Fitzpatrick,NA,Grand Junction Jackalopes,2022,52.2265991886006,177,0.942,0.2,NA,NA,NA,NA,NA,manual_needed
+J Williams,NA,Great Falls Voyagers,2023,52.1021752673417,349,0.917,0.171,NA,NA,NA,NA,NA,manual_needed
+C Runge,NA,Great Falls Voyagers,2022,52.0305710249659,396,0.871,0.157,NA,NA,NA,NA,NA,manual_needed
+T DeBonville,NA,Missoula PaddleHeads,2023,51.9728510251717,256,0.903,0.218,NA,NA,NA,NA,NA,manual_needed
+K Kaler,NA,Boise Hawks,2024,51.8722674497935,210,0.91,0.134,NA,NA,NA,NA,NA,manual_needed
+B Dansereau,NA,Ogden Raptors,2022,51.8411707752714,391,0.98,0.212,NA,NA,NA,NA,NA,manual_needed
+C Thompson,NA,Missoula PaddleHeads,2022,51.7285400302537,427,0.889,0.176,NA,NA,NA,NA,NA,manual_needed
+C Perez,NA,Missoula PaddleHeads,2025,51.4480743888275,258,0.858,0.166,NA,NA,NA,NA,NA,manual_needed
+A Davis,NA,Rocky Mountain Vibes,2024,51.2528607557464,429,0.918,0.172,NA,NA,NA,NA,NA,manual_needed
+J Kline,NA,Billings Mustangs,2022,50.8326133508492,248,0.936,0.234,NA,NA,NA,NA,NA,manual_needed
+H Hisky,NA,Idaho Falls Chukars,2022,50.7998241168703,450,0.873,0.157,NA,NA,NA,NA,NA,manual_needed
+A Bernard,NA,Missoula PaddleHeads,2023,50.7492991369662,226,0.846,0.143,NA,NA,NA,NA,NA,manual_needed
+G Morgan,NA,Idaho Falls Chukars,2025,50.6904580628617,222,0.879,0.14,NA,NA,NA,NA,NA,manual_needed
+W Little,NA,Idaho Falls Chukars,2021,50.5390845661897,328,0.88,0.115,NA,NA,NA,NA,NA,manual_needed
+S Gozzo,NA,Ogden Raptors,2023,50.51408373323,253,0.898,0.132,NA,NA,NA,NA,NA,manual_needed
+S Wilmer,NA,Oakland Ballers,2024,50.2450324675455,357,0.906,0.176,NA,NA,NA,NA,NA,manual_needed
+J Guenther,NA,Missoula PaddleHeads,2023,50.2263223503936,393,0.898,0.119,NA,NA,NA,NA,NA,manual_needed
+G Lora,NA,Billings Mustangs,2024,49.860335380036,176,0.876,0.148,NA,NA,NA,NA,NA,manual_needed
+L Meyer,NA,Boise Hawks,2026,49.7815404969665,195,0.927,0.142,NA,NA,NA,NA,NA,manual_needed
+P Parks,NA,Ogden Raptors,2021,49.7481929154307,348,0.893,0.123,NA,NA,NA,NA,NA,manual_needed
+E Corona,NA,Great Falls Voyagers,2025,49.7418124260942,302,0.909,0.216,NA,NA,NA,NA,NA,manual_needed
+J Raper,NA,Glacier Range Riders,2023,49.4562493999132,407,0.857,0.177,NA,NA,NA,NA,NA,manual_needed
+N Ultsch,NA,Boise Hawks,2024,49.0638799600924,414,0.947,0.18,NA,NA,NA,NA,NA,manual_needed
+E Smith,NA,Grand Junction Jackalopes,2023,48.9758274555697,133,0.948,0.206,NA,NA,NA,NA,NA,manual_needed
+B West,NA,Idaho Falls Chukars,2021,48.9500821592008,123,0.881,0.161,NA,NA,NA,NA,NA,manual_needed
+R Mccarthy,NA,Idaho Falls Chukars,2024,48.9344790819832,237,0.901,0.127,NA,NA,NA,NA,NA,manual_needed
+E Good,NA,Ogden Raptors,2025,48.7987874880662,413,0.902,0.13,NA,NA,NA,NA,NA,manual_needed
+M Wong,NA,Grand Junction Jackalopes,2023,48.7676667279633,248,0.874,0.148,NA,NA,NA,NA,NA,manual_needed
+L Helmig,NA,Oakland Ballers,2025,48.7159856401767,314,0.884,0.147,NA,NA,NA,NA,NA,manual_needed
+D Harris IV,NA,Oakland Ballers,2025,48.5581418806394,413,0.847,0.163,NA,NA,NA,NA,NA,manual_needed
+D Hernandez,NA,Rocky Mountain Vibes,2022,48.4093039387552,273,0.886,0.199,NA,NA,NA,NA,NA,manual_needed
+C Dunn Jr.,NA,Rocky Mountain Vibes,2023,48.3807581462087,187,0.91,0.209,NA,NA,NA,NA,NA,manual_needed
+D Rivera,NA,Grand Junction Jackalopes,2024,48.1798844016195,245,0.897,0.182,NA,NA,NA,NA,NA,manual_needed
+D Stone,NA,Ogden Raptors,2025,48.0218326302472,382,0.997,0.137,NA,NA,NA,NA,NA,manual_needed
+A Herron Jr.,NA,Rocky Mountain Vibes,2023,47.9491992766881,268,0.885,0.166,NA,NA,NA,NA,NA,manual_needed
+A Sequera,NA,Boise Hawks,2022,47.9259982935001,225,0.944,0.158,NA,NA,NA,NA,NA,manual_needed
+K Crowl,NA,Great Falls Voyagers,2021,47.6032996807894,315,0.917,0.089,NA,NA,NA,NA,NA,manual_needed
+A Chouinard,NA,Rocky Mountain Vibes,2025,47.5868514186425,220,0.97,0.159,NA,NA,NA,NA,NA,manual_needed
+R Narea,NA,Ogden Raptors,2023,47.5441104605612,359,0.847,0.14,NA,NA,NA,NA,NA,manual_needed
+M OConnor,NA,Missoula PaddleHeads,2021,47.5049889084075,241,0.818,0.148,NA,NA,NA,NA,NA,manual_needed
+T Lozano,NA,Oakland Ballers,2025,47.3534862254381,188,0.816,0.162,NA,NA,NA,NA,NA,manual_needed
+J Reyes,NA,Idaho Falls Chukars,2022,47.1044566462646,308,0.932,0.157,NA,NA,NA,NA,NA,manual_needed
+R Major,NA,Great Falls Voyagers,2024,47.0586765257951,383,0.902,0.177,NA,NA,NA,NA,NA,manual_needed
+G Horvat,NA,RedPocket Mobiles,2026,47.0186528591573,132,1,0.145,NA,NA,NA,NA,NA,manual_needed
+L Roskam,NA,Grand Junction Jackalopes,2021,46.8526243813153,252,0.846,0.108,NA,NA,NA,NA,NA,manual_needed
+D Connors,NA,Ogden Raptors,2022,46.6145668790346,379,0.856,0.145,NA,NA,NA,NA,NA,manual_needed
+A Noviello,NA,Missoula PaddleHeads,2022,46.415676910471,193,0.83,0.124,NA,NA,NA,NA,NA,manual_needed
+B Marine,NA,Yuba-Sutter Freebirds,2024,46.2224558118087,381,0.976,0.148,NA,NA,NA,NA,NA,manual_needed
+T Halsema,NA,Idaho Falls Chukars,2023,46.2126683075759,405,0.858,0.148,NA,NA,NA,NA,NA,manual_needed
+D Maberry,NA,Ogden Raptors,2021,45.7576916846393,214,0.993,0.112,NA,NA,NA,NA,NA,manual_needed
+M Herron Jr.,NA,Rocky Mountain Vibes,2023,45.7324915982378,352,0.837,0.183,NA,NA,NA,NA,NA,manual_needed
+P Coddou,NA,Yuba-Sutter Freebirds,2025,45.682936610364,306,0.881,0.112,NA,NA,NA,NA,NA,manual_needed
+R Jepson,NA,Great Falls Voyagers,2023,45.5547246841112,385,0.954,0.115,NA,NA,NA,NA,NA,manual_needed
+H Hall,NA,Great Falls Voyagers,2024,45.5300982724544,271,0.889,0.181,NA,NA,NA,NA,NA,manual_needed
+T Minder,NA,Boise Hawks,2023,45.0160594259888,381,0.829,0.143,NA,NA,NA,NA,NA,manual_needed
+R Gonzalez,NA,Idaho Falls Chukars,2024,44.9772181424127,151,1.103,0.144,NA,NA,NA,NA,NA,manual_needed
+J Matthews,NA,Great Falls Voyagers,2021,44.6424438952851,268,0.862,0.09,NA,NA,NA,NA,NA,manual_needed
+S Cullen,NA,Idaho Falls Chukars,2023,44.6373289937442,206,0.811,0.159,NA,NA,NA,NA,NA,manual_needed
+T Hardy,NA,Idaho Falls Chukars,2024,44.082817612997,101,0.95,0.143,NA,NA,NA,NA,NA,manual_needed
+K Willman,NA,Missoula PaddleHeads,2022,43.9390748662694,298,0.868,0.147,NA,NA,NA,NA,NA,manual_needed
+B Crosby,NA,Rocky Mountain Vibes,2023,43.9372465517203,334,0.875,0.145,NA,NA,NA,NA,NA,manual_needed
+S Barmakian,NA,Idaho Falls Chukars,2022,43.7802939586758,448,0.878,0.13,NA,NA,NA,NA,NA,manual_needed
+B Hueth,NA,Idaho Falls Chukars,2022,43.7608393781147,291,0.841,0.13,NA,NA,NA,NA,NA,manual_needed
+C Lopez,NA,Rocky Mountain Vibes,2022,43.7078248249863,278,0.865,0.119,NA,NA,NA,NA,NA,manual_needed
+M Harris,NA,Boise Hawks,2021,43.66739608267,185,0.691,0.113,NA,NA,NA,NA,NA,manual_needed
+R Shah,NA,Ogden Raptors,2021,43.578406430091,243,0.886,0.099,NA,NA,NA,NA,NA,manual_needed
+B Brown,NA,Idaho Falls Chukars,2023,43.1861136262094,274,0.958,0.142,NA,NA,NA,NA,NA,manual_needed
+T Clark,NA,Oakland Ballers,2024,43.1601318532282,160,0.863,0.145,NA,NA,NA,NA,NA,manual_needed
+T Lomack,NA,Billings Mustangs,2023,43.0259269965314,400,0.845,0.148,NA,NA,NA,NA,NA,manual_needed
+A Ray,NA,Grand Junction Jackalopes,2023,42.9963236280242,250,0.844,0.13,NA,NA,NA,NA,NA,manual_needed
+G Lyttle,NA,Great Falls Voyagers,2021,42.9924699350824,122,0.853,0.061,NA,NA,NA,NA,NA,manual_needed
+C Phelts,NA,Ogden Raptors,2023,42.8920352523861,392,0.874,0.121,NA,NA,NA,NA,NA,manual_needed
+B Skinner,NA,Yuba-Sutter Freebirds,2024,42.8320249328094,416,0.803,0.126,NA,NA,NA,NA,NA,manual_needed
+A Mata,NA,Idaho Falls Chukars,2025,42.7826867151636,309,0.893,0.154,NA,NA,NA,NA,NA,manual_needed
+D Williams,NA,Grand Junction Jackalopes,2023,42.7303443687018,112,0.802,0.119,NA,NA,NA,NA,NA,manual_needed
+H Yanez,NA,Great Falls Voyagers,2024,42.6602618971183,170,0.868,0.142,NA,NA,NA,NA,NA,manual_needed
+J Shanks,NA,Idaho Falls Chukars,2024,42.1786553801148,196,0.869,0.162,NA,NA,NA,NA,NA,manual_needed
+C Dunn,NA,Glacier Range Riders,2022,41.9790888256882,178,0.874,0.139,NA,NA,NA,NA,NA,manual_needed
+M Jefferson,NA,Oakland Ballers,2024,41.9421087006351,168,0.84,0.115,NA,NA,NA,NA,NA,manual_needed
+T Garcia,NA,Rocky Mountain Vibes,2025,41.8850521491144,335,0.939,0.119,NA,NA,NA,NA,NA,manual_needed
+D Conners,NA,Ogden Raptors,2023,41.7879128118029,402,0.815,0.114,NA,NA,NA,NA,NA,manual_needed
+P Adams,NA,Ogden Raptors,2022,41.751410019171,393,0.851,0.089,NA,NA,NA,NA,NA,manual_needed
+C Comer,NA,Billings Mustangs,2021,41.4171021564733,199,0.689,0.102,NA,NA,NA,NA,NA,manual_needed
+G DiGiacomo,NA,Missoula PaddleHeads,2023,41.3408931889517,140,0.85,0.092,NA,NA,NA,NA,NA,manual_needed
+E Acosta,NA,Idaho Falls Chukars,2023,41.3208342792702,260,0.834,0.086,NA,NA,NA,NA,NA,manual_needed
+T Fontenot,NA,Ogden Raptors,2025,41.1943105332778,426,0.907,0.159,NA,NA,NA,NA,NA,manual_needed
+B Evans,NA,Billings Mustangs,2023,40.8256697698261,113,0.787,0.125,NA,NA,NA,NA,NA,manual_needed
+M Annone,NA,Rocky Mountain Vibes,2022,40.5945883276093,252,0.831,0.127,NA,NA,NA,NA,NA,manual_needed
+J Barth,NA,Billings Mustangs,2022,40.4775783860668,274,0.744,0.112,NA,NA,NA,NA,NA,manual_needed
+K Jimenez,NA,Colorado Springs Sky Sox,2024,40.4240230021677,392,0.847,0.125,NA,NA,NA,NA,NA,manual_needed
+S Jabusch,NA,Great Falls Voyagers,2021,40.299984450203,425,0.739,0.075,NA,NA,NA,NA,NA,manual_needed
+J Azuaje,NA,Billings Mustangs,2021,40.1323750824156,264,0.694,0.026,NA,NA,NA,NA,NA,manual_needed
+R Cash,NA,Glacier Range Riders,2022,39.9906927476528,386,0.803,0.073,NA,NA,NA,NA,NA,manual_needed
+S Olsson,NA,Boise Hawks,2023,39.9277505560029,134,0.959,0.092,NA,NA,NA,NA,NA,manual_needed
+E Yake,NA,Rocky Mountain Vibes,2024,39.7157186186686,405,0.913,0.103,NA,NA,NA,NA,NA,manual_needed
+A Hanson,NA,Rocky Mountain Vibes,2022,39.7133779381261,221,0.811,0.158,NA,NA,NA,NA,NA,manual_needed
+J McMurray,NA,Rocky Mountain Vibes,2023,39.6631485539875,239,1.032,0.068,NA,NA,NA,NA,NA,manual_needed
+C Hanson,NA,Billings Mustangs,2025,39.530999730059,164,0.799,0.093,NA,NA,NA,NA,NA,manual_needed
+E Rosales,NA,Rocky Mountain Vibes,2021,39.1817084464519,303,0.727,0.1,NA,NA,NA,NA,NA,manual_needed
+G Kueber,NA,Rocky Mountain Vibes,2025,38.9071897539063,359,0.828,0.101,NA,NA,NA,NA,NA,manual_needed
+M Golda,NA,Grand Junction Jackalopes,2023,38.7999563686053,199,0.798,0.103,NA,NA,NA,NA,NA,manual_needed
+B Riley,NA,Missoula PaddleHeads,2021,38.7103098365476,372,0.786,0.047,NA,NA,NA,NA,NA,manual_needed
+O Serratos Jr.,NA,Great Falls Voyagers,2024,38.698111584628,243,0.868,0.149,NA,NA,NA,NA,NA,manual_needed
+C Booth,NA,Rocky Mountain Vibes,2025,38.6699445925809,449,0.884,0.129,NA,NA,NA,NA,NA,manual_needed
+M Dinesen,NA,Glacier Range Riders,2023,38.6340899210347,335,0.819,0.158,NA,NA,NA,NA,NA,manual_needed
+P Myro IV,NA,Boise Hawks,2025,38.6063630382384,402,0.914,0.12,NA,NA,NA,NA,NA,manual_needed
+E Peralta,NA,Rocky Mountain Vibes,2023,38.5665495730338,355,0.856,0.142,NA,NA,NA,NA,NA,manual_needed
+O Taylor,NA,Ogden Raptors,2021,38.521951835626,217,0.773,0.066,NA,NA,NA,NA,NA,manual_needed
+T Lewis,NA,Ogden Raptors,2022,38.4797692251015,289,0.814,0.15,NA,NA,NA,NA,NA,manual_needed
+J Olson,NA,Great Falls Voyagers,2021,38.192432624328,299,0.825,0.098,NA,NA,NA,NA,NA,manual_needed
+P Shelton,NA,Grand Junction Jackalopes,2025,38.1498339901338,158,0.804,0.101,NA,NA,NA,NA,NA,manual_needed
+K Maldonado,NA,Grand Junction Jackalopes,2021,37.8955581335237,1108,0.776,0.088,NA,NA,NA,NA,NA,manual_needed
+A Amicangelo,NA,Billings Mustangs,2021,37.8712645408027,304,0.877,0.054,NA,NA,NA,NA,NA,manual_needed
+Z Zurbrugg,NA,Great Falls Voyagers,2021,37.8583962718148,105,0.692,0,NA,NA,NA,NA,NA,manual_needed
+F Jezioro,NA,Grand Junction Jackalopes,2021,37.8375972779206,135,0.968,0.119,NA,NA,NA,NA,NA,manual_needed
+M Deeb,NA,Great Falls Voyagers,2021,37.7442065328343,339,0.765,0.097,NA,NA,NA,NA,NA,manual_needed
+N Popa,NA,Grand Junction Jackalopes,2022,37.6687464079184,433,0.975,0.12,NA,NA,NA,NA,NA,manual_needed
+N Scantlin,NA,Grand Junction Jackalopes,2021,37.6452345017772,275,0.862,0.064,NA,NA,NA,NA,NA,manual_needed
+B Broussard,NA,Billings Mustangs,2021,37.5903719277154,262,0.6,0.055,NA,NA,NA,NA,NA,manual_needed
+D Kolbush,NA,Great Falls Voyagers,2022,37.0355058320497,306,0.815,0.121,NA,NA,NA,NA,NA,manual_needed
+E McCabe,NA,Glacier Range Riders,2022,36.6136030908661,321,0.823,0.096,NA,NA,NA,NA,NA,manual_needed
+A Meggs,NA,Grand Junction Jackalopes,2023,36.552570228901,223,0.76,0.067,NA,NA,NA,NA,NA,manual_needed
+P Harden,NA,Oakland Ballers,2024,35.9048958212867,365,0.825,0.097,NA,NA,NA,NA,NA,manual_needed
+B McConnell,NA,Glacier Range Riders,2022,35.4255358321004,430,0.745,0.083,NA,NA,NA,NA,NA,manual_needed
+A Adams,NA,Rocky Mountain Vibes,2025,35.2387499627312,150,0.835,0.092,NA,NA,NA,NA,NA,manual_needed
+C Horner,NA,Ogden Raptors,2023,35.1992912124452,209,0.742,0.108,NA,NA,NA,NA,NA,manual_needed
+T Jorgensen,NA,Boise Hawks,2022,34.6152180655578,460,0.762,0.103,NA,NA,NA,NA,NA,manual_needed
+E Sanchez,NA,Billings Mustangs,2023,34.4761632487099,132,0.764,0.094,NA,NA,NA,NA,NA,manual_needed
+P Howard,NA,Ogden Raptors,2024,34.4639781343798,426,0.875,0.11,NA,NA,NA,NA,NA,manual_needed
+N Emanuel,NA,Great Falls Voyagers,2021,34.4636234194613,121,0.655,0,NA,NA,NA,NA,NA,manual_needed
+G Diaz,NA,Rocky Mountain Vibes,2022,34.0630758301305,419,0.909,0.069,NA,NA,NA,NA,NA,manual_needed
+J Lee,NA,Boise Hawks,2025,34.04699761009,124,0.822,0.139,NA,NA,NA,NA,NA,manual_needed
+M Sykes,NA,Rocky Mountain Vibes,2024,33.8565463532296,181,0.798,0.12,NA,NA,NA,NA,NA,manual_needed
+C Monroe,NA,Great Falls Voyagers,2022,33.5114481502949,181,0.749,0.121,NA,NA,NA,NA,NA,manual_needed
+E Diaz,NA,Colorado Springs Sky Sox,2023,33.3020809540459,323,0.846,0.101,NA,NA,NA,NA,NA,manual_needed
+K Whatley,NA,Missoula PaddleHeads,2022,33.0141794369207,149,0.814,0.136,NA,NA,NA,NA,NA,manual_needed
+A Nielsen,NA,Grand Junction Jackalopes,2022,32.9858394666109,295,0.764,0.072,NA,NA,NA,NA,NA,manual_needed
+D Cornett,NA,Billings Mustangs,2021,32.7548762627003,106,0.61,0.031,NA,NA,NA,NA,NA,manual_needed
+J Anderson,NA,Grand Junction Jackalopes,2021,32.6817020783703,188,0.709,0.036,NA,NA,NA,NA,NA,manual_needed
+M Edie,NA,Billings Mustangs,2023,32.6356110349476,283,0.85,0.135,NA,NA,NA,NA,NA,manual_needed
+B Donovan,NA,Billings Mustangs,2023,32.6147332155159,164,0.747,0.114,NA,NA,NA,NA,NA,manual_needed
+A Elder,NA,Grand Junction Jackalopes,2021,32.4701737486364,185,0.616,0.018,NA,NA,NA,NA,NA,manual_needed
+T Van Marter,NA,Idaho Falls Chukars,2021,31.4126284422902,208,0.713,0.016,NA,NA,NA,NA,NA,manual_needed
+B Parr,NA,Billings Mustangs,2021,30.6791458683722,124,0.728,0.051,NA,NA,NA,NA,NA,manual_needed
+L Barns,NA,Ogden Raptors,2024,30.5562787514779,360,0.759,0.076,NA,NA,NA,NA,NA,manual_needed
+F Achecar,NA,Billings Mustangs,2021,30.4755044715793,197,0.703,0.051,NA,NA,NA,NA,NA,manual_needed
+N Michaels,NA,Ogden Raptors,2021,30.4608604384006,284,0.81,0.0580000000000001,NA,NA,NA,NA,NA,manual_needed
+A Armstrong,NA,Ogden Raptors,2021,30.1779665325015,192,0.637,0.017,NA,NA,NA,NA,NA,manual_needed
+A Don,NA,Idaho Falls Chukars,2021,30.0081062577003,287,0.691,0.047,NA,NA,NA,NA,NA,manual_needed
+A Buendia,NA,Rocky Mountain Vibes,2021,29.9680869702591,112,0.688,0.029,NA,NA,NA,NA,NA,manual_needed
+N Pacheco,NA,Ogden Raptors,2021,29.6731962554804,108,0.699,0.032,NA,NA,NA,NA,NA,manual_needed
+M Skundrich,NA,Billings Mustangs,2021,29.1823124106393,248,0.629,0.041,NA,NA,NA,NA,NA,manual_needed
+K Higgins,NA,Colorado Springs Sky Sox,2022,28.5251876969247,352,0.815,0.084,NA,NA,NA,NA,NA,manual_needed
+S Troyer,NA,Idaho Falls Chukars,2023,28.0626087888212,263,0.767,0.075,NA,NA,NA,NA,NA,manual_needed
+J Malec,NA,Great Falls Voyagers,2022,27.7959332372513,396,0.736,0.096,NA,NA,NA,NA,NA,manual_needed
+T Brunson,NA,Great Falls Voyagers,2021,27.136899193852,127,0.682,0.052,NA,NA,NA,NA,NA,manual_needed
+H Himrich,NA,Rocky Mountain Vibes,2025,27.0405568703079,119,0.814,0.116,NA,NA,NA,NA,NA,manual_needed
+M O'Hara,NA,Oakland Ballers,2025,26.6921414260058,121,0.824,0.1,NA,NA,NA,NA,NA,manual_needed
+G Barnes,NA,Rocky Mountain Vibes,2021,26.6125451499723,249,0.695,0.038,NA,NA,NA,NA,NA,manual_needed
+J Esparza,NA,Rocky Mountain Vibes,2021,26.4109335107686,259,0.59,0.059,NA,NA,NA,NA,NA,manual_needed
+B Perez,NA,Rocky Mountain Vibes,2021,25.221806486444,303,0.58,0.031,NA,NA,NA,NA,NA,manual_needed
+Q Alexander,NA,Great Falls Voyagers,2021,25.1485863205505,239,0.637,0,NA,NA,NA,NA,NA,manual_needed
+A Monge,NA,Grand Junction Jackalopes,2021,24.2274529859497,158,0.61,0,NA,NA,NA,NA,NA,manual_needed
+A Nunez,NA,Rocky Mountain Vibes,2021,22.1488104259327,233,0.612,0.013,NA,NA,NA,NA,NA,manual_needed
+G White,NA,Boise Hawks,2021,20,127,0.594,0,NA,NA,NA,NA,NA,manual_needed

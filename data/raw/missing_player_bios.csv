@@ -1,0 +1,354 @@
+player_name,team,season,full_name,position,bats_throws,height,weight,photo_url,missing_photo,missing_height,missing_weight,missing_any
+B Nigh,Boise Hawks,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+L Meyer,Boise Hawks,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Fernandes,Glacier Range Riders,2026,Alex Fernandes,NA,L/R,NA,NA,https://www.gorangeriders.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+C Hornung,Glacier Range Riders,2026,Carson Hornung,INF,L/R,6-3,225,NA,TRUE,FALSE,FALSE,TRUE
+D Ratfield,Glacier Range Riders,2026,Donovan Ratfield,C,R/R,6-1,210,NA,TRUE,FALSE,FALSE,TRUE
+J Steele,Glacier Range Riders,2026,Jacob Steele,INF,R/R,6-2,195,NA,TRUE,FALSE,FALSE,TRUE
+A Redahan,Great Falls Voyagers,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Ott,Great Falls Voyagers,2026,Ethan Ott,1B/3B,R/R,NA,NA,https://www.gfvoyagers.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+K Schmack,Great Falls Voyagers,2026,Kyle Schmack,OF,R/R,NA,NA,https://www.gfvoyagers.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+V Temesvary,Great Falls Voyagers,2026,Vincent Temesvary,UTL,R/R,NA,NA,https://www.gfvoyagers.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+W Rogers,Great Falls Voyagers,2026,Will Rogers,RHP/UTL,R/R,NA,NA,https://www.gfvoyagers.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+D Stengren,Idaho Falls Chukars,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Trimble,Idaho Falls Chukars,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Canton,Idaho Falls Chukars,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Bess,Long Beach Coast,2026,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/BESS_LBC_01_copy_ad_hoc.jpg?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+C Vest,Long Beach Coast,2026,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/VEST_LBC_01_copy_ad_hoc.jpg?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+E Pelc,Long Beach Coast,2026,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/PELC_LBC_01_copy_ad_hoc.jpg?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+M Bardowell,Long Beach Coast,2026,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/BARDOWELL_LBC_01_copy_ad_hoc.jpg?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+B Cannon,Modesto Roadsters,2026,NA,NA,NA,NA,NA,https://modestoroadsters.com/team/headshots/-11-Bryce-Cannon.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+J Boyd,Modesto Roadsters,2026,NA,NA,NA,NA,NA,https://modestoroadsters.com/team/headshots/-7-Justin-Boyd.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+J Lojewski,Modesto Roadsters,2026,NA,NA,NA,NA,NA,https://modestoroadsters.com/team/headshots/-1-Jacob-Lowjeski.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+M Handron,Modesto Roadsters,2026,NA,NA,NA,NA,NA,https://modestoroadsters.com/team/headshots/-43-Max-Handron.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+O Johnson,Modesto Roadsters,2026,NA,NA,NA,NA,NA,https://modestoroadsters.com/team/headshots/-21-Osiris-Johnson.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+T Williams,Modesto Roadsters,2026,NA,NA,NA,NA,NA,https://modestoroadsters.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+B Bishop,RedPocket Mobiles,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Horvat,RedPocket Mobiles,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+H Nieves,RedPocket Mobiles,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Chavez,RedPocket Mobiles,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Harrison-Dudley,RedPocket Mobiles,2026,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Aragon,Yuba-Sutter Freebirds,2026,Diego Aragon,Catcher,R/R,NA,NA,https://freebirdsbaseball.com/assets/ARAGON.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+E Pagani,Yuba-Sutter Freebirds,2026,Edwin Pagani,Infield,R/R,NA,NA,https://freebirdsbaseball.com/assets/PAGANI.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+Z Chamizo,Yuba-Sutter Freebirds,2026,Zach Chamizo,Utility,R/R,NA,NA,https://freebirdsbaseball.com/assets/CHAMIZO.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+C Hanson,Billings Mustangs,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J O'Dowd,Billings Mustangs,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Woodcox,Boise Hawks,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Hjelle,Boise Hawks,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Lee,Boise Hawks,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Jung-Goldberg,Boise Hawks,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Marcelo,Boise Hawks,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+P Myro IV,Boise Hawks,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Darden,Boise Hawks,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Roberts,Colorado Springs Sky Sox,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Moody,Colorado Springs Sky Sox,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+Q Landis,Colorado Springs Sky Sox,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+Z Denton,Colorado Springs Sky Sox,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Paton,Glacier Range Riders,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Mabry,Glacier Range Riders,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Clarkson,Glacier Range Riders,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Pimentel,Grand Junction Jackalopes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Maynard,Grand Junction Jackalopes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Scavotto,Grand Junction Jackalopes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+I Nunez,Grand Junction Jackalopes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Minzey,Grand Junction Jackalopes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+P Shelton,Grand Junction Jackalopes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Coffman,Grand Junction Jackalopes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+Z Roos,Grand Junction Jackalopes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Fritz,Great Falls Voyagers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Swenda,Great Falls Voyagers,2025,Anthony Swenda,INF,R/R,NA,NA,https://www.gfvoyagers.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+B Watkins,Great Falls Voyagers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Corona,Great Falls Voyagers,2025,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/CORONA_LBC_01_copy.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+T Cruz,Great Falls Voyagers,2025,Trey Cruz,SS/OF,R/R,NA,NA,https://www.gfvoyagers.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+T Specht,Great Falls Voyagers,2025,Tommy Specht,OF,L/R,NA,NA,https://www.gfvoyagers.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+A Mata,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/MATA_LBC_01_copy_ad_hoc.jpg?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+B Rosengard,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Morgan,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Jablonski,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/JABLONSKI_LBC_01_copy_ad_hoc.jpg?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+J Pappas,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/Johnny_Pappas_Headshot_ad_hoc.jpg?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+S Baumgardt,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Rich,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T McCaffrey,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,https://longbeachcoast.com/images/McCAFFREY_LBC_01_copy_ad_hoc.jpg?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+T Rogers,Idaho Falls Chukars,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Gordon,Missoula PaddleHeads,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Perez,Missoula PaddleHeads,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Sleight,Missoula PaddleHeads,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Rosario,Missoula PaddleHeads,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Pena,Missoula PaddleHeads,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Almanza,Oakland Ballers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Harris IV,Oakland Ballers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Tatum,Oakland Ballers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+L Helmig,Oakland Ballers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M O'Hara,Oakland Ballers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Lozano,Oakland Ballers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T McKenzie,Oakland Ballers,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Bagnieski,Ogden Raptors,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Hall,Ogden Raptors,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Sargent Jr.,Ogden Raptors,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Stone,Ogden Raptors,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Good,Ogden Raptors,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Oyama,Ogden Raptors,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Fontenot,Ogden Raptors,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Adams,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Chouinard,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Booth,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Tofteland,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Kueber,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Lora Gonzalez,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+H Himrich,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Clark,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Linscott,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Garcia,Rocky Mountain Vibes,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Lada,Yuba-Sutter Freebirds,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Hext,Yuba-Sutter Freebirds,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Berkey,Yuba-Sutter Freebirds,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Brusa,Yuba-Sutter Freebirds,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Duarte,Yuba-Sutter Freebirds,2025,Josh Duarte,OF,R/R,NA,NA,https://freebirdsbaseball.com/assets/DUARTE.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+P Coddou,Yuba-Sutter Freebirds,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Orsak,Yuba-Sutter Freebirds,2025,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Ryan,Billings Mustangs,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Leach,Billings Mustangs,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Blum,Billings Mustangs,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Lora,Billings Mustangs,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Rooks,Billings Mustangs,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Kaler,Boise Hawks,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Yonamine,Boise Hawks,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Ultsch,Boise Hawks,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Viola,Boise Hawks,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Gomez,Colorado Springs Sky Sox,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Matthews,Colorado Springs Sky Sox,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Coutts,Colorado Springs Sky Sox,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Jimenez,Colorado Springs Sky Sox,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Fitzgerald,Glacier Range Riders,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Castillo,Glacier Range Riders,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Liniak,Glacier Range Riders,2024,NA,NA,NA,NA,NA,https://modestoroadsters.com/team/headshots/-20-Kingston-Liniak.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+R McCarthy,Glacier Range Riders,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Rios,Grand Junction Jackalopes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Halvorson,Grand Junction Jackalopes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Rivera,Grand Junction Jackalopes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Dugan,Grand Junction Jackalopes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Kuchinski,Grand Junction Jackalopes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Green,Great Falls Voyagers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+F Rojas Jr.,Great Falls Voyagers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+H Hall,Great Falls Voyagers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+H Yanez,Great Falls Voyagers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Backstrom,Great Falls Voyagers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+O Serratos Jr.,Great Falls Voyagers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Major,Great Falls Voyagers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+X Washington,Great Falls Voyagers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Shanks,Idaho Falls Chukars,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Johnson,Idaho Falls Chukars,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Gonzalez,Idaho Falls Chukars,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Mccarthy,Idaho Falls Chukars,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Hardy,Idaho Falls Chukars,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Wyatt,Idaho Falls Chukars,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Fogel,Missoula PaddleHeads,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Sanchez,Missoula PaddleHeads,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+P Chung,Missoula PaddleHeads,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Barrera,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Carson,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Hubbard,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Stuart,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Jefferson,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Martinez,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+P Harden,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Wilmer,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Clark,Oakland Ballers,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Sargent,Ogden Raptors,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Brutcher,Ogden Raptors,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+L Barns,Ogden Raptors,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+P Howard,Ogden Raptors,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Davis,Rocky Mountain Vibes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Yake,Rocky Mountain Vibes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Day,Rocky Mountain Vibes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Sykes,Rocky Mountain Vibes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Rivas,Rocky Mountain Vibes,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Figueredo,Yuba-Sutter Freebirds,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Blackford,Yuba-Sutter Freebirds,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Marine,Yuba-Sutter Freebirds,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Skinner,Yuba-Sutter Freebirds,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Glancy,Yuba-Sutter Freebirds,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Gonzalez,Yuba-Sutter Freebirds,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Kirby,Yuba-Sutter Freebirds,2024,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Donovan,Billings Mustangs,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Evans,Billings Mustangs,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Denning,Billings Mustangs,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Sanchez,Billings Mustangs,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Wurtz,Billings Mustangs,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Faile,Billings Mustangs,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Edie,Billings Mustangs,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Lomack,Billings Mustangs,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Baeza,Boise Hawks,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Maiben,Boise Hawks,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Poteet,Boise Hawks,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Olsson,Boise Hawks,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Minder,Boise Hawks,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Guadalupe,Colorado Springs Sky Sox,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Perez,Colorado Springs Sky Sox,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Diaz,Colorado Springs Sky Sox,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+H George,Colorado Springs Sky Sox,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+P Robertson,Colorado Springs Sky Sox,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Bouchard,Colorado Springs Sky Sox,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Kirtley,Glacier Range Riders,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Taylor,Glacier Range Riders,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Miller,Glacier Range Riders,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Howell,Glacier Range Riders,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Raper,Glacier Range Riders,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Clayton,Glacier Range Riders,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Dinesen,Glacier Range Riders,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Meggs,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Ray,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Williams,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Smith,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Cruce,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Hubbard,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Figueiredo,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Golda,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Wong,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Washington Jr.,Grand Junction Jackalopes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Williams,Great Falls Voyagers,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Jepson,Great Falls Voyagers,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Brown,Idaho Falls Chukars,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Acosta,Idaho Falls Chukars,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Paller,Idaho Falls Chukars,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Cullen,Idaho Falls Chukars,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Troyer,Idaho Falls Chukars,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Halsema,Idaho Falls Chukars,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Bernard,Missoula PaddleHeads,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G DiGiacomo,Missoula PaddleHeads,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Guenther,Missoula PaddleHeads,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Greenwalt,Missoula PaddleHeads,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+L Navarro,Missoula PaddleHeads,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M O'Connor,Missoula PaddleHeads,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T DeBonville,Missoula PaddleHeads,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Horner,Ogden Raptors,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Phelts,Ogden Raptors,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Conners,Ogden Raptors,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Henderson,Ogden Raptors,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+L Williams,Ogden Raptors,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Alexiades,Ogden Raptors,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Narea,Ogden Raptors,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Gozzo,Ogden Raptors,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Herron Jr.,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Crosby,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Dunn Jr.,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Stroup,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Lopez,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Peralta,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Barfield,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J McMurray,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Herron Jr.,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Hogan,Rocky Mountain Vibes,2023,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Barth,Billings Mustangs,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Kline,Billings Mustangs,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Sequera,Boise Hawks,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Teixeira,Boise Hawks,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Gil,Boise Hawks,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Jorgensen,Boise Hawks,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Higgins,Colorado Springs Sky Sox,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Rich,Colorado Springs Sky Sox,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B McConnell,Glacier Range Riders,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Dunn,Glacier Range Riders,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E McCabe,Glacier Range Riders,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Cash,Glacier Range Riders,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Nielsen,Grand Junction Jackalopes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Farmer,Grand Junction Jackalopes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Middleton,Grand Junction Jackalopes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Petersen,Grand Junction Jackalopes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Elvir,Grand Junction Jackalopes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Fitzpatrick,Grand Junction Jackalopes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Popa,Grand Junction Jackalopes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Atwood,Great Falls Voyagers,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Daniel,Great Falls Voyagers,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Monroe,Great Falls Voyagers,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Runge,Great Falls Voyagers,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Kolbush,Great Falls Voyagers,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Malec,Great Falls Voyagers,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Bohning,Idaho Falls Chukars,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Hueth,Idaho Falls Chukars,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Estrada,Idaho Falls Chukars,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+H Hisky,Idaho Falls Chukars,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Reyes,Idaho Falls Chukars,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Barmakian,Idaho Falls Chukars,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Kelly,Idaho Falls Chukars,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Noviello,Missoula PaddleHeads,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Thompson,Missoula PaddleHeads,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Newman,Missoula PaddleHeads,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Whatley,Missoula PaddleHeads,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Willman,Missoula PaddleHeads,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+L Sparks,Missoula PaddleHeads,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Gatewood,Missoula PaddleHeads,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Dansereau,Ogden Raptors,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Connors,Ogden Raptors,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Macaluso,Ogden Raptors,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Broughton,Ogden Raptors,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Valdez,Ogden Raptors,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+P Adams,Ogden Raptors,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Ullian,Ogden Raptors,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Lewis,Ogden Raptors,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Hanson,Rocky Mountain Vibes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Lopez,Rocky Mountain Vibes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Hernandez,Rocky Mountain Vibes,2022,NA,NA,NA,NA,NA,https://modestoroadsters.com/team/headshots/-28-Devyn-Hernandez.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+G Diaz,Rocky Mountain Vibes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Annone,Rocky Mountain Vibes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+U Cantu,Rocky Mountain Vibes,2022,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Amicangelo,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Broussard,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Parr,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Comer,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+C Sepulveda,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Cornett,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+F Achecar,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Azuaje,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Skundrich,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Carranza,Billings Mustangs,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Smith,Boise Hawks,2021,NA,NA,NA,NA,NA,https://modestoroadsters.com/images/setup/default-headshot.png?max_height=576&max_width=576&crop=1,FALSE,TRUE,TRUE,TRUE
+G White,Boise Hawks,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Harris,Boise Hawks,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Elder,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Monge,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+F Jezioro,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Anderson,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Maldonado,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+L Roskam,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Scantlin,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Martinez,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+V Esposito,Grand Junction Jackalopes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Norman,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Lyttle,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Matthews,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Olson,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Crowl,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Deeb,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Emanuel,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+Q Alexander,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Jabusch,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Brunson,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+Z Zurbrugg,Great Falls Voyagers,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Don,Idaho Falls Chukars,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B West,Idaho Falls Chukars,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+K Quiggle,Idaho Falls Chukars,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M Feinstein,Idaho Falls Chukars,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+T Van Marter,Idaho Falls Chukars,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+W Little,Idaho Falls Chukars,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Riley,Missoula PaddleHeads,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Nevarez,Missoula PaddleHeads,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Akins,Missoula PaddleHeads,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+L Navigato,Missoula PaddleHeads,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+M OConnor,Missoula PaddleHeads,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+Z Almond,Missoula PaddleHeads,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Armstrong,Ogden Raptors,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+D Maberry,Ogden Raptors,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Goldfarb,Ogden Raptors,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Michaels,Ogden Raptors,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+N Pacheco,Ogden Raptors,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+O Taylor,Ogden Raptors,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+P Parks,Ogden Raptors,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+R Shah,Ogden Raptors,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Buendia,Rocky Mountain Vibes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+A Nunez,Rocky Mountain Vibes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+B Perez,Rocky Mountain Vibes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+E Rosales,Rocky Mountain Vibes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+G Barnes,Rocky Mountain Vibes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+J Esparza,Rocky Mountain Vibes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE
+S Macias,Rocky Mountain Vibes,2021,NA,NA,NA,NA,NA,NA,TRUE,TRUE,TRUE,TRUE

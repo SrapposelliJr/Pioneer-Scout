@@ -1,0 +1,410 @@
+player_name,name_key,player_name_master,full_name,team,position,bats_throws,height,weight,match_status
+A Adams,a_adams,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Amicangelo,a_amicangelo,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Armstrong,a_armstrong,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Atwood,a_atwood,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Baeza,a_baeza,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Bernard,a_bernard,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Buendia,a_buendia,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Chouinard,a_chouinard,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Cootway,a_cootway,A Cootway,Adam Cootway,Billings Mustangs,OF,R/R,6’0,205,matched
+A Davis,a_davis,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Don,a_don,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Elder,a_elder,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Fernandes,a_fernandes,A Fernandes,Alex Fernandes,Glacier Range Riders,NA,L/R,NA,NA,matched
+A Figueredo,a_figueredo,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Fogel,a_fogel,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Folds,a_folds,A Folds,Austin Folds,Boise Hawks,OF,L/L,5&amp;rsquo;10,180,matched
+A Fritz,a_fritz,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Guadalupe,a_guadalupe,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Hanson,a_hanson,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Herron Jr.,a_jr.,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Mata,a_mata,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Meggs,a_meggs,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Monge,a_monge,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Nielsen,a_nielsen,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Noviello,a_noviello,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Nunez,a_nunez,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Pimentel,a_pimentel,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Ray,a_ray,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Redahan,a_redahan,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Rios,a_rios,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Sanchez,a_sanchez,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Sequera,a_sequera,NA,NA,NA,NA,NA,NA,NA,needs_review
+A Shaver,a_shaver,A Shaver,A.J. Shaver,Billings Mustangs,OF,R/R,6'1,215,matched
+A Swenda,a_swenda,A Swenda,Anthony Swenda,Great Falls Voyagers,INF,R/R,NA,NA,matched
+B Barrera,b_barrera,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Bishop,b_bishop,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Blackford,b_blackford,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Bohning,b_bohning,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Broussard,b_broussard,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Brown,b_brown,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Cannon,b_cannon,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Carson,b_carson,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Crosby,b_crosby,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Daniel,b_daniel,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Dansereau,b_dansereau,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Donovan,b_donovan,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Evans,b_evans,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Fitzgerald,b_fitzgerald,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Hueth,b_hueth,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Lada,b_lada,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Marine,b_marine,NA,NA,NA,NA,NA,NA,NA,needs_review
+B McConnell,b_mcconnell,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Nigh,b_nigh,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Norman,b_norman,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Parr,b_parr,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Perez,b_perez,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Riley,b_riley,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Roberts,b_roberts,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Rosengard,b_rosengard,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Ryan,b_ryan,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Skinner,b_skinner,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Smith,b_smith,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Watkins,b_watkins,NA,NA,NA,NA,NA,NA,NA,needs_review
+B West,b_west,NA,NA,NA,NA,NA,NA,NA,needs_review
+B Wright,b_wright,B Wright,Bodee Wright,Billings Mustangs,UTL,R/R,5'9,175,matched
+C Almanza,c_almanza,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Bagnieski,c_bagnieski,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Bess,c_bess,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Booth,c_booth,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Bowen,c_bowen,C Bowen,Cameron Bowen,Billings Mustangs,SS,R/R,5'9,200,matched
+C Bufford,c_bufford,C Bufford,Cam Bufford,Oakland Ballers,UTIL,R/R,6'3,195,matched
+C Castaneda,c_castaneda,C Castaneda,Christian Castaneda,Yuba-Sutter Freebirds,First Base/Outfield,R/R,6'1,220,matched
+C Castillo,c_castillo,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Comer,c_comer,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Denning,c_denning,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Dunn,c_dunn,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Dunn Jr.,c_jr.,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Estrada,c_estrada,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Farmer,c_farmer,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Gallardo,c_gallardo,C Gallardo,Cameron Gallardo,Missoula PaddleHeads,P,R/R,6-2,210,matched
+C Garner,c_garner,C Garner,Carson Garner,Glacier Range Riders,INF,R/R,6-1,205,matched
+C Gordon,c_gordon,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Green,c_green,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Hall,c_hall,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Halvorson,c_halvorson,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Hanson,c_hanson,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Hext,c_hext,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Horner,c_horner,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Hornung,c_hornung,C Hornung,Carson Hornung,Glacier Range Riders,INF,L/R,6-3,225,matched
+C Jordan,c_jordan,C Jordan,Cole Jordan,Ogden Raptors,UTL,R/R,5'10,193,matched
+C Kirtley,c_kirtley,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Lane,c_lane,C Lane,Carmine Lane,Ogden Raptors,INF,R/R,6'1,211,matched
+C Lawrence,c_lawrence,C Lawrence,Colson Lawrence,Ogden Raptors,OF,R/R,6'5,220,matched
+C Lopez,c_lopez,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Middleton,c_middleton,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Monroe,c_monroe,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Muniz,c_muniz,C Muniz,Charlie Muniz,Billings Mustangs,C,R/R,6'2,220,matched
+C Perez,c_perez,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Petersen,c_petersen,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Phelts,c_phelts,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Runge,c_runge,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Sargent,c_sargent,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Sargent Jr.,c_jr.,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Sepulveda,c_sepulveda,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Taylor,c_taylor,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Thompson,c_thompson,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Valentine,c_valentine,C Valentine,Chase Valentine,Ogden Raptors,INF,R/R,5'11,185,matched
+C Vaughan,c_vaughan,C Vaughan,Casey Vaughan,Idaho Falls Chukars,INF,S/R,6'3,200,matched
+C Vest,c_vest,NA,NA,NA,NA,NA,NA,NA,needs_review
+C Wilkerson,c_wilkerson,C Wilkerson,Colby Wilkerson,Missoula PaddleHeads,2B,S/R,5-10,180,matched
+D Aragon,d_aragon,D Aragon,Diego Aragon,Yuba-Sutter Freebirds,Catcher,R/R,NA,NA,matched
+D Brutcher,d_brutcher,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Conners,d_conners,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Connors,d_connors,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Cornett,d_cornett,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Glancy,d_glancy,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Gomez,d_gomez,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Harris IV,d_iv,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Henderson,d_henderson,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Hernandez,d_hernandez,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Hubbard,d_hubbard,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Jackson,d_jackson,D Jackson,Darryl Jackson,Boise Hawks,Infield,R/R,5&rsquo;10,190,matched
+D Jimerson,d_jimerson,D Jimerson,Demias Jimerson,Oakland Ballers,OF,R/R,6'0,220,matched
+D Kolbush,d_kolbush,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Leach,d_leach,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Maberry,d_maberry,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Macaluso,d_macaluso,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Maiben,d_maiben,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Matthews,d_matthews,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Maynard,d_maynard,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Miller,d_miller,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Nevarez,d_nevarez,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Perez,d_perez,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Poteet,d_poteet,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Ratfield,d_ratfield,D Ratfield,Donovan Ratfield,Glacier Range Riders,C,R/R,6-1,210,matched
+D Rivera,d_rivera,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Stengren,d_stengren,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Stone,d_stone,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Stroup,d_stroup,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Stuart,d_stuart,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Tatum,d_tatum,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Tofteland,d_tofteland,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Wilkinson,d_wilkinson,D Wilkinson,Dylan Wilkinson,Ogden Raptors,INF,L/R,5'10,185,matched
+D Williams,d_williams,NA,NA,NA,NA,NA,NA,NA,needs_review
+D Woodcox,d_woodcox,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Acosta,e_acosta,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Apodaca,e_apodaca,E Apodaca,Enzo Apodaca,Missoula PaddleHeads,OF,L/L,5-7,195,matched
+E Berkey,e_berkey,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Blum,e_blum,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Corona,e_corona,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Diaz,e_diaz,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Good,e_good,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Lopez,e_lopez,NA,NA,NA,NA,NA,NA,NA,needs_review
+E McCabe,e_mccabe,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Ott,e_ott,E Ott,Ethan Ott,Great Falls Voyagers,1B/3B,R/R,NA,NA,matched
+E Pagani,e_pagani,E Pagani,Edwin Pagani,Yuba-Sutter Freebirds,Infield,R/R,NA,NA,matched
+E Paton,e_paton,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Pelc,e_pelc,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Peralta,e_peralta,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Rosales,e_rosales,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Sanchez,e_sanchez,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Santos,e_santos,E Santos,Esai Santos,Oakland Ballers,UTIL,L/R,"5'11""",170,matched
+E Scavotto,e_scavotto,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Sleight,e_sleight,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Smith,e_smith,NA,NA,NA,NA,NA,NA,NA,needs_review
+E Underwood,e_underwood,E Underwood,Ethan Underwood,Boise Hawks,Utility,L/R,6&rsquo;0,200,matched
+E Yake,e_yake,NA,NA,NA,NA,NA,NA,NA,needs_review
+F Achecar,f_achecar,NA,NA,NA,NA,NA,NA,NA,needs_review
+F Jezioro,f_jezioro,NA,NA,NA,NA,NA,NA,NA,needs_review
+F Rojas Jr.,f_jr.,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Barnes,g_barnes,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Bevacqua,g_bevacqua,G Bevacqua,Garrett Bevacqua,Ogden Raptors,OF,L/R,6'3,195,matched
+G Brusa,g_brusa,NA,NA,NA,NA,NA,NA,NA,needs_review
+G DiGiacomo,g_digiacomo,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Diaz,g_diaz,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Ferraro-Nahr,g_ferraro-nahr,G Ferraro-Nahr,Giuseppe Ferraro-Nahr,Ogden Raptors,INF,R/R,6'3,215,matched
+G Horvat,g_horvat,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Howell,g_howell,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Kueber,g_kueber,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Lora,g_lora,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Lora Gonzalez,g_gonzalez,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Lyttle,g_lyttle,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Morgan,g_morgan,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Ostrander,g_ostrander,G Ostrander,Garret Ostrander,Idaho Falls Chukars,UTL,R/R,5'11,185,matched
+G White,g_white,NA,NA,NA,NA,NA,NA,NA,needs_review
+G Wurtz,g_wurtz,NA,NA,NA,NA,NA,NA,NA,needs_review
+H George,h_george,NA,NA,NA,NA,NA,NA,NA,needs_review
+H Hall,h_hall,NA,NA,NA,NA,NA,NA,NA,needs_review
+H Himrich,h_himrich,NA,NA,NA,NA,NA,NA,NA,needs_review
+H Hisky,h_hisky,NA,NA,NA,NA,NA,NA,NA,needs_review
+H Nieves,h_nieves,NA,NA,NA,NA,NA,NA,NA,needs_review
+H Yanez,h_yanez,NA,NA,NA,NA,NA,NA,NA,needs_review
+I Nunez,i_nunez,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Akins,j_akins,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Allgeyer,j_allgeyer,J Allgeyer,Jake Allgeyer,Oakland Ballers,INF,S/R,"5'11""",200,matched
+J Anderson,j_anderson,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Azuaje,j_azuaje,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Barfield,j_barfield,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Barth,j_barth,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Begora,j_begora,J Begora,Jeremiah Begora,Boise Hawks,1b,R/R,6&rsquo;8,235,matched
+J Boyd,j_boyd,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Broughton,j_broughton,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Chavez,j_chavez,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Collura,j_collura,J Collura,Jaden Collura,Oakland Ballers,C,L/R,"5'8""",190,matched
+J Cone,j_cone,J Cone,John Cone,Boise Hawks,RHP,L/R,6&rsquo;0&rdquo;,190,matched
+J Coutts,j_coutts,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Cruce,j_cruce,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Day,j_day,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Donahue,j_donahue,J Donahue,Jordan Donahue,Yuba-Sutter Freebirds,Infielder,L/R,5'10,170,matched
+J Duarte,j_duarte,J Duarte,Josh Duarte,Yuba-Sutter Freebirds,OF,R/R,NA,NA,matched
+J Elvir,j_elvir,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Esparza,j_esparza,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Faile,j_faile,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Feliciano,j_feliciano,J Feliciano,Joskar Feliciano,Missoula PaddleHeads,C,R/R,6-2,220,matched
+J Fitzpatrick,j_fitzpatrick,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Garcia,j_garcia,J Garcia,Julian Garcia,Billings Mustangs,RHP,R/R,6'4,205,matched
+J Goldfarb,j_goldfarb,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Gonzalez,j_gonzalez,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Guenther,j_guenther,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Gutierrez,j_gutierrez,J Gutierrez,Jacob Gutierrez,Billings Mustangs,OF,R/R,6’0,210,matched
+J Harrison-Dudley,j_harrison-dudley,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Hjelle,j_hjelle,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Hubbard,j_hubbard,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Jablonski,j_jablonski,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Johnson,j_johnson,J Johnson,Josh Johnson,Missoula PaddleHeads,P,R/R,6-2,190,matched
+J Kalafut,j_kalafut,J Kalafut,Joseph Kalafut,Boise Hawks,OF,L/L,6&rsquo;3,220,matched
+J Kirby,j_kirby,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Kline,j_kline,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Lee,j_lee,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Lojewski,j_lojewski,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Mabry,j_mabry,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Malec,j_malec,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Matthews,j_matthews,NA,NA,NA,NA,NA,NA,NA,needs_review
+J McHenry,j_mchenry,J McHenry,John McHenry,Billings Mustangs,INF,S/R,5’9,200,matched
+J McMurray,j_mcmurray,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Newman,j_newman,NA,NA,NA,NA,NA,NA,NA,needs_review
+J O'Dowd,j_o'dowd,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Olson,j_olson,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Pappas,j_pappas,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Raper,j_raper,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Reyes,j_reyes,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Rooks,j_rooks,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Shanks,j_shanks,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Steele,j_steele,J Steele,Jacob Steele,Glacier Range Riders,INF,R/R,6-2,195,matched
+J Teixeira,j_teixeira,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Trimble,j_trimble,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Valdez,j_valdez,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Williams,j_williams,NA,NA,NA,NA,NA,NA,NA,needs_review
+J Ybarra,j_ybarra,J Ybarra,Jeter Ybarra,Oakland Ballers,INF,L/R,"6'3""",205,matched
+K Ashworth,k_ashworth,K Ashworth,Kyle Ashworth,Glacier Range Riders,OF,L/R,6-0,180,matched
+K Clark,k_clark,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Crowl,k_crowl,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Dugan,k_dugan,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Figueiredo,k_figueiredo,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Greenwalt,k_greenwalt,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Higgins,k_higgins,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Jimenez,k_jimenez,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Johnson,k_johnson,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Kaler,k_kaler,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Liniak,k_liniak,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Maldonado,k_maldonado,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Micklus,k_micklus,K Micklus,Kyle Micklus,Billings Mustangs,C,L/R,5'9,195,matched
+K Moody,k_moody,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Oyama,k_oyama,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Quiggle,k_quiggle,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Schmack,k_schmack,K Schmack,Kyle Schmack,Great Falls Voyagers,OF,R/R,NA,NA,matched
+K Stancato,k_stancato,K Stancato,Kyler Stancato,Ogden Raptors,OF,L/L,6'3,210,matched
+K Whatley,k_whatley,NA,NA,NA,NA,NA,NA,NA,needs_review
+K Willman,k_willman,NA,NA,NA,NA,NA,NA,NA,needs_review
+L Barns,l_barns,NA,NA,NA,NA,NA,NA,NA,needs_review
+L Helmig,l_helmig,NA,NA,NA,NA,NA,NA,NA,needs_review
+L Meyer,l_meyer,NA,NA,NA,NA,NA,NA,NA,needs_review
+L Navarro,l_navarro,NA,NA,NA,NA,NA,NA,NA,needs_review
+L Navigato,l_navigato,NA,NA,NA,NA,NA,NA,NA,needs_review
+L Roskam,l_roskam,NA,NA,NA,NA,NA,NA,NA,needs_review
+L Sparks,l_sparks,NA,NA,NA,NA,NA,NA,NA,needs_review
+L Williams,l_williams,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Annone,m_annone,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Backstrom,m_backstrom,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Bardowell,m_bardowell,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Clayton,m_clayton,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Deeb,m_deeb,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Dinesen,m_dinesen,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Edie,m_edie,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Feinstein,m_feinstein,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Golda,m_golda,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Handron,m_handron,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Harris,m_harris,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Herron Jr.,m_jr.,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Hogan,m_hogan,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Jefferson,m_jefferson,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Jung-Goldberg,m_jung-goldberg,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Koszewski,m_koszewski,M Koszewski,Michael Koszewski,Missoula PaddleHeads,OF,L/L,5-10,190,matched
+M Miller,m_miller,M Miller,Max Miller,Ogden Raptors,RHP,R/R,6'2,220,matched
+M Minzey,m_minzey,NA,NA,NA,NA,NA,NA,NA,needs_review
+M O'Connor,m_o'connor,NA,NA,NA,NA,NA,NA,NA,needs_review
+M O'Hara,m_o'hara,NA,NA,NA,NA,NA,NA,NA,needs_review
+M OConnor,m_oconnor,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Rich,m_rich,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Rosario,m_rosario,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Skundrich,m_skundrich,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Soper,m_soper,M Soper,Michael Soper,Billings Mustangs,INF,L/R,6’0,190,matched
+M Sykes,m_sykes,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Wong,m_wong,NA,NA,NA,NA,NA,NA,NA,needs_review
+M Yonamine,m_yonamine,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Blythe,n_blythe,N Blythe,Noah Blythe,Oakland Ballers,OF,R/R,"6'1""",210,matched
+N Emanuel,n_emanuel,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Gatewood,n_gatewood,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Klemp,n_klemp,N Klemp,Nich Klemp,Missoula PaddleHeads,C,R/R,5-11,185,matched
+N Marcelo,n_marcelo,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Martinez,n_martinez,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Michaels,n_michaels,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Pacheco,n_pacheco,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Popa,n_popa,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Scantlin,n_scantlin,NA,NA,NA,NA,NA,NA,NA,needs_review
+N Ultsch,n_ultsch,NA,NA,NA,NA,NA,NA,NA,needs_review
+O Johnson,o_johnson,NA,NA,NA,NA,NA,NA,NA,needs_review
+O Serratos Jr.,o_jr.,NA,NA,NA,NA,NA,NA,NA,needs_review
+O Taylor,o_taylor,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Adams,p_adams,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Chung,p_chung,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Coddou,p_coddou,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Depasquale,p_depasquale,P Depasquale,Parker Depasquale,Boise Hawks,Utility,R/R,5&rsquo;9,190,matched
+P Harden,p_harden,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Howard,p_howard,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Mills,p_mills,P Mills,Pat Mills,Billings Mustangs,1B/OF,L/L,6’4,205,matched
+P Myro IV,p_iv,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Parks,p_parks,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Robertson,p_robertson,NA,NA,NA,NA,NA,NA,NA,needs_review
+P Shelton,p_shelton,NA,NA,NA,NA,NA,NA,NA,needs_review
+Q Alexander,q_alexander,NA,NA,NA,NA,NA,NA,NA,needs_review
+Q Landis,q_landis,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Alexiades,r_alexiades,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Cash,r_cash,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Gil,r_gil,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Gonzalez,r_gonzalez,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Jepson,r_jepson,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Major,r_major,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Martinez,r_martinez,NA,NA,NA,NA,NA,NA,NA,needs_review
+R McCarthy,r_mccarthy,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Mccarthy,r_mccarthy,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Narea,r_narea,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Orsak,r_orsak,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Paller,r_paller,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Pena,r_pena,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Shah,r_shah,NA,NA,NA,NA,NA,NA,NA,needs_review
+R Washington Jr.,r_jr.,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Barmakian,s_barmakian,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Baumgardt,s_baumgardt,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Canton,s_canton,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Coffman,s_coffman,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Cullen,s_cullen,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Gozzo,s_gozzo,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Greico,s_greico,S Greico,Sebastian Greico,Ogden Raptors,1B,L/R,6'3,220,matched
+S Jabusch,s_jabusch,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Kuchinski,s_kuchinski,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Linscott,s_linscott,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Macias,s_macias,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Olsson,s_olsson,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Rich,s_rich,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Rivas,s_rivas,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Troyer,s_troyer,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Ullian,s_ullian,NA,NA,NA,NA,NA,NA,NA,needs_review
+S Wilmer,s_wilmer,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Bouchard,t_bouchard,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Brunson,t_brunson,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Carranza,t_carranza,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Clark,t_clark,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Clarkson,t_clarkson,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Cobb,t_cobb,T Cobb,Tremayne Cobb,Oakland Ballers,INF,R/R,"6'1""",195,matched
+T Cruz,t_cruz,T Cruz,Trey Cruz,Great Falls Voyagers,SS/OF,R/R,NA,NA,matched
+T Darden,t_darden,NA,NA,NA,NA,NA,NA,NA,needs_review
+T DeBonville,t_debonville,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Dooley,t_dooley,T Dooley,Ty Dooley,Idaho Falls Chukars,INF,L/R,5'10,185,matched
+T Fontenot,t_fontenot,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Garcia,t_garcia,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Halsema,t_halsema,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Hardy,t_hardy,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Jorgensen,t_jorgensen,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Kelly,t_kelly,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Lewis,t_lewis,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Lomack,t_lomack,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Lozano,t_lozano,NA,NA,NA,NA,NA,NA,NA,needs_review
+T McCaffrey,t_mccaffrey,NA,NA,NA,NA,NA,NA,NA,needs_review
+T McKenzie,t_mckenzie,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Minder,t_minder,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Rogers,t_rogers,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Specht,t_specht,T Specht,Tommy Specht,Great Falls Voyagers,OF,L/R,NA,NA,matched
+T Van Marter,t_marter,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Viola,t_viola,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Williams,t_williams,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Wyatt,t_wyatt,NA,NA,NA,NA,NA,NA,NA,needs_review
+T Yukumoto,t_yukumoto,T Yukumoto,Ty Yukumoto,Missoula PaddleHeads,2B,L/R,5-8,165,matched
+U Cantu,u_cantu,NA,NA,NA,NA,NA,NA,NA,needs_review
+V Esposito,v_esposito,NA,NA,NA,NA,NA,NA,NA,needs_review
+V Temesvary,v_temesvary,V Temesvary,Vincent Temesvary,Great Falls Voyagers,UTL,R/R,NA,NA,matched
+W Bermudez,w_bermudez,W Bermudez,William Bermudez,Missoula PaddleHeads,IF,S/R,5-8,185,matched
+W Grant,w_grant,W Grant,Wyatt Grant,Boise Hawks,C,R/R,6&rsquo;1&rdquo;,210,matched
+W Little,w_little,NA,NA,NA,NA,NA,NA,NA,needs_review
+W Mitchell,w_mitchell,W Mitchell,Wesley Mitchell,Idaho Falls Chukars,OF,R/R,6'4,215,matched
+W Rogers,w_rogers,W Rogers,Will Rogers,Great Falls Voyagers,RHP/UTL,R/R,NA,NA,matched
+X Casserilla,x_casserilla,X Casserilla,Xavier Casserilla,Missoula PaddleHeads,3B,R/R,5-11,225,matched
+X Washington,x_washington,NA,NA,NA,NA,NA,NA,NA,needs_review
+Z Almond,z_almond,NA,NA,NA,NA,NA,NA,NA,needs_review
+Z Blaszak,z_blaszak,Z Blaszak,Zack Blaszak,Great Falls Voyagers,INF,L/R,6'0,175,matched
+Z Chamizo,z_chamizo,Z Chamizo,Zach Chamizo,Yuba-Sutter Freebirds,Utility,R/R,NA,NA,matched
+Z Denton,z_denton,NA,NA,NA,NA,NA,NA,NA,needs_review
+Z Roos,z_roos,NA,NA,NA,NA,NA,NA,NA,needs_review
+Z Zurbrugg,z_zurbrugg,NA,NA,NA,NA,NA,NA,NA,needs_review
