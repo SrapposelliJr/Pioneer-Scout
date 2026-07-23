@@ -29,3 +29,36 @@
 2026-07-22 11:10:04 | Starting 05_model_validation.R 
 2026-07-22 11:10:04 | Completed 05_model_validation.R 
 2026-07-22 11:10:04 | Pioneer Scout refresh completed successfully 
+2026-07-23 01:31:38 | Pioneer Scout refresh started 
+2026-07-23 01:31:38 | Starting 01_data_collection.R 
+2026-07-23 01:32:24 | Completed 01_data_collection.R 
+2026-07-23 01:32:24 | Starting 02_data_cleaning.R 
+2026-07-23 01:32:26 | Completed 02_data_cleaning.R 
+2026-07-23 01:32:26 | Starting 03_feature_engineering.R 
+2026-07-23 01:32:27 | Completed 03_feature_engineering.R 
+2026-07-23 01:32:27 | Starting 04_model_training.R 
+2026-07-23 01:32:27 | Completed 04_model_training.R 
+2026-07-23 01:32:27 | Starting 05_model_validation.R 
+2026-07-23 01:32:27 | Completed 05_model_validation.R 
+2026-07-23 01:32:27 | Pioneer Scout refresh completed successfully 
+2026-07-23 01:32:51 | Pioneer Scout refresh started 
+2026-07-23 01:32:51 | Starting 01_data_collection.R 
+2026-07-23 01:32:53 | REFRESH FAILED: ℹ In index: 1.
+Caused by error in `path_to_connection()`:
+! 'Due to recent heavy bot traffic, access to this page has been temporarily rate limited. If your request was
+  blocked because of systematic or automated parsing, please note that using our API is the recommended best practice
+  for this type of access. For more information, please reach out to our team. If you were blocked while manually
+  browsing the page, please wait one minute and then try again.' does not exist in current working directory
+  ('C:/Users/scott/BaseballR/Predicting Breakout Hitters'). 
+2026-07-23 01:34:58 | Pioneer Scout refresh started 
+2026-07-23 01:34:58 | Starting 01_data_collection.R 
+2026-07-23 01:35:31 | Completed 01_data_collection.R 
+2026-07-23 01:35:31 | Starting 02_data_cleaning.R 
+2026-07-23 01:35:32 | Completed 02_data_cleaning.R 
+2026-07-23 01:35:32 | Starting 03_feature_engineering.R 
+2026-07-23 01:35:33 | Completed 03_feature_engineering.R 
+2026-07-23 01:35:33 | Starting 04_model_training.R 
+2026-07-23 01:35:33 | Completed 04_model_training.R 
+2026-07-23 01:35:33 | Starting 05_model_validation.R 
+2026-07-23 01:35:33 | Completed 05_model_validation.R 
+2026-07-23 01:35:33 | Pioneer Scout refresh completed successfully 
