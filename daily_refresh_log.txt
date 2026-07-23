@@ -1,0 +1,31 @@
+2026-07-21 15:32:48 | Pioneer Scout refresh started 
+2026-07-21 15:32:48 | Starting 01_data_collection.R 
+2026-07-21 15:33:20 | Completed 01_data_collection.R 
+2026-07-21 15:33:20 | Starting 02_data_cleaning.R 
+2026-07-21 15:33:21 | REFRESH FAILED: [1m[22m[36mℹ[39m In argument: `ip_raw = clean_numeric(ip)`.
+[1mCaused by error:[22m
+[33m![39m object 'ip' not found 
+2026-07-21 15:42:34 | Pioneer Scout refresh started 
+2026-07-21 15:42:34 | Starting 01_data_collection.R 
+2026-07-21 15:43:04 | Completed 01_data_collection.R 
+2026-07-21 15:43:04 | Starting 02_data_cleaning.R 
+2026-07-21 15:43:05 | Completed 02_data_cleaning.R 
+2026-07-21 15:43:05 | Starting 03_feature_engineering.R 
+2026-07-21 15:43:06 | Completed 03_feature_engineering.R 
+2026-07-21 15:43:06 | Starting 04_model_training.R 
+2026-07-21 15:43:06 | Completed 04_model_training.R 
+2026-07-21 15:43:06 | Starting 05_model_validation.R 
+2026-07-21 15:43:06 | Completed 05_model_validation.R 
+2026-07-21 15:43:06 | Pioneer Scout refresh completed successfully 
+2026-07-22 11:08:33 | Pioneer Scout refresh started 
+2026-07-22 11:08:33 | Starting 01_data_collection.R 
+2026-07-22 11:10:00 | Completed 01_data_collection.R 
+2026-07-22 11:10:00 | Starting 02_data_cleaning.R 
+2026-07-22 11:10:03 | Completed 02_data_cleaning.R 
+2026-07-22 11:10:03 | Starting 03_feature_engineering.R 
+2026-07-22 11:10:04 | Completed 03_feature_engineering.R 
+2026-07-22 11:10:04 | Starting 04_model_training.R 
+2026-07-22 11:10:04 | Completed 04_model_training.R 
+2026-07-22 11:10:04 | Starting 05_model_validation.R 
+2026-07-22 11:10:04 | Completed 05_model_validation.R 
+2026-07-22 11:10:04 | Pioneer Scout refresh completed successfully 

@@ -70,13 +70,34 @@ scrape_pbl_pitchers <- function(year) {
       break
     }
 
-    result <- tables[[1]] %>%
-      janitor::clean_names() %>%
-      mutate(across(everything(), as.character)) %>%
-      mutate(
-        season = year,
-        player_type = "pitcher"
-      )
+    pitcher_table_index <- which(
+  vapply(
+    tables,
+    function(tbl) {
+      cleaned_names <- janitor::make_clean_names(names(tbl))
+
+      all(c("era", "ip", "whip") %in% cleaned_names)
+    },
+    logical(1)
+  )
+)[1]
+
+if (is.na(pitcher_table_index)) {
+  stop(
+    "Could not find pitcher table at offset ",
+    offset,
+    ". Tables found: ",
+    length(tables)
+  )
+}
+
+result <- tables[[pitcher_table_index]] %>%
+  janitor::clean_names() %>%
+  mutate(across(everything(), as.character)) %>%
+  mutate(
+    season = year,
+    player_type = "pitcher"
+  )
 
     # Stop if the returned table has no player records
     if (

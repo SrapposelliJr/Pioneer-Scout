@@ -33,16 +33,6 @@ player_headshots <- if (file.exists("data/raw/player_headshots.csv")) {
 } else {
   tibble(player_name = character(), photo_url = character())
 }
-last_updated <- if (
-  file.exists("data/processed/last_updated.txt")
-) {
-  readLines(
-    "data/processed/last_updated.txt",
-    warn = FALSE
-  )[1]
-} else {
-  "Not yet available"
-}
 pitcher_board <- pitcher_board %>%
   left_join(
     player_headshots %>%
@@ -60,11 +50,27 @@ pitcher_board <- pitcher_board %>%
       ),
     by = c("name" = "player_name")
   ) %>%
+  left_join(
+    model_data %>%
+      select(
+        name,
+        season,
+        signed_by_mlb_org
+      ) %>%
+      distinct(name, season, .keep_all = TRUE),
+    by = c("name", "season")
+  ) %>%
   mutate(
     display_name = if_else(
       !is.na(full_name) & nzchar(full_name),
       full_name,
       name
+    ),
+    signed_by_mlb_org = replace_na(signed_by_mlb_org, 0),
+    signed_status = if_else(
+      signed_by_mlb_org == 1,
+      "Signed",
+      "Unsigned"
     )
   )
 team_colors <- c(
@@ -228,125 +234,33 @@ ui <- fluidPage(
     "))
   ),
 
- div(
-    class = "hero",
-
-    div(
-  style = "
-    display:flex;
-    align-items:center;
-    gap:18px;
-    margin-bottom:8px;
-  ",
-
-  tags$img(
-    src = "Pioneer Scout Logo.png",
-    style = "
-      width:70px;
-      height:70px;
-      object-fit:contain;
-    "
-  ),
-
-  h1(
-    "Pioneer Scout",
-    style = "
-      margin:0;
-      color:white;
-      font-size:56px;
-      font-weight:800;
-    "
-  )
-),
-
-    h4("Independent League Scouting Platform"),
-
-    p(
-      paste("Database last updated:", last_updated),
-      style = "
-        margin-top:8px;
-        margin-bottom:0;
-        font-size:14px;
-        color:#cbd5e1;
-      "
-    )
+  div(class = "hero",
+      h1("⚾ Pioneer Scout"),
+      h4("Independent League Scouting Platform")
   ),
 
   fluidRow(
-    column(
-      2,
-      div(
-        class = "sidebar",
-
+    column(2,
+      div(class = "sidebar",
         h3("Navigation"),
-
-        actionLink(
-          "nav_targets",
-          "⚾ Hitters",
-          class = "nav-btn"
-        ),
-
-        actionLink(
-          "nav_pitchers",
-          "⚾ Pitchers",
-          class = "nav-btn"
-        ),
-
-        actionLink(
-          "nav_report",
-          "👤 Player Report",
-          class = "nav-btn"
-        ),
-
-        actionLink(
-          "nav_analytics",
-          "📊 Analytics",
-          class = "nav-btn"
-        ),
-
-        actionLink(
-          "nav_teams",
-          "⚾ Teams",
-          class = "nav-btn"
-        ),
-
-        actionLink(
-          "nav_signings",
-          "🏆 MLB Signings",
-          class = "nav-btn"
-        ),
-
-        actionLink(
-          "nav_about",
-          "ℹ About",
-          class = "nav-btn"
-        )
+        actionLink("nav_targets", "⚾ Hitters", class = "nav-btn"),
+        actionLink("nav_pitchers", "⚾ Pitchers", class = "nav-btn"),
+        actionLink("nav_report", "👤 Player Report", class = "nav-btn"),
+        actionLink("nav_analytics", "📊 Analytics", class = "nav-btn"),
+        actionLink("nav_teams", "⚾ Teams", class = "nav-btn"),
+        actionLink("nav_signings", "🏆 MLB Signings", class = "nav-btn"),
+        actionLink("nav_model", "🤖 Model", class = "nav-btn"),
+        actionLink("nav_about", "ℹ About", class = "nav-btn")
       )
     ),
-
-    column(
-      6,
-      uiOutput("main_page")
-    ),
-
-    column(
-      4,
-      conditionalPanel(
-        condition = "output.showPlayerReport",
-        uiOutput("player_report")
-      )
-    )
-  )
+   column(6, uiOutput("main_page")),
+column(4, uiOutput("player_report"))
+)
 )
 server <- function(input, output, session) {
 
   page <- reactiveVal("targets")
 
-output$showPlayerReport <- reactive({
-  page() != "about"
-})
-
-outputOptions(output, "showPlayerReport", suspendWhenHidden = FALSE)
 
   selected_signing <- reactive({
 
@@ -373,6 +287,7 @@ outputOptions(output, "showPlayerReport", suspendWhenHidden = FALSE)
   observeEvent(input$nav_analytics, page("analytics"))
   observeEvent(input$nav_teams, page("teams"))
   observeEvent(input$nav_signings, page("signings"))
+  observeEvent(input$nav_model, page("model"))
   observeEvent(input$nav_about, page("about"))
 
   filtered_players <- reactive({
@@ -669,203 +584,22 @@ if (page() == "teams") {
 
 
    )
-  } else if (page() == "about") {
+  } else if (page() == "model") {
 
-div(
-  class = "card",
-  style = "
-    background:#ffffff;
-    box-shadow:0 12px 30px rgba(15,23,42,.12);
-  ",
-
-  h2(
-    "Meet the Creator",
-    style = "
-      margin-top:0;
-      color:#08172d;
-      font-weight:800;
-    "
-  ),
-
-  div(
-    style = "
-      display:flex;
-      align-items:flex-start;
-      gap:32px;
-      flex-wrap:wrap;
-    ",
-
-    tags$img(
-      src = "scott_rapposelli.jpg",
-      alt = "Scott Rapposelli Jr.",
-      style = "
-        width:220px;
-        height:220px;
-        object-fit:cover;
-        object-position:center 20%;
-        border-radius:50%;
-        border:5px solid #e5e7eb;
-        box-shadow:0 10px 24px rgba(15,23,42,.18);
-      "
-    ),
-
-    div(
-      style = "
-        flex:1;
-        min-width:280px;
-      ",
-
-      h3(
-        "Scott Rapposelli Jr.",
-        style = "
-          margin-top:0;
-          margin-bottom:16px;
-          color:#08172d;
-          font-size:30px;
-          font-weight:800;
-        "
-      ),
-
-      div(
-        style = "
-          display:grid;
-          grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-          gap:12px;
-          margin-bottom:22px;
-        ",
-
-        div(
-          style="
-            background:#eef4fb;
-            border-left:5px solid #0b1f3a;
-            border:1px solid #d6e3f3;
-            border-radius:10px;
-            padding:14px 18px;
-            color:#0b1f3a;
-            font-weight:700;
-          ",
-          "🎓 Cal Poly San Luis Obispo"
-        ),
-
-        div(
-          style="
-            background:#eef4fb;
-            border-left:5px solid #0b1f3a;
-            border:1px solid #d6e3f3;
-            border-radius:10px;
-            padding:14px 18px;
-            color:#0b1f3a;
-            font-weight:700;
-          ",
-          "⚾ Player Development Analyst"
-        ),
-
-        div(
-          style="
-            background:#eef4fb;
-            border-left:5px solid #0b1f3a;
-            border:1px solid #d6e3f3;
-            border-radius:10px;
-            padding:14px 18px;
-            color:#0b1f3a;
-            font-weight:700;
-          ",
-          "📅 Graduating June 2027"
-        ),
-
-        div(
-          style="
-            background:#eef4fb;
-            border-left:5px solid #0b1f3a;
-            border:1px solid #d6e3f3;
-            border-radius:10px;
-            padding:14px 18px;
-            color:#0b1f3a;
-            font-weight:700;
-          ",
-          "⚾ Pursuing a Career in Major League Baseball"
-        )
-      ),
-tags$a(
-  href = "https://github.com/Srapposellijr",
-  target = "_blank",
-
-  tags$button(
-    "💻 View Pioneer Scout sourcecode on GitHub",
-
-    style = "
-      background:#0b1f3a;
-      color:white;
-      border:none;
-      border-radius:8px;
-      padding:12px 22px;
-      font-size:16px;
-      font-weight:700;
-      cursor:pointer;
-      margin-bottom:22px;
-      margin-top:4px;
-    "
-  )
-),
-
-br(),
-br(),
-      p(
-        "Created by Scott Rapposelli Jr., a student and Player Development Analyst at Cal Poly San Luis Obispo. Scott expects to graduate in June 2027 and is pursuing a career in Major League Baseball with interests in player development, scouting, baseball analytics, and baseball operations.",
-        style="
-          font-size:17px;
-          line-height:1.8;
-          color:#1f2937;
-          font-weight:500;
-          margin-bottom:0;
-        "
-      )
+    div(class="card",
+      h2("🤖 Model"),
+      p("Scout Grade is a 20-80 style score combining offensive production, power, discipline, and model output."),
+      p("OPS measures overall offensive production. ISO means Isolated Power and is calculated as SLG minus AVG.")
     )
-  ),
 
-  tags$hr(
-    style="
-      margin:32px 0;
-      border:none;
-      border-top:2px solid #d1d5db;
-    "
-  ),
+  } else {
 
-  h2(
-    "About Pioneer Scout",
-    style="
-      color:#08172d;
-      font-weight:800;
-      margin-bottom:12px;
-    "
-  ),
-
-  p(
-    "Pioneer Scout is an independent-league scouting and analytics platform designed to identify, evaluate, and track professional baseball talent. The platform combines automated data collection, feature engineering, statistical modeling, scouting reports, team analysis, and historical MLB signing information.",
-    style="
-      font-size:16px;
-      line-height:1.8;
-      color:#1f2937;
-      font-weight:500;
-    "
-  ),
-
-   p(
-    "The project was built to surface overlooked players and provide a clearer view of performance, development indicators, and professional potential across the Pioneer League.",
-    style = "
-      font-size:16px;
-      line-height:1.8;
-      color:#1f2937;
-      font-weight:500;
-      margin-bottom:0;
-    "
-  )
-)
-
-}  # closes the About branch
-
-}) # closes output$main_page <- renderUI({
-
+    div(class="card",
+      h2("ℹ About"),
+      p("Pioneer Scout is an independent league scouting platform built in R/Shiny.")
+    )
+  }
+})
   output$leaderboard <- renderDT({
     filtered_players() %>%
       transmute(
@@ -897,21 +631,31 @@ br(),
     NULL
   }
 
-  show_pitcher <- page() == "pitchers" ||
-    (!is.null(team_selection) &&
-     team_selection$player_type == "pitcher")
+ show_pitcher <- isTRUE(page() == "pitchers") ||
+  (
+    page() == "teams" &&
+    NROW(team_selection) > 0 &&
+    identical(
+      tolower(as.character(team_selection$player_type[1])),
+      "pitcher"
+    )
+  )
 
-  if (show_pitcher) {
+  if (isTRUE(show_pitcher)) {
 
-    p <- if (page() == "teams") {
+  p <- if (page() == "teams") {
 
-  pitchers_clean %>%
+  pitcher_board %>%
     filter(
-      name == team_selection$display_name,
+      display_name == team_selection$display_name,
       team == team_selection$team,
       season == team_selection$season
     ) %>%
     slice(1)
+
+} else {
+  selected_player()
+}
 
 } else {
 
@@ -919,7 +663,7 @@ br(),
 
 }
 
-    if (nrow(p) == 0) {
+    if (is.null(p) || nrow(p) == 0) {
       return(
         div(
           class = "card",
@@ -932,19 +676,25 @@ br(),
     pitcher_logo <- NULL
 
     if (
-      !is.na(p$team) &&
-      p$team %in% names(team_logos)
-    ) {
-      pitcher_logo <- team_logos[[p$team]]
-    }
+  "team" %in% names(p) &&
+  length(p$team) > 0 &&
+  !is.na(p$team[1]) &&
+  p$team[1] %in% names(team_logos)
+) {
+  pitcher_logo <- team_logos[[p$team[1]]]
+}
 
     safe_num <- function(x, digits = 2) {
-      if (length(x) == 0 || is.na(x) || !is.finite(x)) {
-        return("—")
-      }
+  if (
+    length(x) == 0 ||
+    is.na(x[1]) ||
+    !is.finite(x[1])
+  ) {
+    return("—")
+  }
 
-      formatC(x, format = "f", digits = digits)
-    }
+  formatC(x[1], format = "f", digits = digits)
+}
 
 pitcher_photo <- if (
   "photo_url" %in% names(p) &&
@@ -1141,23 +891,64 @@ fluidRow(
       )
     )
   }
-  }
-p <- selected_player()
-    if (nrow(p) == 0) return(div(class="card", "No player selected."))
+  
+p <- if (page() == "teams") {
+  players %>%
+    filter(
+      display_name == team_selection$display_name,
+      team == team_selection$team,
+      season == team_selection$season
+    ) %>%
+    slice(1)
+} else {
+  selected_player()
+}
 
-    team_color <- team_colors[p$team]
-    if (is.na(team_color)) team_color <- "#0b1f3a"
+if (is.null(p) || nrow(p) == 0) {
+  return(
+    div(
+      class = "card",
+      "No hitter record found."
+    )
+  )
+}
 
-    stat_label_prefix <- ifelse(p$signed_by_mlb_org == 1, "Reference", "Most Recent")
+
+
+    team_color <- unname(team_colors[p$team[1]])
+
+if (
+  length(team_color) == 0 ||
+  isTRUE(is.na(team_color[1]))
+) {
+  team_color <- "#0b1f3a"
+}
+
+ signed_flag <- 0
+
+if (
+  "signed_by_mlb_org" %in% names(p) &&
+  length(p$signed_by_mlb_org) > 0 &&
+  !is.na(p$signed_by_mlb_org[1])
+) {
+  signed_flag <- p$signed_by_mlb_org[1]
+}
+
+stat_label_prefix <- ifelse(
+  signed_flag == 1,
+  "Reference",
+  "Projection"
+)
 org_logo <- NULL
 
 if (
-  !is.null(p$organization) &&
-  !is.na(p$organization) &&
-  p$organization != "" &&
-  p$organization %in% names(mlb_logos)
+  "organization" %in% names(p) &&
+  length(p$organization) > 0 &&
+  !is.na(p$organization[1]) &&
+  nzchar(p$organization[1]) &&
+  p$organization[1] %in% names(mlb_logos)
 ) {
-  org_logo <- mlb_logos[[p$organization]]
+  org_logo <- mlb_logos[[p$organization[1]]]
 }
     div(class="card",
      h3("👤 Scouting Report"),
@@ -1172,9 +963,14 @@ if (!is.null(org_logo)) {
     "
   )
 },
-if (!is.na(p$photo_url) && p$photo_url != "") {
+if (
+  "photo_url" %in% names(p) &&
+  length(p$photo_url) > 0 &&
+  !is.na(p$photo_url[1]) &&
+  nzchar(p$photo_url[1])
+) {
   tags$img(
-    src = p$photo_url,
+    src = p$photo_url[1],
     style = "
       width:120px;
       height:120px;
@@ -1187,11 +983,18 @@ if (!is.na(p$photo_url) && p$photo_url != "") {
 },
 
 div(class = "player-name", p$display_name),
-      div(class="team-pill", style=paste0("background:", team_color, ";"), paste(p$team, "|", p$season)),
+      div(
+  class = "status-pill",
+  ifelse(
+    signed_flag == 1,
       br(),
       div(class="status-pill", ifelse(p$signed_by_mlb_org == 1, "Signed Player / Historical Reference", "Unsigned / Current Target")),
 
-      if (!is.na(p$position)) {
+      if (
+  "position" %in% names(p) &&
+  length(p$position) > 0 &&
+  !is.na(p$position[1])
+) {
         tagList(
           br(),
           strong(paste(p$position, "|", p$bats_throws, "|", p$height, "|", p$weight)),
@@ -1226,7 +1029,7 @@ div(class = "player-name", p$display_name),
         p(make_scouting_summary(p))
       )
     )
-  })
+   ))
 
  output$skill_chart <- renderPlot({
 
@@ -1586,7 +1389,7 @@ output$team_roster <- renderDT({
     formatC(era, format = "f", digits = 2),
     " ERA"
   ),
-  Status = "Current"
+  Status = signed_status
 )
 
   combined_roster <- bind_rows(
@@ -1629,19 +1432,30 @@ selected_team_roster_player <- reactive({
       source_row = row_number()
     )
 
-  pitcher_roster <- pitchers_clean %>%
-    filter(
-      team == input$team_page_filter,
-      season == current_season,
-      app > 0
-    ) %>%
-    transmute(
-      display_name = name,
-      player_type = "pitcher",
-      team = team,
-      season = season,
-      source_row = row_number()
-    )
+  pitcher_roster <- pitcher_board %>%
+  filter(
+    team == input$team_page_filter,
+    season == current_season,
+    app > 0
+  ) %>%
+  transmute(
+    display_name = display_name,
+    player_type = "pitcher",
+    team = team,
+    season = season,
+    source_row = row_number(),
+    photo_url = photo_url,
+    pitcher_scout_grade = pitcher_scout_grade,
+    pitcher_role = pitcher_role,
+    era = era,
+    whip = whip,
+    k_9 = k_9,
+    bb_9 = bb_9,
+    k_bb = k_bb,
+    ip = ip,
+    hr_9 = hr_9,
+    k_bb_pct = k_bb_pct
+  )
 
   combined_lookup <- bind_rows(
     hitter_roster,
@@ -1707,7 +1521,7 @@ output$pitchers_table <- renderDT({
 
   pitcher_table_data <- filtered_pitchers() %>%
   transmute(
-    Pitcher = name,
+    Pitcher = display_name,
     Team = team,
     Role = pitcher_role,
     `Scout Grade` = round(pitcher_scout_grade, 1),
