@@ -3,10 +3,10 @@
 
 options(warn = 1)
 
-project_dir <- "C:/Users/scott/BaseballR/Predicting Breakout Hitters"
-setwd(project_dir)
+project_dir <- getwd()
 
 log_file <- file.path(project_dir, "daily_refresh_log.txt")
+
 
 log_message <- function(...) {
   message_text <- paste0(
