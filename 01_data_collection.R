@@ -15,7 +15,14 @@ scrape_pbl_hitters <- function(year) {
     "/players?sort=avg&view=&pos=h&r=0"
   )
 
-  page <- read_html(url)
+  page <- httr::GET(
+  url,
+  httr::user_agent(
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
+  )
+) |>
+  httr::content(as = "text", encoding = "UTF-8") |>
+  xml2::read_html()
 
   hitters <- page %>%
     html_table(fill = TRUE) %>%
