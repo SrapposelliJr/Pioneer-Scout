@@ -770,7 +770,7 @@ div(
             color:#0b1f3a;
             font-weight:700;
           ",
-          "📅 Graduating June 2027"
+          "📅 Graduating May 2027"
         ),
 
         div(
@@ -811,7 +811,7 @@ tags$a(
 br(),
 br(),
       p(
-        "Created by Scott Rapposelli Jr., a student and Player Development Analyst at Cal Poly San Luis Obispo. Scott expects to graduate in June 2027 and is pursuing a career in Major League Baseball with interests in player development, scouting, baseball analytics, and baseball operations.",
+        "Created by Scott Rapposelli Jr., a student and Player Development Analyst at Cal Poly San Luis Obispo. Scott expects to graduate in May 2027 and is pursuing a career in Major League Baseball with interests in player development, scouting, baseball analytics, and baseball operations.",
         style="
           font-size:17px;
           line-height:1.8;
