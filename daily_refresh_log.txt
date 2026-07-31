@@ -253,3 +253,9 @@ Caused by error in `path_to_connection()`:
 2026-07-30 10:07:31 | Starting 05_model_validation.R 
 2026-07-30 10:07:31 | Completed 05_model_validation.R 
 2026-07-30 10:07:31 | Pioneer Scout refresh completed successfully 
+2026-07-31 10:00:48 | Pioneer Scout refresh started 
+2026-07-31 10:00:48 | Starting 01_data_collection.R 
+2026-07-31 10:15:00 | REFRESH FAILED: ℹ In index: 5.
+Caused by error in `curl::curl_fetch_memory()`:
+! Could not connect to server [www.pioneerleague.com]:
+Recv failure: Connection was reset 
