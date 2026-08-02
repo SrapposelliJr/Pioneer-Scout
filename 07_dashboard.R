@@ -462,7 +462,15 @@ if (page() == "teams") {
       fluidRow(
       column(4,
   div(class="card",
-    div(class="metric", length(unique(players$team))),
+    div(
+  class = "metric",
+  length(
+    union(
+      unique(players$team),
+      unique(pitcher_board$team)
+    )
+  )
+),
     div(class="metric-label", "Current Teams")
   )
 ),
@@ -1567,7 +1575,11 @@ output$team_roster <- renderDT({
         "Position Player"
       ),
       `Scout Grade` = as.character(fmt_grade(scout_grade)),
-      `Primary Stat` = paste0(fmt3(ops), " OPS"),
+      `Primary Stat` = ifelse(
+  is.na(ops),
+  "N/A",
+  paste0(sprintf("%.3f", ops), " OPS")
+),
       Status = signed_status
     )
 

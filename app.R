@@ -462,7 +462,15 @@ if (page() == "teams") {
       fluidRow(
       column(4,
   div(class="card",
-    div(class="metric", length(unique(players$team))),
+    div(
+  class = "metric",
+  length(
+    union(
+      unique(players$team),
+      unique(pitcher_board$team)
+    )
+  )
+),
     div(class="metric-label", "Current Teams")
   )
 ),
@@ -1295,7 +1303,13 @@ output$team_profile <- renderUI({
   c(players$season, pitchers_clean$season),
   na.rm = TRUE
 )
+print(input$team_page_filter)
 
+print(unique(players$team))
+
+print(unique(players$season))
+
+print(current_season)
 team_hitters <- players %>%
   filter(
     team == input$team_page_filter,
@@ -1561,39 +1575,52 @@ output$team_roster <- renderDT({
     transmute(
       Player = display_name,
       Type = "Hitter",
-      Role = ifelse(
-        !is.na(position) & position != "",
-        position,
-        "Position Player"
-      ),
+      Role = dplyr::if_else(
+  !is.na(position) & position != "",
+  as.character(position),
+  "Position Player",
+  missing = "Position Player"
+),
       `Scout Grade` = as.character(fmt_grade(scout_grade)),
-      `Primary Stat` = paste0(fmt3(ops), " OPS"),
+      `Primary Stat` = ifelse(
+  is.na(ops),
+  "N/A",
+  paste0(sprintf("%.3f", ops), " OPS")
+),
       Status = signed_status
     )
 
   pitcher_roster <- pitcher_board %>%
-  filter(
-    team == input$team_page_filter,
-    season == current_season,
-    app > 0
-  ) %>%
+  # existing pitcher code
   transmute(
-  Player = display_name,
-  Type = "Pitcher",
-  Role = pitcher_role,
-  `Scout Grade` = as.character(fmt_grade(pitcher_scout_grade)),
-  `Primary Stat` = paste0(
-    formatC(era, format = "f", digits = 2),
-    " ERA"
-  ),
-  Status = "Current"
-)
+    Player = display_name,
+    Type = "Pitcher",
+    Role = pitcher_role,
+    `Scout Grade` = as.character(fmt_grade(pitcher_scout_grade)),
+    `Primary Stat` = paste0(
+      formatC(era, format = "f", digits = 2),
+      " ERA"
+    ),
+    Status = "Current"
+  )
 
-  combined_roster <- bind_rows(
-    hitter_roster,
-    pitcher_roster
-  ) %>%
-    arrange(Type, Player)
+hitter_roster <- hitter_roster %>%
+  mutate(
+    Role = as.character(Role),
+    `Primary Stat` = as.character(`Primary Stat`)
+  )
+
+pitcher_roster <- pitcher_roster %>%
+  mutate(
+    Role = as.character(Role),
+    `Primary Stat` = as.character(`Primary Stat`)
+  )
+
+combined_roster <- bind_rows(
+  hitter_roster,
+  pitcher_roster
+) %>%
+  arrange(Type, Player)
 
   datatable(
     combined_roster,
