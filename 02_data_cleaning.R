@@ -48,13 +48,34 @@ hitters_clean <- hitters_raw %>%
 
 hitters_player_level <- hitters_clean %>%
   filter(pa >= 100) %>%
-  group_by(player_name) %>%
-  slice_max(
-    order_by = pa,
-    n = 1,
-    with_ties = FALSE
+  group_by(player_name, team, season) %>%
+  summarise(
+    gp = sum(gp, na.rm = TRUE),
+    pa = sum(pa, na.rm = TRUE),
+    ab = sum(ab, na.rm = TRUE),
+    h = sum(h, na.rm = TRUE),
+    x2b = sum(x2b, na.rm = TRUE),
+    x3b = sum(x3b, na.rm = TRUE),
+    hr = sum(hr, na.rm = TRUE),
+    bb = sum(bb, na.rm = TRUE),
+    hbp = sum(hbp, na.rm = TRUE),
+    sf = sum(sf, na.rm = TRUE),
+    k = sum(k, na.rm = TRUE),
+    .groups = "drop"
   ) %>%
-  ungroup()
+  mutate(
+    x1b = h - x2b - x3b - hr,
+    avg = h / ab,
+    obp = (h + bb + hbp) / (ab + bb + hbp + sf),
+    slg = (x1b + 2 * x2b + 3 * x3b + 4 * hr) / ab,
+    ops = obp + slg,
+    iso = slg - avg,
+    bb_rate = bb / pa,
+    k_rate = k / pa,
+    hr_rate = hr / pa,
+    xbh = x2b + x3b + hr,
+    xbh_rate = xbh / pa
+  )
 pitchers_raw <- read_csv(
   "data/raw/pioneer_pitchers_raw.csv",
   show_col_types = FALSE
@@ -97,6 +118,47 @@ pitchers_clean <- pitchers_raw %>%
     k_minus_bb_pct = k_pct - bb_pct,
     gs_pct = if_else(app > 0, gs / app, NA_real_)
   )
+  league_fip_constants <- pitchers_clean %>%
+  filter(ip > 0) %>%
+  group_by(season) %>%
+  summarise(
+    league_era =
+      9 * sum(er, na.rm = TRUE) /
+      sum(ip, na.rm = TRUE),
+
+    league_fip_component =
+      (
+        13 * sum(hr, na.rm = TRUE) +
+        3 * (
+          sum(bb, na.rm = TRUE) +
+          sum(hbp, na.rm = TRUE)
+        ) -
+        2 * sum(k, na.rm = TRUE)
+      ) /
+      sum(ip, na.rm = TRUE),
+
+    fip_constant =
+      league_era - league_fip_component,
+
+    .groups = "drop"
+  )
+
+pitchers_clean <- pitchers_clean %>%
+  left_join(
+    league_fip_constants,
+    by = "season"
+  ) %>%
+  mutate(
+  fip = if_else(
+    ip > 0,
+    (
+      13 * hr +
+      3 * (bb + hbp) -
+      2 * k
+    ) / ip + fip_constant,
+    NA_real_
+  )
+)
 write_csv(
   hitters_clean,
   "data/processed/hitters_clean.csv"

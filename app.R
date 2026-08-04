@@ -794,6 +794,36 @@ div(
           "⚾ Pursuing a Career in Major League Baseball"
         )
       ),
+      hr(),
+
+h3(
+  "How Pioneer Scout Works",
+  style = "
+    color:#08172d;
+    font-weight:800;
+    margin-top:28px;
+  "
+),
+
+p(
+  "Pioneer Scout combines traditional baseball statistics with advanced metrics ",
+  "to better evaluate player performance across the Pioneer League."
+),
+
+tags$ul(
+
+  tags$li(
+    tags$b("OPS+: "),
+    "Adjusts a hitter's on-base percentage and slugging percentage relative to the Pioneer League average for that season. ",
+    "A score of 100 is league average, while values above 100 indicate above-average offensive production."
+  ),
+
+  tags$li(
+    tags$b("FIP: "),
+    "Fielding Independent Pitching estimates a pitcher's performance using strikeouts, walks, hit batters, home runs, and innings pitched. ",
+    "It removes much of the impact of team defense and is displayed on the same scale as ERA, where lower is better."
+  )
+),
 tags$a(
   href = "https://github.com/Srapposellijr",
   target = "_blank",
@@ -882,6 +912,7 @@ br(),
         Season = season,
         PA = pa,
         OPS = fmt3(ops),
+        `OPS+` = round(ops_plus),
         ISO = fmt3(iso),
         `Scout Grade` = fmt_grade(scout_grade),
         `Signing Probability` = fmt_pct(signing_probability),
@@ -1740,6 +1771,7 @@ output$pitchers_table <- renderDT({
     `Scout Grade` = round(pitcher_scout_grade, 1),
     IP = round(ip, 1),
     ERA = round(era, 2),
+    FIP = round(fip, 2),
     WHIP = round(whip, 2),
     `K/9` = round(k_9, 2),
     `BB/9` = round(bb_9, 2),
