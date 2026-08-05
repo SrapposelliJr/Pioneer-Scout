@@ -3,6 +3,14 @@ library(scales)
 
 hitters_player_level <- read_csv("data/processed/hitters_player_level.csv")
 pitchers_clean <- read_csv("data/processed/pioneer_pitchers_clean.csv")
+hitters_player_level <- hitters_player_level %>%
+  select(
+    -any_of(c(
+      "lg_obp",
+      "lg_slg",
+      "ops_plus"
+    ))
+  )
 league_hitting <- hitters_player_level %>%
   group_by(season) %>%
   summarise(
@@ -36,20 +44,41 @@ hitters_player_level <- hitters_player_level %>%
 hitters_features <- hitters_player_level %>%
   filter(pa >= 250) %>%
   mutate(
-    iso_pct = percent_rank(iso),
-    hr_pct = percent_rank(hr_rate),
-    bb_pct = percent_rank(bb_rate),
-    k_pct = 1 - percent_rank(k_rate),
+  ops_plus_pct = percent_rank(ops_plus),
+  iso_pct = percent_rank(iso),
+  hr_pct = percent_rank(hr_rate),
+  bb_pct = percent_rank(bb_rate),
+  k_pct = 1 - percent_rank(k_rate),
 
-    power_score = 0.60 * iso_pct + 0.40 * hr_pct,
-    discipline_score = 0.55 * bb_pct + 0.45 * k_pct,
+  power_score =
+    0.60 * iso_pct +
+    0.40 * hr_pct,
 
-    scout_score = 0.65 * power_score + 0.35 * discipline_score,
+  discipline_score =
+    0.55 * bb_pct +
+    0.45 * k_pct,
 
-    power_grade = rescale(power_score, to = c(20, 80)),
-    discipline_grade = rescale(discipline_score, to = c(20, 80)),
-    scout_grade = rescale(scout_score, to = c(20, 80))
-  ) %>%
+  scout_score =
+    0.40 * ops_plus_pct +
+    0.25 * iso_pct +
+    0.20 * bb_pct +
+    0.15 * k_pct,
+
+  power_grade = rescale(
+    power_score,
+    to = c(20, 80)
+  ),
+
+  discipline_grade = rescale(
+    discipline_score,
+    to = c(20, 80)
+  ),
+
+  scout_grade = rescale(
+    scout_score,
+    to = c(20, 80)
+  )
+) %>%
   arrange(desc(scout_grade))
 
 scouting_board <- hitters_features %>%

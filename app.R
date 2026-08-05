@@ -822,7 +822,18 @@ tags$ul(
     tags$b("FIP: "),
     "Fielding Independent Pitching estimates a pitcher's performance using strikeouts, walks, hit batters, home runs, and innings pitched. ",
     "It removes much of the impact of team defense and is displayed on the same scale as ERA, where lower is better."
-  )
+  ),
+  tags$li(
+  tags$b("Scout Grade: "),
+  "A 20–80 offensive rating based on a player's performance relative to other Pioneer League hitters. ",
+  "The current model weighs OPS+ (40%), ISO (25%), walk rate (20%), and strikeout rate (15%) to evaluate overall offensive ability."
+),
+
+tags$li(
+  tags$b("Signing Probability: "),
+  "An estimated probability generated from a logistic regression model trained on historical Pioneer League players who later signed with MLB organizations. ",
+  "The model uses ISO, walk rate, strikeout rate, home run rate, and extra-base hit rate to estimate the likelihood of a future MLB signing."
+)
 ),
 tags$a(
   href = "https://github.com/Srapposellijr",
