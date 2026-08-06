@@ -42,7 +42,10 @@ hitters_player_level <- hitters_player_level %>%
   "data/processed/hitters_player_level.csv"
 )
 hitters_features <- hitters_player_level %>%
-  filter(pa >= 250) %>%
+  filter(
+    gp >= 1,
+    pa > 0
+  ) %>%
   mutate(
   ops_plus_pct = percent_rank(ops_plus),
   iso_pct = percent_rank(iso),
@@ -120,13 +123,7 @@ pitcher_features <- pitchers_clean %>%
       "Reliever"
     ),
 
-    minimum_ip = if_else(
-      pitcher_role == "Starter",
-      30,
-      15
-    ),
-
-    eligible = ip >= minimum_ip,
+    eligible = app > 0 & ip > 0,
 
     k_bb_pct = if_else(
       bf > 0,

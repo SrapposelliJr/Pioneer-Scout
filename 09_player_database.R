@@ -22,6 +22,21 @@ roster_urls <- tribble(
 
 clean_roster_field <- function(x) {
   x %>%
+    as.character() %>%
+
+    # Decode double-encoded entities first
+    str_replace_all("&amp;", "&") %>%
+
+    # Decode common HTML entities
+    str_replace_all("&rsquo;", "'") %>%
+    str_replace_all("&#39;", "'") %>%
+    str_replace_all("&lsquo;", "'") %>%
+    str_replace_all("&rdquo;", "\"") %>%
+    str_replace_all("&ldquo;", "\"") %>%
+    str_replace_all("&quot;", "\"") %>%
+    str_replace_all("&nbsp;", " ") %>%
+
+    # Clean whitespace
     str_replace_all("[\r\n\t]+", " ") %>%
     str_squish()
 }

@@ -47,7 +47,10 @@ hitters_clean <- hitters_raw %>%
   )
 
 hitters_player_level <- hitters_clean %>%
-  filter(pa >= 100) %>%
+ filter(
+  gp >= 1,
+  pa > 0
+) %>%
   group_by(player_name, team, season) %>%
   summarise(
     gp = sum(gp, na.rm = TRUE),

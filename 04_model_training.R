@@ -19,7 +19,10 @@ make_name_key <- function(x) {
 }
 
 hitters_model <- hitters %>%
-  filter(pa >= 100) %>%
+  filter(
+    gp >= 1,
+    pa > 0
+  ) %>%
   mutate(
     name_key = make_name_key(player_name),
 

@@ -20,7 +20,27 @@ player_master <- if (file.exists("data/raw/player_master.csv")) {
          position = character(), bats_throws = character(),
          height = character(), weight = character())
 }
+clean_bio_text <- function(x) {
+  x %>%
+    as.character() %>%
+    str_replace_all(
+      c(
+        "&rsquo;" = "'",
+        "&#39;" = "'",
+        "&rdquo;" = "\"",
+        "&ldquo;" = "\"",
+        "&quot;" = "\"",
+        "&amp;" = "&"
+      )
+    ) %>%
+    str_squish()
+}
 
+player_master <- player_master %>%
+  mutate(
+    height = clean_bio_text(height),
+    weight = clean_bio_text(weight)
+  )
 name_lookup <- if (file.exists("data/raw/player_name_lookup.csv")) {
   read.csv("data/raw/player_name_lookup.csv") %>%
     distinct(player_name, .keep_all = TRUE)
@@ -112,10 +132,19 @@ fmt_grade <- function(x) round(as.numeric(x), 1)
 fmt_pct <- function(x) percent(as.numeric(x), accuracy = 0.1)
 
 make_scouting_summary <- function(p) {
+
+  production <- case_when(
+    p$ops_plus >= 150 ~ "elite league-adjusted production",
+    p$ops_plus >= 125 ~ "well above-average league-adjusted production",
+    p$ops_plus >= 110 ~ "above-average league-adjusted production",
+    p$ops_plus >= 90  ~ "near-average league-adjusted production",
+    TRUE ~ "below-average league-adjusted production"
+  )
+
   power <- case_when(
     p$iso >= 0.300 ~ "plus game power",
     p$iso >= 0.200 ~ "above-average power",
-    TRUE ~ "moderate power"
+    TRUE ~ "modest power production"
   )
 
   discipline <- case_when(
@@ -125,20 +154,117 @@ make_scouting_summary <- function(p) {
   )
 
   contact <- case_when(
-    p$k_rate <= 0.18 ~ "manageable swing-and-miss",
+    p$k_rate <= 0.18 ~ "strong contact ability",
     p$k_rate <= 0.25 ~ "some swing-and-miss risk",
     TRUE ~ "notable swing-and-miss concerns"
   )
 
+  signing_note <- case_when(
+    p$signing_probability >= 0.20 ~
+      "His statistical profile closely resembles past Pioneer League hitters who signed with MLB organizations.",
+
+    p$signing_probability >= 0.10 ~
+      "His statistical profile shows several similarities to past Pioneer League hitters who signed with MLB organizations.",
+
+    p$signing_probability >= 0.05 ~
+      "His statistical profile shows some traits associated with previous MLB signees.",
+
+    TRUE ~
+      "His current statistical profile is less similar to the historical Pioneer League players who later signed with MLB organizations."
+  )
+
   paste0(
-    p$display_name, " profiles with ", power, ", ",
-    discipline, ", and ", contact, ". His offensive case is built around a ",
-    fmt3(p$ops), " OPS, ", fmt3(p$iso),
-    " ISO, and a ", fmt_grade(p$scout_grade),
-    " scout grade on the 20-80 scale."
+    p$display_name,
+    " earns a ",
+    fmt_grade(p$scout_grade),
+    " scout grade due to ",
+    production,
+    " (OPS+ ",
+    round(p$ops_plus),
+    "), ",
+    power,
+    " (",
+    fmt3(p$iso),
+    " ISO), ",
+    discipline,
+    " (",
+    fmt_pct(p$bb_rate),
+    " BB%), and ",
+    contact,
+    " (",
+    fmt_pct(p$k_rate),
+    " K%). ",
+    signing_note,
+    " His estimated signing probability is ",
+    fmt_pct(p$signing_probability),
+    "."
   )
 }
+make_pitcher_summary <- function(p) {
 
+  role <- ifelse(
+    !is.na(p$gs_pct) && p$gs_pct >= 0.50,
+    "starter",
+    "reliever"
+  )
+
+  run_prevention <- case_when(
+    p$fip <= 2.75 ~ "elite defense-independent run prevention",
+    p$fip <= 3.50 ~ "above-average defense-independent run prevention",
+    p$fip <= 4.25 ~ "solid defense-independent run prevention",
+    p$fip <= 5.00 ~ "mixed defense-independent results",
+    TRUE ~ "developing defense-independent run prevention"
+  )
+
+  command <- case_when(
+    p$k_minus_bb_pct >= 0.25 ~ "excellent command",
+    p$k_minus_bb_pct >= 0.18 ~ "strong command",
+    p$k_minus_bb_pct >= 0.12 ~ "solid command",
+    p$k_minus_bb_pct >= 0.06 ~ "average command",
+    TRUE ~ "developing command"
+  )
+
+  bat_missing <- case_when(
+    p$k_9 >= 12 ~ "plus swing-and-miss ability",
+    p$k_9 >= 10 ~ "above-average bat-missing ability",
+    p$k_9 >= 8 ~ "solid bat-missing ability",
+    TRUE ~ "below-average strikeout production"
+  )
+
+  traffic <- case_when(
+    p$whip <= 1.10 ~ "limits baserunners effectively",
+    p$whip <= 1.30 ~ "keeps traffic manageable",
+    p$whip <= 1.50 ~ "allows moderate traffic",
+    TRUE ~ "has allowed frequent baserunners"
+  )
+
+  paste0(
+    p$display_name,
+    " profiles as a ",
+    role,
+    " with ",
+    run_prevention,
+    " (",
+    formatC(p$fip, format = "f", digits = 2),
+    " FIP), ",
+    command,
+    " (",
+    scales::percent(p$k_minus_bb_pct, accuracy = 0.1),
+    " K-BB%), and ",
+    bat_missing,
+    " (",
+    formatC(p$k_9, format = "f", digits = 2),
+    " K/9). He ",
+    traffic,
+    " with a ",
+    formatC(p$whip, format = "f", digits = 2),
+    " WHIP over ",
+    formatC(p$ip, format = "f", digits = 1),
+    " innings. This profile results in a ",
+    formatC(p$pitcher_scout_grade, format = "f", digits = 1),
+    " scout grade."
+  )
+}
 players_all <- model_data %>%
   left_join(
     player_master %>%
@@ -178,14 +304,13 @@ left_join(
   mutate(season = as.integer(season)) %>%
   filter(
     season == 2026,
-    !is.na(photo_url),
-    photo_url != ""
+    gp >= 1,
+    pa > 0
   ) %>%
-  group_by(player_name) %>%
+  group_by(player_name, team, season) %>%
   arrange(desc(scout_grade)) %>%
   slice(1) %>%
   ungroup()
-
 historical_signings <- players_all %>%
   mutate(season = as.integer(season)) %>%
   filter(signed_by_mlb_org == 1) %>%
@@ -1166,32 +1291,21 @@ fluidRow(
           )
         ),
 
-        hr(),
+         hr(),
 
-        h4("📝 Pitcher Profile"),
+        div(
+          class = "summary-box",
 
-        p(
-          paste0(
-    p$display_name,
-    " is currently working as a ",
-            tolower(pitcher_role),
-            " for the ",
-            p$team,
-            ". The current profile includes a ",
-            safe_num(p$era),
-            " ERA, ",
-            safe_num(p$whip),
-            " WHIP, ",
-            safe_num(p$k_9),
-            " K/9, and ",
-            safe_num(p$bb_9),
-            " BB/9."
+          h4("📝 Why This Pitcher"),
+
+          p(
+            make_pitcher_summary(p)
           )
         )
       )
     )
   }
-  }
+}
 p <- selected_player()
     if (nrow(p) == 0) return(div(class="card", "No player selected."))
 
@@ -1737,22 +1851,17 @@ selected_team_roster_player <- reactive({
 
  df <- pitcher_board %>%
   filter(
-    eligible,
-    season == latest_season
+    season == latest_season,
+    app > 0,
+    ip > 0
   ) %>%
   mutate(
     pitcher_role = if_else(
       gs_pct >= 0.50,
       "Starter",
       "Reliever"
-    ),
-    minimum_ip = if_else(
-      pitcher_role == "Starter",
-      30,
-      15
     )
-  ) %>%
-  filter(ip >= minimum_ip)
+  )
 
   if (
     !is.null(input$pitcher_team) &&
