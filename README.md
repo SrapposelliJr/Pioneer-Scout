@@ -54,4 +54,4 @@ Baseball Research & Development / Scouting
 
 Cal Poly Baseball
 
-Expected Graduation: June 2027
+Expected Graduation: May 2027
