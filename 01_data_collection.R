@@ -6,6 +6,43 @@ dir.create("data/raw", recursive = TRUE, showWarnings = FALSE)
 
 years <- 2021:2026
 
+fetch_pioneer_page <- function(url, attempts = 2L) {
+  for (attempt in seq_len(attempts)) {
+    response <- httr::GET(
+      url,
+      httr::user_agent(
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
+      )
+    )
+
+    body <- httr::content(response, as = "text", encoding = "UTF-8")
+    rate_limited <-
+      httr::status_code(response) == 429 ||
+      stringr::str_detect(body, stringr::regex("heavy bot traffic|temporarily rate limited", ignore_case = TRUE))
+
+    if (httr::status_code(response) < 400 && !rate_limited) {
+      return(xml2::read_html(body))
+    }
+
+    if (attempt < attempts) {
+      wait_seconds <- if (rate_limited) 70 else 15
+      message("  Pioneer League request was unavailable; retrying in ", wait_seconds, " seconds.")
+      Sys.sleep(wait_seconds)
+    }
+  }
+
+  stop("Pioneer League request failed after ", attempts, " attempts: ", url)
+}
+
+read_previous_data <- function(path, label) {
+  if (!file.exists(path)) {
+    stop("No previously collected ", label, " data is available for fallback.")
+  }
+
+  warning("Using the last successful ", label, " data because the live scrape was unavailable.")
+  readr::read_csv(path, show_col_types = FALSE)
+}
+
 scrape_pbl_hitters <- function(year) {
   message("Scraping hitters: ", year)
 
@@ -15,14 +52,7 @@ scrape_pbl_hitters <- function(year) {
     "/players?sort=avg&view=&pos=h&r=0"
   )
 
-  page <- httr::GET(
-  url,
-  httr::user_agent(
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
-  )
-) |>
-  httr::content(as = "text", encoding = "UTF-8") |>
-  xml2::read_html()
+  page <- fetch_pioneer_page(url)
 
   hitters <- page %>%
     html_table(fill = TRUE) %>%
@@ -54,8 +84,8 @@ scrape_pbl_pitchers <- function(year) {
 
     page <- tryCatch(
       {
-        Sys.sleep(0.75)
-        rvest::read_html(url)
+        Sys.sleep(1)
+        fetch_pioneer_page(url)
       },
       error = function(e) {
         message("  Stopping at offset ", offset, ": ", e$message)
@@ -139,7 +169,7 @@ scrape_pbl_alumni <- function() {
   message("Scraping alumni signings")
 
   url <- "https://www.pioneerleague.com/players/alumni-roster"
-  page <- read_html(url)
+  page <- fetch_pioneer_page(url)
 
   alumni <- page %>%
     html_table(fill = TRUE) %>%
@@ -176,8 +206,25 @@ scrape_pbl_alumni <- function() {
   alumni
 }
 
-pioneer_hitters_raw <- map_dfr(years, scrape_pbl_hitters)
-pioneer_pitchers_raw <- scrape_pbl_pitchers(2026)
+pioneer_hitters_raw <- tryCatch(
+  map_dfr(years, scrape_pbl_hitters),
+  error = function(e) {
+    message("Hitters scrape failed: ", conditionMessage(e))
+    read_previous_data("data/raw/pioneer_hitters_raw.csv", "hitters")
+  }
+)
+
+pioneer_pitchers_raw <- tryCatch(
+  scrape_pbl_pitchers(2026),
+  error = function(e) {
+    message("Pitchers scrape failed: ", conditionMessage(e))
+    tibble::tibble()
+  }
+)
+
+if (nrow(pioneer_pitchers_raw) == 0) {
+  pioneer_pitchers_raw <- read_previous_data("data/raw/pioneer_pitchers_raw.csv", "pitchers")
+}
 pioneer_alumni_raw <- tryCatch(
   scrape_pbl_alumni(),
   error = function(e) {

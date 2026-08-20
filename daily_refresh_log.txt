@@ -583,3 +583,14 @@ Recv failure: Connection was reset
 2026-08-20 10:14:56 | Starting 05_model_validation.R 
 2026-08-20 10:14:56 | Completed 05_model_validation.R 
 2026-08-20 10:14:56 | Pioneer Scout refresh completed successfully 
+2026-08-20 10:15:22 | Pioneer Scout refresh started 
+2026-08-20 10:15:22 | Starting 01_data_collection.R 
+2026-08-20 10:15:26 | REFRESH FAILED: i In index: 1.
+Caused by error in `path_to_connection()`:
+! 'Due to recent heavy bot traffic, access to this page has been
+  temporarily rate limited. If your request was blocked because of systematic
+  or automated parsing, please note that using our API is the recommended best
+  practice for this type of access. For more information, please reach out to
+  our team. If you were blocked while manually browsing the page, please wait
+  one minute and then try again.' does not exist in current working directory
+  ('C:/Users/scott/BaseballR/Predicting Breakout Hitters'). 
