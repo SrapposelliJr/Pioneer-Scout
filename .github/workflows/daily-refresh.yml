@@ -3,10 +3,6 @@ name: Daily Pioneer Scout Refresh
 on:
   workflow_dispatch:
 
-  schedule:
-    # 10:00 AM Pacific during daylight saving time = 17:00 UTC
-    - cron: "0 17 * * *"
-
 permissions:
   contents: write
 
