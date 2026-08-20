@@ -1,5 +1,10 @@
 @echo off
+setlocal
 
-"C:\Program Files\R\R-4.6.0\bin\Rscript.exe" "C:\Users\scott\BaseballR\Predicting Breakout Hitters\99_refresh_database.R"
+cd /d "%~dp0"
 
-call "C:\Users\scott\BaseballR\Predicting Breakout Hitters\100_push_to_github.bat"
+"C:\Program Files\R\R-4.6.0\bin\Rscript.exe" "%~dp099_refresh_database.R"
+if errorlevel 1 exit /b %errorlevel%
+
+call "%~dp0100_push_to_github.bat"
+exit /b %errorlevel%

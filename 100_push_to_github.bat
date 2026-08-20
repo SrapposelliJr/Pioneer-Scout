@@ -1,15 +1,19 @@
 @echo off
+setlocal
 
-cd /d "C:\Users\scott\BaseballR\Predicting Breakout Hitters"
+cd /d "%~dp0"
 
-git add .
+git add -A
+if errorlevel 1 exit /b %errorlevel%
 
 git diff --cached --quiet
-if %ERRORLEVEL%==0 (
+if not errorlevel 1 (
     echo No changes to commit.
     exit /b 0
 )
 
 git commit -m "Automated daily Pioneer Scout refresh"
+if errorlevel 1 exit /b %errorlevel%
 
 git push origin main
+exit /b %errorlevel%
