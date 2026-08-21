@@ -594,3 +594,15 @@ Caused by error in `path_to_connection()`:
   our team. If you were blocked while manually browsing the page, please wait
   one minute and then try again.' does not exist in current working directory
   ('C:/Users/scott/BaseballR/Predicting Breakout Hitters'). 
+2026-08-21 14:48:27 | Pioneer Scout refresh started 
+2026-08-21 14:48:28 | Starting 01_data_collection.R 
+2026-08-21 14:50:09 | Completed 01_data_collection.R 
+2026-08-21 14:50:09 | Starting 02_data_cleaning.R 
+2026-08-21 14:50:14 | Completed 02_data_cleaning.R 
+2026-08-21 14:50:14 | Starting 03_feature_engineering.R 
+2026-08-21 14:50:16 | Completed 03_feature_engineering.R 
+2026-08-21 14:50:16 | Starting 04_model_training.R 
+2026-08-21 14:50:17 | Completed 04_model_training.R 
+2026-08-21 14:50:17 | Starting 05_model_validation.R 
+2026-08-21 14:50:17 | Completed 05_model_validation.R 
+2026-08-21 14:50:17 | Pioneer Scout refresh completed successfully 
