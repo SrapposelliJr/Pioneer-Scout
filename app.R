@@ -48,10 +48,19 @@ name_lookup <- if (file.exists("data/raw/player_name_lookup.csv")) {
   tibble(player_name = character(), full_name = character())
 }
 player_headshots <- if (file.exists("data/raw/player_headshots.csv")) {
-  read.csv("data/raw/player_headshots.csv") %>%
+  readr::read_csv(
+    "data/raw/player_headshots.csv",
+    col_types = readr::cols(.default = readr::col_character()),
+    show_col_types = FALSE
+  ) %>%
     distinct(player_name, .keep_all = TRUE)
 } else {
-  tibble(player_name = character(), photo_url = character())
+  tibble(
+    player_name = character(),
+    full_name = character(),
+    team = character(),
+    photo_url = character()
+  )
 }
 
 # A current team roster is authoritative for player availability.  A team is

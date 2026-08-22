@@ -94,12 +94,43 @@ possible_name <- possible_name %>%
   })
 }
 
-player_headshots <- headshot_urls %>%
+previous_headshots <- if (file.exists("data/raw/player_headshots.csv")) {
+  read_csv(
+    "data/raw/player_headshots.csv",
+    col_types = cols(.default = col_character()),
+    show_col_types = FALSE
+  )
+} else {
+  tibble(
+    player_name = character(), full_name = character(),
+    team = character(), photo_url = character()
+  )
+}
+
+scraped_headshots <- headshot_urls %>%
   mutate(data = map2(team, url, scrape_headshots)) %>%
   select(data) %>%
   unnest(data)
 
+healthy_teams <- scraped_headshots %>%
+  count(team, name = "player_count") %>%
+  filter(player_count >= 15) %>%
+  pull(team)
+
+if (length(healthy_teams) == 0) {
+  message("No complete roster scrape was available; retaining the previous headshot data.")
+  player_headshots <- previous_headshots
+} else {
+  # Replace a team only when its live roster is complete enough to trust. This
+  # prevents a temporary source outage from clearing valid roster/headshot data.
+  player_headshots <- bind_rows(
+    scraped_headshots %>% filter(team %in% healthy_teams),
+    previous_headshots %>% filter(!team %in% healthy_teams)
+  )
+}
+
 player_headshots <- player_headshots %>%
+  filter(!is.na(player_name), nzchar(player_name)) %>%
   distinct(player_name, .keep_all = TRUE)
 
 write_csv(
