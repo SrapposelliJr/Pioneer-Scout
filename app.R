@@ -332,6 +332,27 @@ team_choices <- sort(
   )
 )
 
+hitter_stat_choices <- c(
+  "Plate Appearances" = "PA",
+  "OPS" = "OPS",
+  "OPS+" = "OPS+",
+  "ISO" = "ISO",
+  "Signing Probability" = "Signing Probability"
+)
+hitter_stat_defaults <- unname(hitter_stat_choices)
+
+pitcher_stat_choices <- c(
+  "Innings Pitched" = "IP",
+  "ERA" = "ERA",
+  "FIP" = "FIP",
+  "WHIP" = "WHIP",
+  "K/9" = "K/9",
+  "BB/9" = "BB/9",
+  "HR/9" = "HR/9",
+  "K/BB" = "K/BB"
+)
+pitcher_stat_defaults <- unname(pitcher_stat_choices)
+
 ui <- fluidPage(
   tags$head(
     tags$style(HTML("
@@ -624,6 +645,14 @@ if (page() == "teams") {
           inline = TRUE
         ),
 
+        checkboxGroupInput(
+          "hitter_stats",
+          "Stats to display",
+          choices = hitter_stat_choices,
+          selected = hitter_stat_defaults,
+          inline = TRUE
+        ),
+
         DTOutput("leaderboard")
       )
       )
@@ -668,6 +697,14 @@ if (page() == "teams") {
             selected = "All"
           )
         )
+      ),
+
+      checkboxGroupInput(
+        "pitcher_stats",
+        "Stats to display",
+        choices = pitcher_stat_choices,
+        selected = pitcher_stat_defaults,
+        inline = TRUE
       ),
 
       DT::DTOutput("pitchers_table")
@@ -1041,8 +1078,9 @@ br(),
 }) # closes output$main_page <- renderUI({
 
   output$leaderboard <- renderDT({
-    filtered_players() %>%
+    leaderboard_data <- filtered_players() %>%
       transmute(
+        Rank = row_number(),
         Player = display_name,
         Team = team,
         Season = season,
@@ -1053,7 +1091,16 @@ br(),
         `Scout Grade` = fmt_grade(scout_grade),
         `Signing Probability` = fmt_pct(signing_probability),
         Status = signed_status
-      ) %>%
+      )
+
+    selected_stats <- input$hitter_stats %||% hitter_stat_defaults
+    displayed_columns <- c(
+      "Rank", "Player", "Team", "Season", "Scout Grade",
+      selected_stats, "Status"
+    )
+
+    leaderboard_data %>%
+      select(all_of(unique(displayed_columns))) %>%
       datatable(
         selection = "single",
         rownames = FALSE,
@@ -1863,6 +1910,10 @@ selected_team_roster_player <- reactive({
     )
   )
 
+  if (!is.null(input$min_pitcher_ip)) {
+    df <- df %>% filter(ip >= input$min_pitcher_ip)
+  }
+
   if (
     !is.null(input$pitcher_team) &&
     input$pitcher_team != "All"
@@ -1873,10 +1924,9 @@ selected_team_roster_player <- reactive({
 
   df %>%
     arrange(
-      pitcher_role,
+      desc(pitcher_scout_grade),
       era,
-      whip,
-      desc(k_9)
+      whip
     )
 })
 
@@ -1885,6 +1935,7 @@ output$pitchers_table <- renderDT({
 
   pitcher_table_data <- filtered_pitchers() %>%
   transmute(
+    Rank = row_number(),
     Pitcher = name,
     Team = team,
     Role = pitcher_role,
@@ -1899,8 +1950,14 @@ output$pitchers_table <- renderDT({
     `K/BB` = round(k_bb, 2)
   )
 
-datatable(
-  pitcher_table_data,
+  selected_stats <- input$pitcher_stats %||% pitcher_stat_defaults
+  displayed_columns <- c(
+    "Rank", "Pitcher", "Team", "Role", "Scout Grade", selected_stats
+  )
+
+pitcher_table_data %>%
+  select(all_of(unique(displayed_columns))) %>%
+  datatable(
   rownames = FALSE,
   selection = "single",
   options = list(
