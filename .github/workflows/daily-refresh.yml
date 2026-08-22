@@ -1,6 +1,11 @@
 name: Daily Pioneer Scout Refresh
 
 on:
+  # GitHub Actions schedules use UTC. Run at both possible UTC offsets, then
+  # use the Pacific-time guard below so the refresh always happens at 10 AM
+  # America/Los_Angeles through daylight-saving changes.
+  schedule:
+    - cron: "5 17,18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -11,16 +16,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Confirm 10 AM Pacific refresh window
+        id: refresh_window
+        shell: bash
+        run: |
+          if [ "$(TZ=America/Los_Angeles date +%H)" = "10" ]; then
+            echo "run_refresh=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_refresh=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Check out repository
+        if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/checkout@v4
 
       - name: Set up R
+        if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: "release"
           use-public-rspm: true
 
       - name: Install system dependencies
+        if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           sudo apt-get update
           sudo apt-get install -y \
@@ -32,6 +50,7 @@ jobs:
             libfribidi-dev
 
       - name: Install R packages
+        if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
         shell: Rscript {0}
         run: |
           packages <- c(
@@ -59,12 +78,15 @@ jobs:
           }
 
       - name: Refresh database
+        if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
         run: Rscript 99_refresh_database.R
 
       - name: Show changed files
+        if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
         run: git status --short
 
       - name: Commit refreshed data
+        if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
