@@ -50,6 +50,7 @@ tryCatch(
     run_step("03_feature_engineering.R")
     run_step("04_model_training.R")
     run_step("05_model_validation.R")
+    run_step("13_player_headshots.R")
 writeLines(
   format(Sys.time(), "%B %d, %Y at %I:%M %p"),
   "data/processed/last_updated.txt"

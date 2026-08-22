@@ -53,6 +53,60 @@ player_headshots <- if (file.exists("data/raw/player_headshots.csv")) {
 } else {
   tibble(player_name = character(), photo_url = character())
 }
+
+# A current team roster is authoritative for player availability.  A team is
+# reconciled only when its roster scrape has a credible number of players, so a
+# partial source response cannot accidentally clear an entire team.
+make_roster_key <- function(x) {
+  cleaned <- x %>%
+    as.character() %>%
+    str_replace_all("[^A-Za-z0-9 ]", " ") %>%
+    str_squish()
+
+  paste0(
+    str_to_lower(str_sub(word(cleaned, 1), 1, 1)),
+    "_",
+    str_to_lower(word(cleaned, -1))
+  )
+}
+
+roster_team_counts <- player_headshots %>%
+  filter(!is.na(full_name), nzchar(full_name), !is.na(team), nzchar(team)) %>%
+  count(team, name = "roster_count")
+
+roster_covered_teams <- roster_team_counts %>%
+  filter(roster_count >= 15) %>%
+  pull(team)
+
+current_roster <- player_headshots %>%
+  filter(team %in% roster_covered_teams) %>%
+  transmute(
+    roster_key = make_roster_key(full_name),
+    roster_team = team
+  ) %>%
+  filter(roster_key != "_") %>%
+  distinct(roster_key, .keep_all = TRUE)
+
+current_season <- max(c(model_data$season, pitcher_board$season), na.rm = TRUE)
+
+reconcile_active_roster <- function(data, name_column) {
+  data %>%
+    mutate(roster_key = make_roster_key(.data[[name_column]])) %>%
+    left_join(current_roster, by = "roster_key") %>%
+    filter(
+      season != current_season |
+        !team %in% roster_covered_teams |
+        !is.na(roster_team)
+    ) %>%
+    mutate(
+      team = if_else(
+        season == current_season & !is.na(roster_team),
+        roster_team,
+        team
+      )
+    ) %>%
+    select(-roster_key, -roster_team)
+}
 last_updated <- if (
   file.exists("data/processed/last_updated.txt")
 ) {
@@ -87,6 +141,9 @@ pitcher_board <- pitcher_board %>%
       name
     )
   )
+
+pitcher_board <- reconcile_active_roster(pitcher_board, "name")
+pitchers_clean <- reconcile_active_roster(pitchers_clean, "name")
 team_colors <- c(
   "Oakland Ballers" = "#00583D",
   "Billings Mustangs" = "#7B1FA2",
@@ -299,6 +356,8 @@ left_join(
     signed_status = ifelse(signed_by_mlb_org == 1, "Signed", "Unsigned")
   ) %>%
   filter(!is.na(scout_grade))
+
+players_all <- reconcile_active_roster(players_all, "player_name")
 
  players <- players_all %>%
   mutate(season = as.integer(season)) %>%

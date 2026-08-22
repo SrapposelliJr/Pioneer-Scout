@@ -2,19 +2,21 @@ library(tidyverse)
 library(rvest)
 library(stringr)
 
+current_season <- as.integer(format(Sys.Date(), "%Y"))
+
 headshot_urls <- tribble(
   ~team, ~url,
-  "Oakland Ballers", "https://www.oaklandballers.com/sports/bsb/2026/roster?view=headshot",
-  "Billings Mustangs", "https://www.billingsmustangs.com/sports/bsb/2026/roster?view=headshot",
-  "Boise Hawks", "https://www.boisehawks.com/sports/bsb/2026/roster?view=headshot",
-  "Glacier Range Riders", "https://www.gorangeriders.com/sports/bsb/2026/roster?view=headshot",
-  "Great Falls Voyagers", "https://www.gfvoyagers.com/sports/bsb/2026/roster?view=headshot",
-  "Idaho Falls Chukars", "https://www.ifchukars.com/sports/bsb/2026/roster?view=headshot",
-  "Long Beach Coast", "https://longbeachcoast.com/sports/bsb/2026/roster?view=headshot",
-  "Missoula PaddleHeads", "https://gopaddleheads.com/sports/bsb/2026/roster?view=headshot",
-  "Modesto Roadsters", "https://modestoroadsters.com/sports/bsb/2026/roster?view=headshot",
-  "Ogden Raptors", "https://ogden-raptors.com/sports/bsb/2026/roster?view=headshot",
-  "Yuba-Sutter Freebirds", "https://freebirdsbaseball.com/sports/bsb/2026/roster?view=headshot"
+  "Oakland Ballers", paste0("https://www.oaklandballers.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Billings Mustangs", paste0("https://www.billingsmustangs.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Boise Hawks", paste0("https://www.boisehawks.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Glacier Range Riders", paste0("https://www.gorangeriders.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Great Falls Voyagers", paste0("https://www.gfvoyagers.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Idaho Falls Chukars", paste0("https://www.ifchukars.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Long Beach Coast", paste0("https://longbeachcoast.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Missoula PaddleHeads", paste0("https://gopaddleheads.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Modesto Roadsters", paste0("https://modestoroadsters.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Ogden Raptors", paste0("https://ogden-raptors.com/sports/bsb/", current_season, "/roster?view=headshot"),
+  "Yuba-Sutter Freebirds", paste0("https://freebirdsbaseball.com/sports/bsb/", current_season, "/roster?view=headshot")
 )
 
 make_abbrev_name <- function(full_name) {
