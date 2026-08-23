@@ -52,7 +52,11 @@ tryCatch(
     run_step("05_model_validation.R")
     run_step("13_player_headshots.R")
 writeLines(
-  format(Sys.time(), "%B %d, %Y at %I:%M %p"),
+  format(
+    Sys.time(),
+    "%B %d, %Y at %I:%M %p %Z",
+    tz = "America/Los_Angeles"
+  ),
   "data/processed/last_updated.txt"
 )
     log_message("Pioneer Scout refresh completed successfully")
