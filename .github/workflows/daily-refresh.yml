@@ -2,10 +2,10 @@ name: Daily Pioneer Scout Refresh
 
 on:
   # GitHub Actions schedules use UTC. Run at both possible UTC offsets, then
-  # use the Pacific-time guard below so the refresh always happens at 10 AM
+  # use the Pacific-time guard below so the refresh always happens at 4 AM
   # America/Los_Angeles through daylight-saving changes.
   schedule:
-    - cron: "5 17,18 * * *"
+    - cron: "5 11,12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
           pacific_hour="$(TZ=America/Los_Angeles date +%H)"
           pacific_date="$(TZ=America/Los_Angeles date '+%B %-d, %Y')"
 
-          if [ "$pacific_hour" -ge 10 ] && ! grep -qF "$pacific_date" data/processed/last_updated.txt; then
+          if [ "$pacific_hour" -ge 4 ] && ! grep -qF "$pacific_date" data/processed/last_updated.txt; then
             echo "run_refresh=true" >> "$GITHUB_OUTPUT"
           else
             echo "run_refresh=false" >> "$GITHUB_OUTPUT"
