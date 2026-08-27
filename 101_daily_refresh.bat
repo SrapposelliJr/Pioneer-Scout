@@ -1,10 +1,5 @@
 @echo off
-setlocal
-
-cd /d "%~dp0"
-
-"C:\Program Files\R\R-4.6.0\bin\Rscript.exe" "%~dp099_refresh_database.R"
-if errorlevel 1 exit /b %errorlevel%
-
-call "%~dp0100_push_to_github.bat"
-exit /b %errorlevel%
+REM The GitHub Actions workflow is the single source of truth for daily
+REM refreshes. Keeping this launcher successful avoids a duplicate local run
+REM racing the cloud workflow and creating non-fast-forward Git push failures.
+exit /b 0
