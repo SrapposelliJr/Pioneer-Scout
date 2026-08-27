@@ -11,24 +11,30 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: daily-pioneer-scout-refresh
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Confirm 10 AM Pacific refresh window
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Confirm today's Pacific refresh is still needed
         id: refresh_window
         shell: bash
         run: |
-          if [ "$(TZ=America/Los_Angeles date +%H)" = "10" ]; then
+          pacific_hour="$(TZ=America/Los_Angeles date +%H)"
+          pacific_date="$(TZ=America/Los_Angeles date '+%B %-d, %Y')"
+
+          if [ "$pacific_hour" -ge 10 ] && ! grep -qF "$pacific_date" data/processed/last_updated.txt; then
             echo "run_refresh=true" >> "$GITHUB_OUTPUT"
           else
             echo "run_refresh=false" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Check out repository
-        if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
-        uses: actions/checkout@v4
 
       - name: Set up R
         if: steps.refresh_window.outputs.run_refresh == 'true' || github.event_name == 'workflow_dispatch'
