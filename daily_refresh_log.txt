@@ -662,3 +662,17 @@ Caused by error in `path_to_connection()`:
 2026-08-25 17:41:57 | Starting 13_player_headshots.R 
 2026-08-25 17:41:59 | Completed 13_player_headshots.R 
 2026-08-25 17:41:59 | Pioneer Scout refresh completed successfully 
+2026-08-27 15:02:50 | Pioneer Scout refresh started 
+2026-08-27 15:02:50 | Starting 01_data_collection.R 
+2026-08-27 15:03:37 | Completed 01_data_collection.R 
+2026-08-27 15:03:37 | Starting 02_data_cleaning.R 
+2026-08-27 15:03:38 | Completed 02_data_cleaning.R 
+2026-08-27 15:03:38 | Starting 03_feature_engineering.R 
+2026-08-27 15:03:38 | Completed 03_feature_engineering.R 
+2026-08-27 15:03:38 | Starting 04_model_training.R 
+2026-08-27 15:03:38 | Completed 04_model_training.R 
+2026-08-27 15:03:38 | Starting 05_model_validation.R 
+2026-08-27 15:03:38 | Completed 05_model_validation.R 
+2026-08-27 15:03:38 | Starting 13_player_headshots.R 
+2026-08-27 15:03:40 | Completed 13_player_headshots.R 
+2026-08-27 15:03:40 | Pioneer Scout refresh completed successfully 
