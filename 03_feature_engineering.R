@@ -112,9 +112,9 @@ head(scouting_board, 25)
 
 pitcher_features <- pitchers_clean %>%
   filter(
-    season == max(season, na.rm = TRUE),
     app > 0
   ) %>%
+  group_by(season) %>%
   mutate(
     gs_pct = if_else(app > 0, gs / app, 0),
 
@@ -158,7 +158,8 @@ pitcher_features <- pitchers_clean %>%
         20 + 60 * pitcher_score_0_1
       )
     )
-  )
+  ) %>%
+  ungroup()
 
   write_csv(
   pitcher_features,

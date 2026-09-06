@@ -69,100 +69,38 @@ scrape_pbl_hitters <- function(year) {
 scrape_pbl_pitchers <- function(year) {
   message("Scraping pitchers: ", year)
 
-  offsets <- seq(0, 150, by = 25)
-  collected <- list()
+  url <- paste0(
+    "https://www.pioneerleague.com/sports/bsb/",
+    year,
+    "/players?sort=ip&view=&pos=p&r=0"
+  )
 
-  for (offset in offsets) {
-    message("  Offset: ", offset)
+  tables <- fetch_pioneer_page(url) %>%
+    rvest::html_table(fill = TRUE)
 
-    url <- paste0(
-      "https://www.pioneerleague.com/sports/bsb/",
-      year,
-      "/players?sort=ip&view=&pos=p&r=",
-      offset
-    )
-
-    page <- tryCatch(
-      {
-        Sys.sleep(1)
-        fetch_pioneer_page(url)
+  pitcher_table_index <- which(
+    vapply(
+      tables,
+      function(tbl) {
+        cleaned_names <- janitor::make_clean_names(names(tbl))
+        all(c("era", "ip", "whip") %in% cleaned_names)
       },
-      error = function(e) {
-        message("  Stopping at offset ", offset, ": ", e$message)
-        return(NULL)
-      }
+      logical(1)
     )
+  )[1]
 
-    # Stop pagination after the first failed request
-    if (is.null(page)) {
-      break
-    }
-
-    tables <- page %>%
-      rvest::html_table(fill = TRUE)
-
-    # Stop when the site returns no table
-    if (length(tables) == 0) {
-      message("  No table at offset ", offset, "; stopping.")
-      break
-    }
-
-    pitcher_table_index <- which(
-  vapply(
-    tables,
-    function(tbl) {
-      cleaned_names <- janitor::make_clean_names(names(tbl))
-
-      all(c("era", "ip", "whip") %in% cleaned_names)
-    },
-    logical(1)
-  )
-)[1]
-
-if (is.na(pitcher_table_index)) {
-  stop(
-    "Could not find pitcher table at offset ",
-    offset,
-    ". Tables found: ",
-    length(tables)
-  )
-}
-
-result <- tables[[pitcher_table_index]] %>%
-  janitor::clean_names() %>%
-  mutate(across(everything(), as.character)) %>%
-  mutate(
-    season = year,
-    player_type = "pitcher"
-  )
-
-    # Stop if the returned table has no player records
-    if (
-      nrow(result) == 0 ||
-      !"name" %in% names(result)
-    ) {
-      message("  No pitcher rows at offset ", offset, "; stopping.")
-      break
-    }
-
-    collected[[length(collected) + 1]] <- result
+  if (is.na(pitcher_table_index)) {
+    stop("Could not find a pitcher table for ", year, ".")
   }
 
-  if (length(collected) == 0) {
-    warning("No pitcher data collected for ", year)
-    return(tibble())
-  }
-
-  pitchers <- bind_rows(collected)
-
-  required_keys <- c("season", "name", "team")
-
-  if (all(required_keys %in% names(pitchers))) {
-    pitchers <- pitchers %>%
-      distinct(season, name, team, .keep_all = TRUE)
-  }
-
-  pitchers
+  tables[[pitcher_table_index]] %>%
+    janitor::clean_names() %>%
+    mutate(across(everything(), as.character)) %>%
+    mutate(
+      season = as.character(year),
+      player_type = "pitcher"
+    ) %>%
+    distinct(season, name, team, .keep_all = TRUE)
 }
  
 scrape_pbl_alumni <- function() {
@@ -214,13 +152,29 @@ pioneer_hitters_raw <- tryCatch(
   }
 )
 
-pioneer_pitchers_raw <- tryCatch(
+pitcher_archive <- if (file.exists("data/raw/pioneer_pitchers_raw.csv")) {
+  readr::read_csv("data/raw/pioneer_pitchers_raw.csv", show_col_types = FALSE) %>%
+    mutate(across(everything(), as.character))
+} else {
+  tibble::tibble()
+}
+
+current_pitchers <- tryCatch(
   scrape_pbl_pitchers(2026),
   error = function(e) {
     message("Pitchers scrape failed: ", conditionMessage(e))
     tibble::tibble()
   }
 )
+
+pioneer_pitchers_raw <- if (nrow(current_pitchers) > 0) {
+  bind_rows(
+    pitcher_archive %>% filter(season != 2026),
+    current_pitchers
+  )
+} else {
+  pitcher_archive
+}
 
 if (nrow(pioneer_pitchers_raw) == 0) {
   pioneer_pitchers_raw <- read_previous_data("data/raw/pioneer_pitchers_raw.csv", "pitchers")

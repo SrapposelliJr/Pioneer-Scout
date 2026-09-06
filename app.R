@@ -153,6 +153,29 @@ pitcher_board <- pitcher_board %>%
 
 pitcher_board <- reconcile_active_roster(pitcher_board, "name")
 pitchers_clean <- reconcile_active_roster(pitchers_clean, "name")
+
+make_signing_key <- function(x) {
+  x <- x %>%
+    as.character() %>%
+    str_squish() %>%
+    str_replace_all("\\b(Jr\\.|Jr|Sr\\.|Sr|II|III|IV)\\b", "") %>%
+    str_squish()
+  str_to_lower(paste0(str_sub(x, 1, 1), word(x, -1)))
+}
+
+pitcher_alumni <- readr::read_csv(
+  "data/raw/pioneer_alumni_raw.csv",
+  show_col_types = FALSE
+) %>%
+  filter(str_detect(position, regex("pitcher", ignore_case = TRUE))) %>%
+  transmute(signing_key = make_signing_key(name), alumni_name = name, organization) %>%
+  distinct(signing_key, .keep_all = TRUE)
+
+historical_pitcher_signings <- pitcher_board %>%
+  mutate(signing_key = make_signing_key(name)) %>%
+  inner_join(pitcher_alumni, by = "signing_key") %>%
+  select(-signing_key) %>%
+  arrange(desc(season), desc(pitcher_scout_grade))
 team_colors <- c(
   "Oakland Ballers" = "#00583D",
   "Billings Mustangs" = "#7B1FA2",
@@ -194,6 +217,10 @@ mlb_logos <- c(
   "Pittsburgh Pirates" = "mlb_logos/pittsburgh_pirates.png"
 )
 fmt3 <- function(x) sprintf("%.3f", as.numeric(x))
+fmt_num_or_dash <- function(x, digits = 3) {
+  if (length(x) == 0 || is.na(x) || !is.finite(x)) return("—")
+  formatC(as.numeric(x), format = "f", digits = digits)
+}
 fmt_grade <- function(x) round(as.numeric(x), 1)
 fmt_pct <- function(x) percent(as.numeric(x), accuracy = 0.1)
 
@@ -567,7 +594,7 @@ outputOptions(output, "showPlayerReport", suspendWhenHidden = FALSE)
   selected_signing <- reactive({
 
     df <- historical_signings
-    row <- input$signings_table_rows_selected
+    row <- input$signing_hitters_table_rows_selected
 
     if (is.null(row) || length(row) == 0) {
 
@@ -802,110 +829,91 @@ if (page() == "teams") {
   )
 }else if (page() == "signings") {
 
-  featured <- historical_signings %>%
-    arrange(desc(scout_grade)) %>%
-    slice(1)
+  hitter_averages <- historical_signings %>%
+    summarise(
+      players = n_distinct(player_name),
+      pa = mean(pa, na.rm = TRUE),
+      ops = mean(ops, na.rm = TRUE),
+      woba = mean(woba, na.rm = TRUE),
+      ops_plus = mean(ops_plus, na.rm = TRUE),
+      iso = mean(iso, na.rm = TRUE),
+      bb_rate = mean(bb_rate, na.rm = TRUE),
+      k_rate = mean(k_rate, na.rm = TRUE)
+    )
+
+  pitcher_averages <- historical_pitcher_signings %>%
+    summarise(
+      players = n_distinct(name),
+      ip = mean(ip, na.rm = TRUE),
+      era = mean(era, na.rm = TRUE),
+      fip = mean(fip, na.rm = TRUE),
+      whip = mean(whip, na.rm = TRUE),
+      k_9 = mean(k_9, na.rm = TRUE),
+      bb_9 = mean(bb_9, na.rm = TRUE),
+      k_bb = mean(k_bb, na.rm = TRUE)
+    )
 
   div(
   class = "card",
 
   h2("🏆 Historical MLB Signings"),
 
-  p("Players from the dataset who later signed with MLB organizations."),
+  p("Pioneer League production for players who later signed with MLB organizations. A dash indicates a metric the official historical archive did not publish."),
 
+  h3("Hitter Averages Before Signing"),
   fluidRow(
-      column(4, div(class="stat-box",
-        div(class="stat-value", nrow(historical_signings)),
-        div(class="stat-label", "Signed Players")
+      column(3, div(class="stat-box",
+        div(class="stat-value", hitter_averages$players),
+        div(class="stat-label", "Signed Hitters")
       )),
-      column(4, div(class="stat-box",
-        div(class="stat-value", round(mean(historical_signings$scout_grade, na.rm=TRUE), 1)),
-        div(class="stat-label", "Avg Scout Grade")
+      column(3, div(class="stat-box",
+        div(class="stat-value", round(hitter_averages$pa, 0)),
+        div(class="stat-label", "Avg PA")
       )),
-      column(4, div(class="stat-box",
-        div(class="stat-value", max(historical_signings$season, na.rm=TRUE)),
-        div(class="stat-label", "Most Recent Season")
+      column(3, div(class="stat-box",
+        div(class="stat-value", fmt3(hitter_averages$ops)),
+        div(class="stat-label", "Avg OPS")
+      )),
+      column(3, div(class="stat-box",
+        div(class="stat-value", fmt3(hitter_averages$woba)),
+        div(class="stat-label", "Avg wOBA")
       ))
     ),
 
-       hr(),
-
-    h3("⭐ Featured MLB Signing"),
-
     fluidRow(
-
-      column(
-  3,
-
-  tags$div(
-
-    style = "text-align:center;",
-
-    tags$img(
-      src = unname(mlb_logos[featured$organization]),
-      style = "
-        width:170px;
-        height:170px;
-        object-fit:contain;
-        margin-bottom:15px;
-      "
-    ),
-
-    h3(featured$organization),
-
-    div(
-      class = "team-pill",
-      "MLB Organization"
-    )
-
-  )
-
-),
-
-      column(
-        9,
-
-        h2(featured$display_name),
-
-        div(
-          class="team-pill",
-          paste(featured$team, "|", featured$season)
-        ),
-
-        br(), br(),
-
-        fluidRow(
-
-          column(
-            4,
-            div(class="stat-box",
-                div(class="stat-value", fmt_grade(featured$scout_grade)),
-                div(class="stat-label","Scout Grade"))
-          ),
-
-          column(
-            4,
-            div(class="stat-box",
-                div(class="stat-value", fmt3(featured$ops)),
-                div(class="stat-label","OPS"))
-          ),
-
-          column(
-            4,
-            div(class="stat-box",
-                div(class="stat-value", fmt3(featured$iso)),
-                div(class="stat-label","ISO"))
-          )
-
-        )
-
-      )
-
+      column(3, div(class="stat-box", div(class="stat-value", round(hitter_averages$ops_plus)), div(class="stat-label", "Avg OPS+"))),
+      column(3, div(class="stat-box", div(class="stat-value", fmt3(hitter_averages$iso)), div(class="stat-label", "Avg ISO"))),
+      column(3, div(class="stat-box", div(class="stat-value", fmt_pct(hitter_averages$bb_rate)), div(class="stat-label", "Avg BB%"))),
+      column(3, div(class="stat-box", div(class="stat-value", fmt_pct(hitter_averages$k_rate)), div(class="stat-label", "Avg K%")))
     ),
 
     hr(),
 
-    DTOutput("signings_table")
+    h3("Pitcher Averages Before Signing"),
+    tagList(
+        fluidRow(
+          column(3, div(class="stat-box", div(class="stat-value", pitcher_averages$players), div(class="stat-label", "Signed Pitchers"))),
+          column(3, div(class="stat-box", div(class="stat-value", round(pitcher_averages$ip, 1)), div(class="stat-label", "Avg IP"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$era)), div(class="stat-label", "Avg ERA"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt_num_or_dash(pitcher_averages$fip)), div(class="stat-label", "Avg FIP")))
+        ),
+        fluidRow(
+          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$whip)), div(class="stat-label", "Avg WHIP"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$k_9)), div(class="stat-label", "Avg K/9"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$bb_9)), div(class="stat-label", "Avg BB/9"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$k_bb)), div(class="stat-label", "Avg K/BB")))
+        )
+      ),
+
+    hr(),
+
+    h3("Signed Hitters"),
+    DTOutput("signing_hitters_table"),
+
+    hr(),
+
+    h3("Signed Pitchers"),
+    DTOutput("signing_pitchers_table")
 
 
    )
@@ -2077,16 +2085,27 @@ selected_pitcher <- reactive({
   df[row, , drop = FALSE]
 })
 
-output$signings_table <- renderDT({
+output$signing_hitters_table <- renderDT({
 
   historical_signings %>%
     transmute(
       Player = display_name,
       Team = team,
       Season = season,
+      Organization = organization,
+      GP = gp,
       PA = pa,
+      AVG = fmt3(avg),
+      OBP = fmt3(obp),
+      SLG = fmt3(slg),
       OPS = fmt3(ops),
+      `OPS+` = round(ops_plus),
+      wOBA = fmt3(woba),
       ISO = fmt3(iso),
+      `BB%` = fmt_pct(bb_rate),
+      `K%` = fmt_pct(k_rate),
+      HR = hr,
+      `HR%` = fmt_pct(hr_rate),
       `Scout Grade` = as.character(fmt_grade(scout_grade)),
       `Signing Probability` = fmt_pct(signing_probability),
       Status = signed_status
@@ -2097,6 +2116,33 @@ output$signings_table <- renderDT({
       options = list(pageLength = 15, scrollX = TRUE)
     )
   })
+
+output$signing_pitchers_table <- renderDT({
+  historical_pitcher_signings %>%
+    transmute(
+      Pitcher = display_name,
+      Team = team,
+      Season = season,
+      Organization = organization,
+      Role = pitcher_role,
+      APP = app,
+      GS = gs,
+      IP = round(ip, 1),
+      ERA = round(era, 2),
+      FIP = vapply(fip, fmt_num_or_dash, character(1), digits = 2),
+      WHIP = round(whip, 2),
+      `K/9` = round(k_9, 2),
+      `BB/9` = round(bb_9, 2),
+      `HR/9` = vapply(hr_9, fmt_num_or_dash, character(1), digits = 2),
+      `K/BB` = round(k_bb, 2),
+      `Scout Grade` = vapply(pitcher_scout_grade, fmt_num_or_dash, character(1), digits = 1)
+    ) %>%
+    datatable(
+      rownames = FALSE,
+      selection = "none",
+      options = list(pageLength = 15, scrollX = TRUE)
+    )
+})
 }
 
 shinyApp(ui, server)
