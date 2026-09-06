@@ -163,6 +163,16 @@ make_signing_key <- function(x) {
   str_to_lower(paste0(str_sub(x, 1, 1), word(x, -1)))
 }
 
+mlb_debuts <- readr::read_csv(
+  "data/raw/mlb_debuts.csv",
+  show_col_types = FALSE
+) %>%
+  mutate(
+    signing_key = make_signing_key(name),
+    mlb_debut_date = as.Date(mlb_debut_date)
+  ) %>%
+  select(signing_key, mlb_debut_date, mlb_debut_team)
+
 pitcher_alumni <- readr::read_csv(
   "data/raw/pioneer_alumni_raw.csv",
   show_col_types = FALSE
@@ -174,6 +184,7 @@ pitcher_alumni <- readr::read_csv(
 historical_pitcher_signings <- pitcher_board %>%
   mutate(signing_key = make_signing_key(name)) %>%
   inner_join(pitcher_alumni, by = "signing_key") %>%
+  left_join(mlb_debuts, by = "signing_key") %>%
   select(-signing_key) %>%
   arrange(desc(season), desc(pitcher_scout_grade))
 team_colors <- c(
@@ -217,6 +228,7 @@ mlb_logos <- c(
   "Pittsburgh Pirates" = "mlb_logos/pittsburgh_pirates.png"
 )
 fmt3 <- function(x) sprintf("%.3f", as.numeric(x))
+fmt_debut_date <- function(x) str_replace(format(as.Date(x), "%b %d, %Y"), " 0", " ")
 fmt_num_or_dash <- function(x, digits = 3) {
   if (length(x) == 0 || is.na(x) || !is.finite(x)) return("—")
   formatC(as.numeric(x), format = "f", digits = digits)
@@ -393,7 +405,9 @@ left_join(
   ) %>%
   filter(!is.na(scout_grade))
 
-players_all <- reconcile_active_roster(players_all, "player_name")
+players_all <- reconcile_active_roster(players_all, "player_name") %>%
+  mutate(signing_key = make_signing_key(player_name)) %>%
+  left_join(mlb_debuts, by = "signing_key")
 
  players <- players_all %>%
   mutate(season = as.integer(season)) %>%
@@ -608,6 +622,17 @@ outputOptions(output, "showPlayerReport", suspendWhenHidden = FALSE)
 
     }
 
+  })
+
+  selected_signing_pitcher <- reactive({
+    df <- historical_pitcher_signings
+    row <- input$signing_pitchers_table_rows_selected
+
+    if (is.null(row) || length(row) == 0) {
+      return(df[0, , drop = FALSE])
+    }
+
+    df[row[1], , drop = FALSE]
   })
 
   observeEvent(input$nav_targets, page("targets"))
@@ -858,7 +883,7 @@ if (page() == "teams") {
 
   h2("🏆 Historical MLB Signings"),
 
-  p("Pioneer League production for players who later signed with MLB organizations. A dash indicates a metric the official historical archive did not publish."),
+  p("Pioneer League production for players who later signed with MLB organizations. A dash indicates a metric the official historical archive did not publish. MLB debut labels mark players who reached the majors after their Pioneer League tenure."),
 
   h3("Hitter Averages Before Signing"),
   fluidRow(
@@ -894,14 +919,14 @@ if (page() == "teams") {
         fluidRow(
           column(3, div(class="stat-box", div(class="stat-value", pitcher_averages$players), div(class="stat-label", "Signed Pitchers"))),
           column(3, div(class="stat-box", div(class="stat-value", round(pitcher_averages$ip, 1)), div(class="stat-label", "Avg IP"))),
-          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$era)), div(class="stat-label", "Avg ERA"))),
-          column(3, div(class="stat-box", div(class="stat-value", fmt_num_or_dash(pitcher_averages$fip)), div(class="stat-label", "Avg FIP")))
+          column(3, div(class="stat-box", div(class="stat-value", fmt_num_or_dash(pitcher_averages$era, 2)), div(class="stat-label", "Avg ERA"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt_num_or_dash(pitcher_averages$fip, 2)), div(class="stat-label", "Avg FIP")))
         ),
         fluidRow(
-          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$whip)), div(class="stat-label", "Avg WHIP"))),
-          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$k_9)), div(class="stat-label", "Avg K/9"))),
-          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$bb_9)), div(class="stat-label", "Avg BB/9"))),
-          column(3, div(class="stat-box", div(class="stat-value", fmt3(pitcher_averages$k_bb)), div(class="stat-label", "Avg K/BB")))
+          column(3, div(class="stat-box", div(class="stat-value", fmt_num_or_dash(pitcher_averages$whip, 2)), div(class="stat-label", "Avg WHIP"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt_num_or_dash(pitcher_averages$k_9, 2)), div(class="stat-label", "Avg K/9"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt_num_or_dash(pitcher_averages$bb_9, 2)), div(class="stat-label", "Avg BB/9"))),
+          column(3, div(class="stat-box", div(class="stat-value", fmt_num_or_dash(pitcher_averages$k_bb, 2)), div(class="stat-label", "Avg K/BB")))
         )
       ),
 
@@ -1196,7 +1221,7 @@ br(),
   
    output$player_report <- renderUI({
 
-  if (page() == "pitchers" || page() == "teams") {
+  if (page() == "pitchers" || page() == "teams" || page() == "signings") {
 
   team_selection <- if (page() == "teams") {
     selected_team_roster_player()
@@ -1204,7 +1229,11 @@ br(),
     NULL
   }
 
-  show_pitcher <- page() == "pitchers" ||
+  signing_pitcher_selected <- page() == "signings" &&
+    !is.null(input$signing_pitchers_table_rows_selected) &&
+    length(input$signing_pitchers_table_rows_selected) > 0
+
+  show_pitcher <- page() == "pitchers" || signing_pitcher_selected ||
     (!is.null(team_selection) &&
      team_selection$player_type == "pitcher")
 
@@ -1219,6 +1248,10 @@ br(),
       season == team_selection$season
     ) %>%
     slice(1)
+
+} else if (page() == "signings") {
+
+  selected_signing_pitcher()
 
 } else {
 
@@ -1329,6 +1362,13 @@ pitcher_photo <- if (
             margin-bottom:14px;
           "
         ),
+
+        if ("mlb_debut_date" %in% names(p) && !is.na(p$mlb_debut_date)) {
+          div(
+            class = "status-pill",
+            paste0("MLB Debut: ", p$mlb_debut_team, " — ", fmt_debut_date(p$mlb_debut_date))
+          )
+        },
 
 fluidRow(
   column(
@@ -1487,6 +1527,10 @@ div(class = "player-name", p$display_name),
       br(),
       div(class="status-pill", ifelse(p$signed_by_mlb_org == 1, "Signed Player / Historical Reference", "Unsigned / Current Target")),
 
+      if ("mlb_debut_date" %in% names(p) && !is.na(p$mlb_debut_date)) {
+        div(class="status-pill", paste0("MLB Debut: ", p$mlb_debut_team, " — ", fmt_debut_date(p$mlb_debut_date)))
+      },
+
       if (!is.na(p$position)) {
         tagList(
           br(),
@@ -1517,9 +1561,8 @@ div(class = "player-name", p$display_name),
       ),
 
       fluidRow(
-        column(4, div(class="stat-box", div(class="stat-value", p$hr), div(class="stat-label", paste(stat_label_prefix, "Home Runs")))),
-        column(4, div(class="stat-box", div(class="stat-value", fmt_pct(p$hr_rate)), div(class="stat-label", paste(stat_label_prefix, "HR%")))),
-        column(4, div(class="stat-box", div(class="stat-value", p$pa), div(class="stat-label", paste(stat_label_prefix, "PA"))))
+        column(6, div(class="stat-box", div(class="stat-value", p$hr), div(class="stat-label", paste(stat_label_prefix, "Home Runs")))),
+        column(6, div(class="stat-box", div(class="stat-value", p$pa), div(class="stat-label", paste(stat_label_prefix, "PA"))))
       ),
 
       div(class="summary-box",
@@ -2105,7 +2148,11 @@ output$signing_hitters_table <- renderDT({
       `BB%` = fmt_pct(bb_rate),
       `K%` = fmt_pct(k_rate),
       HR = hr,
-      `HR%` = fmt_pct(hr_rate),
+      `MLB Debut` = ifelse(
+        is.na(mlb_debut_date),
+        "—",
+        paste0(mlb_debut_team, " — ", fmt_debut_date(mlb_debut_date))
+      ),
       `Scout Grade` = as.character(fmt_grade(scout_grade)),
       `Signing Probability` = fmt_pct(signing_probability),
       Status = signed_status
@@ -2135,11 +2182,16 @@ output$signing_pitchers_table <- renderDT({
       `BB/9` = round(bb_9, 2),
       `HR/9` = vapply(hr_9, fmt_num_or_dash, character(1), digits = 2),
       `K/BB` = round(k_bb, 2),
+      `MLB Debut` = ifelse(
+        is.na(mlb_debut_date),
+        "—",
+        paste0(mlb_debut_team, " — ", fmt_debut_date(mlb_debut_date))
+      ),
       `Scout Grade` = vapply(pitcher_scout_grade, fmt_num_or_dash, character(1), digits = 1)
     ) %>%
     datatable(
       rownames = FALSE,
-      selection = "none",
+      selection = "single",
       options = list(pageLength = 15, scrollX = TRUE)
     )
 })
