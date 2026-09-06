@@ -402,6 +402,7 @@ team_choices <- sort(
 
 hitter_stat_choices <- c(
   "Plate Appearances" = "PA",
+  "Home Runs" = "HR",
   "OPS" = "OPS",
   "OPS+" = "OPS+",
   "ISO" = "ISO",
@@ -1153,6 +1154,7 @@ br(),
         Team = team,
         Season = season,
         PA = pa,
+        HR = hr,
         OPS = fmt3(ops),
         `OPS+` = round(ops_plus),
         ISO = fmt3(iso),
@@ -1496,8 +1498,9 @@ div(class = "player-name", p$display_name),
       ),
 
       fluidRow(
-        column(6, div(class="stat-box", div(class="stat-value", fmt_pct(p$hr_rate)), div(class="stat-label", paste(stat_label_prefix, "HR%")))),
-        column(6, div(class="stat-box", div(class="stat-value", p$pa), div(class="stat-label", paste(stat_label_prefix, "PA"))))
+        column(4, div(class="stat-box", div(class="stat-value", p$hr), div(class="stat-label", paste(stat_label_prefix, "Home Runs")))),
+        column(4, div(class="stat-box", div(class="stat-value", fmt_pct(p$hr_rate)), div(class="stat-label", paste(stat_label_prefix, "HR%")))),
+        column(4, div(class="stat-box", div(class="stat-value", p$pa), div(class="stat-label", paste(stat_label_prefix, "PA"))))
       ),
 
       div(class="summary-box",
@@ -1712,7 +1715,7 @@ if (is.null(top_hitter)) {
 
       fluidRow(
         column(
-          6,
+          4,
           div(
             class = "stat-box",
             div(class = "stat-value", fmt3(top_hitter$ops)),
@@ -1721,11 +1724,19 @@ if (is.null(top_hitter)) {
         ),
 
         column(
-          6,
+          4,
           div(
             class = "stat-box",
             div(class = "stat-value", fmt3(top_hitter$iso)),
             div(class = "stat-label", "ISO")
+          )
+        ),
+        column(
+          4,
+          div(
+            class = "stat-box",
+            div(class = "stat-value", top_hitter$hr),
+            div(class = "stat-label", "Home Runs")
           )
         )
       )
@@ -1853,6 +1864,7 @@ output$team_roster <- renderDT({
   missing = "Position Player"
 ),
       `Scout Grade` = as.character(fmt_grade(scout_grade)),
+      HR = as.integer(hr),
       `Primary Stat` = ifelse(
   is.na(ops),
   "N/A",
