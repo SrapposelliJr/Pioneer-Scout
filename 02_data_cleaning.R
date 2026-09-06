@@ -23,6 +23,21 @@ clean_ip <- function(x) {
   whole_innings + outs / 3
 }
 
+# Standard linear weights are used because Pioneer League play-by-play data does
+# not provide league-specific run-expectancy weights or intentional walks.
+calc_woba <- function(bb, hbp, x1b, x2b, x3b, hr, ab, sf) {
+  denominator <- ab + bb + hbp + sf
+  numerator <-
+    0.690 * bb +
+    0.722 * hbp +
+    0.888 * x1b +
+    1.271 * x2b +
+    1.616 * x3b +
+    2.101 * hr
+
+  if_else(denominator > 0, numerator / denominator, NA_real_)
+}
+
 hitters_clean <- hitters_raw %>%
   clean_names() %>%
   mutate(
@@ -37,13 +52,26 @@ hitters_clean <- hitters_raw %>%
       clean_numeric
     ),
 
+    # The Pioneer League export reports XBH and SLG, but leaves 2B and 3B
+    # blank. Reconstruct them from total bases before calculating wOBA.
+    total_bases = round(slg * ab),
+    non_hr_xbh = pmax(xbh - hr, 0),
+    x3b_from_slg = pmax(total_bases - h - 3 * hr - non_hr_xbh, 0),
+    x2b_from_slg = pmax(non_hr_xbh - x3b_from_slg, 0),
+    x2b = coalesce(x2b, x2b_from_slg),
+    x3b = coalesce(x3b, x3b_from_slg),
+    hbp = replace_na(hbp, 0),
+    sf = replace_na(sf, 0),
+
     player_name = name,
+    x1b = h - x2b - x3b - hr,
     ops = obp + slg,
     iso = slg - avg,
     bb_rate = bb / pa,
     k_rate = k / pa,
     hr_rate = hr / pa,
-    xbh_rate = xbh / pa
+    xbh_rate = xbh / pa,
+    woba = calc_woba(bb, hbp, x1b, x2b, x3b, hr, ab, sf)
   )
 
 hitters_player_level <- hitters_clean %>%
@@ -77,7 +105,8 @@ hitters_player_level <- hitters_clean %>%
     k_rate = k / pa,
     hr_rate = hr / pa,
     xbh = x2b + x3b + hr,
-    xbh_rate = xbh / pa
+    xbh_rate = xbh / pa,
+    woba = calc_woba(bb, hbp, x1b, x2b, x3b, hr, ab, sf)
   )
 pitchers_raw <- read_csv(
   "data/raw/pioneer_pitchers_raw.csv",

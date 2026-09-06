@@ -59,6 +59,7 @@ prospect_board <- model_df %>%
     season,
     pa,
     ops,
+    woba,
     iso,
     scout_grade,
     signing_probability,

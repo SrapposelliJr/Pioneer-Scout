@@ -92,6 +92,7 @@ scouting_board <- hitters_features %>%
     pa,
     ops,
     ops_plus,
+    woba,
     iso,
     hr_rate,
     bb_rate,

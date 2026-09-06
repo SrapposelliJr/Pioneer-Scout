@@ -405,6 +405,7 @@ hitter_stat_choices <- c(
   "Home Runs" = "HR",
   "OPS" = "OPS",
   "OPS+" = "OPS+",
+  "wOBA" = "wOBA",
   "ISO" = "ISO",
   "Signing Probability" = "Signing Probability"
 )
@@ -1050,6 +1051,11 @@ tags$ul(
   ),
 
   tags$li(
+    tags$b("wOBA: "),
+    "Weights walks, hit-by-pitches, and each hit type by its run value to provide a single measure of offensive production."
+  ),
+
+  tags$li(
     tags$b("FIP: "),
     "Fielding Independent Pitching estimates a pitcher's performance using strikeouts, walks, hit batters, home runs, and innings pitched. ",
     "It removes much of the impact of team defense and is displayed on the same scale as ERA, where lower is better."
@@ -1157,6 +1163,7 @@ br(),
         HR = hr,
         OPS = fmt3(ops),
         `OPS+` = round(ops_plus),
+        wOBA = fmt3(woba),
         ISO = fmt3(iso),
         `Scout Grade` = fmt_grade(scout_grade),
         `Signing Probability` = fmt_pct(signing_probability),
@@ -1490,6 +1497,10 @@ div(class = "player-name", p$display_name),
       fluidRow(
         column(6, div(class="stat-box", div(class="stat-value", fmt3(p$ops)), div(class="stat-label", paste(stat_label_prefix, "OPS")))),
         column(6, div(class="stat-box", div(class="stat-value", fmt3(p$iso)), div(class="stat-label", paste(stat_label_prefix, "ISO"))))
+      ),
+
+      fluidRow(
+        column(12, div(class="stat-box", div(class="stat-value", fmt3(p$woba)), div(class="stat-label", paste(stat_label_prefix, "wOBA"))))
       ),
 
       fluidRow(
@@ -1865,6 +1876,7 @@ output$team_roster <- renderDT({
 ),
       `Scout Grade` = as.character(fmt_grade(scout_grade)),
       HR = as.integer(hr),
+      wOBA = fmt3(woba),
       `Primary Stat` = ifelse(
   is.na(ops),
   "N/A",
