@@ -523,6 +523,95 @@ pitchers_clean <- add_pitcher_signing_match(pitchers_clean)
 historical_signings <- add_hitter_signing_match(historical_signings)
 historical_pitcher_signings <- add_pitcher_signing_match(historical_pitcher_signings)
 
+# Pitcher signing probability is calibrated on the entire historical Pioneer
+# League pitcher pool. Confirmed alumni signings form the positive class, while
+# scout grade, signed-pitcher similarity, and age provide the comparison.
+pitcher_signing_history <- pitcher_board %>%
+  mutate(signing_key = make_signing_key(name)) %>%
+  left_join(
+    pitcher_alumni %>% select(signing_key, organization),
+    by = "signing_key"
+  ) %>%
+  mutate(signed_by_mlb_org = as.integer(!is.na(organization)))
+
+pitcher_probability_training <- pitcher_signing_history %>%
+  filter(season < current_season) %>%
+  mutate(
+    model_age = replace_na(age, median(age, na.rm = TRUE)),
+    signed_benchmark_metrics = replace_na(signed_benchmark_metrics, 0)
+  )
+
+pitcher_probability_profile <- pitcher_probability_training %>%
+  summarise(
+    grade_mean = mean(pitcher_scout_grade, na.rm = TRUE),
+    grade_sd = sd(pitcher_scout_grade, na.rm = TRUE),
+    match_mean = mean(signed_benchmark_metrics, na.rm = TRUE),
+    match_sd = sd(signed_benchmark_metrics, na.rm = TRUE),
+    age_mean = mean(model_age, na.rm = TRUE),
+    age_sd = sd(model_age, na.rm = TRUE)
+  ) %>%
+  mutate(across(ends_with("_sd"), ~ if_else(is.na(.) | . == 0, 1, .)))
+
+pitcher_probability_training <- pitcher_probability_training %>%
+  mutate(
+    grade_z = (pitcher_scout_grade - pitcher_probability_profile$grade_mean) / pitcher_probability_profile$grade_sd,
+    match_z = (signed_benchmark_metrics - pitcher_probability_profile$match_mean) / pitcher_probability_profile$match_sd,
+    age_z = (model_age - pitcher_probability_profile$age_mean) / pitcher_probability_profile$age_sd
+  )
+
+pitcher_signing_model <- tryCatch(
+  glm(
+    signed_by_mlb_org ~ grade_z + match_z + age_z,
+    data = pitcher_probability_training,
+    family = binomial()
+  ),
+  error = function(e) NULL
+)
+
+add_pitcher_signing_probability <- function(data) {
+  candidates <- data %>%
+    mutate(
+      model_age = replace_na(age, pitcher_probability_profile$age_mean),
+      model_grade = replace_na(pitcher_scout_grade, pitcher_probability_profile$grade_mean),
+      signed_benchmark_metrics = replace_na(signed_benchmark_metrics, 0),
+      grade_z = (model_grade - pitcher_probability_profile$grade_mean) / pitcher_probability_profile$grade_sd,
+      match_z = (signed_benchmark_metrics - pitcher_probability_profile$match_mean) / pitcher_probability_profile$match_sd,
+      age_z = (model_age - pitcher_probability_profile$age_mean) / pitcher_probability_profile$age_sd
+    )
+
+  if (is.null(pitcher_signing_model)) {
+    return(candidates %>% mutate(pitcher_signing_probability = mean(pitcher_probability_training$signed_by_mlb_org)))
+  }
+
+  candidates %>%
+    mutate(
+      pitcher_signing_probability = pmin(
+        0.50,
+        pmax(
+          0.001,
+          replace_na(
+            predict(pitcher_signing_model, newdata = candidates, type = "response"),
+            mean(pitcher_probability_training$signed_by_mlb_org)
+          )
+        )
+      )
+    ) %>%
+    select(-model_age, -model_grade, -grade_z, -match_z, -age_z)
+}
+
+pitcher_board <- add_pitcher_signing_probability(pitcher_board)
+pitchers_clean <- pitchers_clean %>%
+  left_join(
+    pitcher_board %>%
+      group_by(name, team, season) %>%
+      summarise(
+        pitcher_signing_probability = max(pitcher_signing_probability, na.rm = TRUE),
+        .groups = "drop"
+      ),
+    by = c("name", "team", "season")
+  )
+historical_pitcher_signings <- add_pitcher_signing_probability(historical_pitcher_signings)
+
 inactive_teams <- c(
   "Colorado Springs Sky Sox",
   "Grand Junction Jackalopes",
@@ -558,7 +647,8 @@ pitcher_stat_choices <- c(
   "K/9" = "K/9",
   "BB/9" = "BB/9",
   "HR/9" = "HR/9",
-  "K/BB" = "K/BB"
+  "K/BB" = "K/BB",
+  "Signing Probability" = "Signing Probability"
 )
 pitcher_stat_defaults <- unname(pitcher_stat_choices)
 
@@ -1478,7 +1568,7 @@ pitcher_photo <- if (
 
 fluidRow(
   column(
-    12,
+    6,
     div(
       class = "metric",
     div(class = "metric-value", safe_num(p$pitcher_scout_grade, 1)),
@@ -1486,6 +1576,14 @@ fluidRow(
         class = "metric-label",
         "Scout Grade"
       )
+    )
+  ),
+  column(
+    6,
+    div(
+      class = "metric",
+      div(class = "metric-value", fmt_pct(p$pitcher_signing_probability)),
+      div(class = "metric-label", "Signing Probability")
     )
   )
 ),
@@ -2209,7 +2307,8 @@ output$pitchers_table <- renderDT({
     `K/9` = round(k_9, 2),
     `BB/9` = round(bb_9, 2),
     `HR/9` = round(hr_9, 2),
-    `K/BB` = round(k_bb, 2)
+    `K/BB` = round(k_bb, 2),
+    `Signing Probability` = fmt_pct(pitcher_signing_probability)
   )
 
   selected_stats <- input$pitcher_stats %||% pitcher_stat_defaults
