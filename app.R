@@ -102,11 +102,6 @@ reconcile_active_roster <- function(data, name_column) {
   data %>%
     mutate(roster_key = make_roster_key(.data[[name_column]])) %>%
     left_join(current_roster, by = "roster_key") %>%
-    filter(
-      season != current_season |
-        !team %in% roster_covered_teams |
-        !is.na(roster_team)
-    ) %>%
     mutate(
       team = if_else(
         season == current_season & !is.na(roster_team),
@@ -162,6 +157,26 @@ make_signing_key <- function(x) {
     str_squish()
   str_to_lower(paste0(str_sub(x, 1, 1), word(x, -1)))
 }
+
+player_ages <- if (file.exists("data/raw/pioneer_player_ages.csv")) {
+  readr::read_csv("data/raw/pioneer_player_ages.csv", show_col_types = FALSE) %>%
+    mutate(age_key = make_signing_key(age_name)) %>%
+    select(season, player_type, age_key, age) %>%
+    distinct(season, player_type, age_key, .keep_all = TRUE)
+} else {
+  tibble(season = integer(), player_type = character(), age_key = character(), age = integer())
+}
+
+hitter_ages <- player_ages %>% filter(player_type == "hitter") %>% select(-player_type)
+pitcher_ages <- player_ages %>% filter(player_type == "pitcher") %>% select(-player_type)
+
+pitcher_board <- pitcher_board %>%
+  mutate(age_key = make_signing_key(name)) %>%
+  left_join(pitcher_ages, by = c("season", "age_key"))
+
+pitchers_clean <- pitchers_clean %>%
+  mutate(age_key = make_signing_key(name)) %>%
+  left_join(pitcher_ages, by = c("season", "age_key"))
 
 mlb_debuts <- readr::read_csv(
   "data/raw/mlb_debuts.csv",
@@ -407,7 +422,8 @@ left_join(
 
 players_all <- reconcile_active_roster(players_all, "player_name") %>%
   mutate(signing_key = make_signing_key(player_name)) %>%
-  left_join(mlb_debuts, by = "signing_key")
+  left_join(mlb_debuts, by = "signing_key") %>%
+  left_join(hitter_ages, by = c("season", "signing_key" = "age_key"))
 
  players <- players_all %>%
   mutate(season = as.integer(season)) %>%
@@ -424,6 +440,70 @@ historical_signings <- players_all %>%
   mutate(season = as.integer(season)) %>%
   filter(signed_by_mlb_org == 1) %>%
   arrange(desc(season), desc(scout_grade))
+
+hitter_signing_benchmark <- historical_signings %>%
+  filter(!is.na(age)) %>%
+  summarise(
+    signing_age = mean(age),
+    ops = mean(ops, na.rm = TRUE),
+    woba = mean(woba, na.rm = TRUE),
+    ops_plus = mean(ops_plus, na.rm = TRUE),
+    iso = mean(iso, na.rm = TRUE),
+    bb_rate = mean(bb_rate, na.rm = TRUE),
+    k_rate = mean(k_rate, na.rm = TRUE)
+  )
+
+pitcher_signing_benchmark <- historical_pitcher_signings %>%
+  filter(!is.na(age)) %>%
+  summarise(
+    signing_age = mean(age),
+    era = mean(era, na.rm = TRUE),
+    fip = mean(fip, na.rm = TRUE),
+    whip = mean(whip, na.rm = TRUE),
+    k_9 = mean(k_9, na.rm = TRUE),
+    bb_9 = mean(bb_9, na.rm = TRUE),
+    k_bb = mean(k_bb, na.rm = TRUE)
+  )
+
+add_hitter_signing_match <- function(data) {
+  data %>%
+    mutate(
+      signed_benchmark_metrics =
+        (ops >= hitter_signing_benchmark$ops) +
+        (woba >= hitter_signing_benchmark$woba) +
+        (ops_plus >= hitter_signing_benchmark$ops_plus) +
+        (iso >= hitter_signing_benchmark$iso) +
+        (bb_rate >= hitter_signing_benchmark$bb_rate) +
+        (k_rate <= hitter_signing_benchmark$k_rate),
+      age_adjusted_signing_match =
+        !is.na(age) &
+        age <= hitter_signing_benchmark$signing_age &
+        signed_benchmark_metrics >= 4
+    )
+}
+
+add_pitcher_signing_match <- function(data) {
+  data %>%
+    mutate(
+      signed_benchmark_metrics =
+        (era <= pitcher_signing_benchmark$era) +
+        (!is.na(fip) & fip <= pitcher_signing_benchmark$fip) +
+        (whip <= pitcher_signing_benchmark$whip) +
+        (k_9 >= pitcher_signing_benchmark$k_9) +
+        (bb_9 <= pitcher_signing_benchmark$bb_9) +
+        (k_bb >= pitcher_signing_benchmark$k_bb),
+      age_adjusted_signing_match =
+        !is.na(age) &
+        age <= pitcher_signing_benchmark$signing_age &
+        signed_benchmark_metrics >= 4
+    )
+}
+
+players <- add_hitter_signing_match(players)
+pitcher_board <- add_pitcher_signing_match(pitcher_board)
+pitchers_clean <- add_pitcher_signing_match(pitchers_clean)
+historical_signings <- add_hitter_signing_match(historical_signings)
+historical_pitcher_signings <- add_pitcher_signing_match(historical_pitcher_signings)
 
 inactive_teams <- c(
   "Colorado Springs Sky Sox",
@@ -1192,12 +1272,18 @@ br(),
         Player = display_name,
         Team = team,
         Season = season,
+        Age = age,
         PA = pa,
         HR = hr,
         OPS = fmt3(ops),
         `OPS+` = round(ops_plus),
         wOBA = fmt3(woba),
         ISO = fmt3(iso),
+        `Signed Benchmark` = ifelse(
+          age_adjusted_signing_match,
+          "Age-adjusted match",
+          paste0(signed_benchmark_metrics, "/6 metrics")
+        ),
         `Scout Grade` = fmt_grade(scout_grade),
         `Signing Probability` = fmt_pct(signing_probability),
         Status = signed_status
@@ -1205,7 +1291,7 @@ br(),
 
     selected_stats <- input$hitter_stats %||% hitter_stat_defaults
     displayed_columns <- c(
-      "Rank", "Player", "Team", "Season", "Scout Grade",
+      "Rank", "Player", "Team", "Season", "Age", "Signed Benchmark", "Scout Grade",
       selected_stats, "Status"
     )
 
@@ -1370,6 +1456,17 @@ pitcher_photo <- if (
           )
         },
 
+        if (!is.na(p$age)) {
+          div(
+            class = "status-pill",
+            paste0("Age: ", p$age, " (season age; birthday not publicly listed)")
+          )
+        },
+
+        if ("age_adjusted_signing_match" %in% names(p) && p$age_adjusted_signing_match) {
+          div(class = "status-pill", "Age-Adjusted Signed-Player Match")
+        },
+
 fluidRow(
   column(
     12,
@@ -1529,6 +1626,14 @@ div(class = "player-name", p$display_name),
 
       if ("mlb_debut_date" %in% names(p) && !is.na(p$mlb_debut_date)) {
         div(class="status-pill", paste0("MLB Debut: ", p$mlb_debut_team, " — ", fmt_debut_date(p$mlb_debut_date)))
+      },
+
+      if (!is.na(p$age)) {
+        div(class="status-pill", paste0("Age: ", p$age, " (season age; birthday not publicly listed)"))
+      },
+
+      if ("age_adjusted_signing_match" %in% names(p) && p$age_adjusted_signing_match) {
+        div(class="status-pill", "Age-Adjusted Signed-Player Match")
       },
 
       if (!is.na(p$position)) {
@@ -2082,6 +2187,7 @@ output$pitchers_table <- renderDT({
     Pitcher = name,
     Team = team,
     Role = pitcher_role,
+    Age = age,
     `Scout Grade` = round(pitcher_scout_grade, 1),
     IP = round(ip, 1),
     ERA = round(era, 2),
@@ -2090,12 +2196,17 @@ output$pitchers_table <- renderDT({
     `K/9` = round(k_9, 2),
     `BB/9` = round(bb_9, 2),
     `HR/9` = round(hr_9, 2),
-    `K/BB` = round(k_bb, 2)
+    `K/BB` = round(k_bb, 2),
+    `Signed Benchmark` = ifelse(
+      age_adjusted_signing_match,
+      "Age-adjusted match",
+      paste0(signed_benchmark_metrics, "/6 metrics")
+    )
   )
 
   selected_stats <- input$pitcher_stats %||% pitcher_stat_defaults
   displayed_columns <- c(
-    "Rank", "Pitcher", "Team", "Role", "Scout Grade", selected_stats
+    "Rank", "Pitcher", "Team", "Role", "Age", "Signed Benchmark", "Scout Grade", selected_stats
   )
 
 pitcher_table_data %>%
@@ -2135,6 +2246,7 @@ output$signing_hitters_table <- renderDT({
       Player = display_name,
       Team = team,
       Season = season,
+      `Age in Pioneer Season` = age,
       Organization = organization,
       GP = gp,
       PA = pa,
@@ -2170,6 +2282,7 @@ output$signing_pitchers_table <- renderDT({
       Pitcher = display_name,
       Team = team,
       Season = season,
+      `Age in Pioneer Season` = age,
       Organization = organization,
       Role = pitcher_role,
       APP = app,

@@ -46,60 +46,69 @@ read_previous_data <- function(path, label) {
 scrape_pbl_hitters <- function(year) {
   message("Scraping hitters: ", year)
 
-  url <- paste0(
-    "https://www.pioneerleague.com/sports/bsb/",
-    year,
-    "/players?sort=avg&view=&pos=h&r=0"
-  )
+  sort_columns <- if (year == 2026) c("avg", "rbi", "hr", "sb") else "avg"
 
-  page <- fetch_pioneer_page(url)
-
-  hitters <- page %>%
-    html_table(fill = TRUE) %>%
-    pluck(1) %>%
-    clean_names() %>%
-    mutate(across(everything(), as.character)) %>%
-    mutate(
-      season = year,
-      player_type = "hitter"
+  map_dfr(sort_columns, function(sort_column) {
+    url <- paste0(
+      "https://www.pioneerleague.com/sports/bsb/",
+      year,
+      "/players?sort=", sort_column, "&view=&pos=h&r=0"
     )
 
-  hitters
+    fetch_pioneer_page(url) %>%
+      html_table(fill = TRUE) %>%
+      pluck(1) %>%
+      clean_names() %>%
+      mutate(across(everything(), as.character)) %>%
+      mutate(
+        name = str_squish(name),
+        team = str_squish(team),
+        season = year,
+        player_type = "hitter"
+      )
+  }) %>%
+    distinct(season, name, team, .keep_all = TRUE)
 }
 scrape_pbl_pitchers <- function(year) {
   message("Scraping pitchers: ", year)
 
-  url <- paste0(
-    "https://www.pioneerleague.com/sports/bsb/",
-    year,
-    "/players?sort=ip&view=&pos=p&r=0"
-  )
+  sort_columns <- c("era", "pw", "pk", "sv")
 
-  tables <- fetch_pioneer_page(url) %>%
-    rvest::html_table(fill = TRUE)
-
-  pitcher_table_index <- which(
-    vapply(
-      tables,
-      function(tbl) {
-        cleaned_names <- janitor::make_clean_names(names(tbl))
-        all(c("era", "ip", "whip") %in% cleaned_names)
-      },
-      logical(1)
+  map_dfr(sort_columns, function(sort_column) {
+    url <- paste0(
+      "https://www.pioneerleague.com/sports/bsb/",
+      year,
+      "/players?sort=", sort_column, "&view=&pos=p&r=0"
     )
-  )[1]
 
-  if (is.na(pitcher_table_index)) {
-    stop("Could not find a pitcher table for ", year, ".")
-  }
+    tables <- fetch_pioneer_page(url) %>%
+      rvest::html_table(fill = TRUE)
 
-  tables[[pitcher_table_index]] %>%
-    janitor::clean_names() %>%
-    mutate(across(everything(), as.character)) %>%
-    mutate(
-      season = as.character(year),
-      player_type = "pitcher"
-    ) %>%
+    pitcher_table_index <- which(
+      vapply(
+        tables,
+        function(tbl) {
+          cleaned_names <- janitor::make_clean_names(names(tbl))
+          all(c("era", "ip", "whip") %in% cleaned_names)
+        },
+        logical(1)
+      )
+    )[1]
+
+    if (is.na(pitcher_table_index)) {
+      stop("Could not find a pitcher table for ", year, " (", sort_column, ").")
+    }
+
+    tables[[pitcher_table_index]] %>%
+      janitor::clean_names() %>%
+      mutate(across(everything(), as.character)) %>%
+      mutate(
+        name = str_squish(name),
+        team = str_squish(team),
+        season = as.character(year),
+        player_type = "pitcher"
+      )
+  }) %>%
     distinct(season, name, team, .keep_all = TRUE)
 }
  
@@ -142,6 +151,85 @@ scrape_pbl_alumni <- function() {
     )
 
   alumni
+}
+
+make_age_key <- function(x) {
+  x <- x %>%
+    as.character() %>%
+    str_replace_all("\\*", "") %>%
+    str_replace_all("\\b(Jr\\.|Jr|Sr\\.|Sr|II|III|IV)\\b", "") %>%
+    str_squish()
+
+  str_to_lower(paste0(str_sub(x, 1, 1), word(x, -1)))
+}
+
+scrape_baseball_reference_ages <- function(year, type) {
+  message("Scraping Baseball-Reference ages: ", year, " ", type)
+
+  league_ids <- c(
+    `2021` = "ef43dde0",
+    `2022` = "50dbada3",
+    `2023` = "c7b1b8f6",
+    `2024` = "700ca0c6",
+    `2025` = "f39a716e",
+    `2026` = "281aaa04"
+  )
+
+  url <- paste0(
+    "https://www.baseball-reference.com/register/leader.cgi?id=", league_ids[[as.character(year)]],
+    "&type=", type
+  )
+
+  response <- httr::RETRY(
+    "GET",
+    url,
+    httr::user_agent(
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
+    ),
+    times = 3,
+    pause_base = 3,
+    pause_cap = 10,
+    terminate_on = c(200)
+  )
+
+  if (httr::status_code(response) != 200) {
+    stop("Baseball-Reference age request failed for ", year, " ", type)
+  }
+
+  page <- xml2::read_html(
+    httr::content(response, as = "text", encoding = "UTF-8")
+  )
+
+  player_links <- page %>%
+    html_elements("td[data-stat='player'] a") %>%
+    html_attr("href")
+
+  table <- page %>%
+    html_table(fill = TRUE) %>%
+    pluck(1)
+
+  if (length(player_links) == nrow(table)) {
+    table$profile_path <- player_links
+  } else {
+    table$profile_path <- NA_character_
+  }
+
+  table %>%
+    transmute(
+      season = as.integer(year),
+      player_type = if_else(type == "bat", "hitter", "pitcher"),
+      age_name = str_remove(Name, "\\*$"),
+      age_key = make_age_key(age_name),
+      age = suppressWarnings(as.integer(Age)),
+      profile_url = if_else(
+        is.na(profile_path),
+        NA_character_,
+        paste0("https://www.baseball-reference.com", profile_path)
+      ),
+      age_source = "Baseball-Reference Register"
+    ) %>%
+    filter(!is.na(age), age_key != "") %>%
+    distinct(season, player_type, age_key, .keep_all = TRUE)
 }
 
 pioneer_hitters_raw <- tryCatch(
@@ -205,6 +293,48 @@ if (nrow(pioneer_alumni_raw) > 0) {
     "data/raw/pioneer_alumni_raw.csv",
     row.names = FALSE
   )
+}
+
+pioneer_player_ages <- tryCatch(
+  {
+    empty_age_rows <- tibble(
+      season = integer(), player_type = character(), age_name = character(),
+      age_key = character(), age = integer(), profile_url = character(), age_source = character()
+    )
+
+    safe_age_scrape <- function(year, type) {
+      tryCatch(
+        scrape_baseball_reference_ages(year, type),
+        error = function(e) {
+          warning("Age scrape failed for ", year, " ", type, ": ", conditionMessage(e))
+          empty_age_rows
+        }
+      )
+    }
+
+    map_dfr(
+      years,
+      \(year) bind_rows(
+        safe_age_scrape(year, "bat"),
+        safe_age_scrape(year, "pitch")
+      )
+    )
+  },
+  error = function(e) {
+    warning("Age scrape failed: ", conditionMessage(e))
+    if (file.exists("data/raw/pioneer_player_ages.csv")) {
+      readr::read_csv("data/raw/pioneer_player_ages.csv", show_col_types = FALSE)
+    } else {
+      tibble(
+        season = integer(), player_type = character(), age_name = character(),
+        age_key = character(), age = integer(), profile_url = character(), age_source = character()
+      )
+    }
+  }
+)
+
+if (nrow(pioneer_player_ages) > 0) {
+  write_csv(pioneer_player_ages, "data/raw/pioneer_player_ages.csv")
 }
 
 list.files("data/raw")
