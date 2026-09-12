@@ -169,6 +169,16 @@ pitcher_board <- reconcile_active_roster(pitcher_board, "name") %>%
   select(-roster_key, -roster_photo_url)
 pitchers_clean <- reconcile_active_roster(pitchers_clean, "name")
 
+# Reuse the resolved full name in team rosters and pitcher cards. The league
+# stat feed itself supplies initials only.
+pitcher_display_lookup <- pitcher_board %>%
+  select(name, team, season, display_name) %>%
+  distinct(name, team, season, .keep_all = TRUE)
+
+pitchers_clean <- pitchers_clean %>%
+  left_join(pitcher_display_lookup, by = c("name", "team", "season")) %>%
+  mutate(display_name = coalesce(display_name, name))
+
 make_signing_key <- function(x) {
   x <- x %>%
     as.character() %>%
@@ -1442,7 +1452,7 @@ br(),
 
   pitchers_clean %>%
     filter(
-      name == team_selection$display_name,
+      name == team_selection$player_name,
       team == team_selection$team,
       season == team_selection$season
     ) %>%
@@ -2057,7 +2067,7 @@ if (is.null(top_pitcher)) {
 
     column(
       8,
-      h3(top_pitcher$name),
+      h3(top_pitcher$display_name),
       strong(
         paste(
           top_pitcher$team,
@@ -2222,6 +2232,7 @@ selected_team_roster_player <- reactive({
     ) %>%
     transmute(
       display_name = display_name,
+      player_name = player_name,
       player_type = "hitter",
       team = team,
       season = season,
@@ -2235,7 +2246,8 @@ selected_team_roster_player <- reactive({
       app > 0
     ) %>%
     transmute(
-      display_name = name,
+      display_name = display_name,
+      player_name = name,
       player_type = "pitcher",
       team = team,
       season = season,
@@ -2305,7 +2317,7 @@ output$pitchers_table <- renderDT({
   pitcher_table_data <- filtered_pitchers() %>%
   transmute(
     Rank = row_number(),
-    Pitcher = name,
+    Pitcher = display_name,
     Team = team,
     Role = pitcher_role,
     Age = age,
