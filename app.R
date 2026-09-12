@@ -42,10 +42,20 @@ player_master <- player_master %>%
     weight = clean_bio_text(weight)
   )
 name_lookup <- if (file.exists("data/raw/player_name_lookup.csv")) {
-  read.csv("data/raw/player_name_lookup.csv") %>%
-    distinct(player_name, .keep_all = TRUE)
+  lookup_data <- read.csv("data/raw/player_name_lookup.csv")
+  if (!"season" %in% names(lookup_data)) lookup_data$season <- NA_integer_
+  if (!"player_type" %in% names(lookup_data)) lookup_data$player_type <- NA_character_
+  lookup_data %>%
+    mutate(
+      season = suppressWarnings(as.integer(season)),
+      player_type = as.character(player_type)
+    ) %>%
+    distinct(player_name, season, player_type, .keep_all = TRUE)
 } else {
-  tibble(player_name = character(), full_name = character())
+  tibble(
+    player_name = character(), season = integer(),
+    player_type = character(), full_name = character()
+  )
 }
 player_headshots <- if (file.exists("data/raw/player_headshots.csv")) {
   readr::read_csv(
@@ -140,11 +150,9 @@ pitcher_board <- pitcher_board %>%
   ) %>%
   left_join(
     name_lookup %>%
-      select(
-        player_name,
-        full_name
-      ),
-    by = c("name" = "player_name")
+      filter(player_type == "pitcher") %>%
+      select(player_name, season, full_name),
+    by = c("name" = "player_name", "season")
   ) %>%
   mutate(
     display_name = if_else(
@@ -406,11 +414,13 @@ players_all <- model_data %>%
   ) %>%
   left_join(
   name_lookup %>%
+    filter(player_type == "hitter") %>%
     select(
       player_name,
+      season,
       full_name_lookup = full_name
     ),
-  by = "player_name"
+  by = c("player_name", "season")
 ) %>%
 left_join(
   player_headshots %>%

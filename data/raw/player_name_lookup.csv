@@ -1,285 +1,1815 @@
-player_name,full_name
-A Baker,Andrew Baker
-A Barranca,Antonio Barranca
-A Bustamante,Alex Bustamante
-A Calhoun,Aaron Calhoun
-A Collins,Andrew Collins
-A Cootway,Adam Cootway
-A Elfering,Aidan Elfering
-A Fernandes,Alex Fernandes
-A Folds,Austin Folds
-A Gauna,Andrew Gauna
-A Gutierrez,Alizaeh Gutierrez
-A Harajli,Ahmad Harajli
-A Hernandez,Alex Hernandez
-A Kirchner,Andrew Kirchner
-A Kostic,AJ Kostic
-A Lopez,Alain Lopez
-A Manisero,Anthony Manisero
-A Risse,Aidan Risse
-A Shaver,A.J. Shaver
-A Shumaker,Aiden Shumaker
-A Silvas,Anthony Silvas
-A Swenda,Anthony Swenda
-A Tsengeg,Amar Tsengeg
-A Valdes,Andy Valdes
-B Beard,Brendan Beard
-B Cermenelli,Bryce Cermenelli
-B Chavez,Brady Chavez
-B Lambert,Brock Lambert
-B Mayer,Brock Mayer
-B McFadden,Blake McFadden
-B O'Sullivan,Brendan O'Sullivan
-B Pelle,Bradley Pelle
-B Rodriguez,Brynden Rodriguez
-B Ross,Brandon Ross
-B Thiels,Brenton Thiels
-B Wilhoite,Blake Wilhoite
-B Wright,Bodee Wright
-C Anziani,Carlos Anziani
-C Barker,Corbin Barker
-C Bergman,Carter Bergman
-C Bowen,Cameron Bowen
-C Bufford,Cam Bufford
-C Bunch,Caleb Bunch
-C Calnon,Cole Calnon
-C Canada,Chris Canada
-C Castaneda,Christian Castaneda
-C Chatman,Chase Chatman
-C Cox,Chance Cox
-C Czerwinski,CJ Czerwinski
-C Diaz,Christian Diaz
-C Garner,Carson Garner
-C Goffar,Cameron Goffar
-C Hornung,Carson Hornung
-C Housley,Connor Housley
-C Hurley,Charlie Hurley
-C Jordan,Cole Jordan
-C Kelly,Carson Kelly
-C Kelsey,Carter Kelsey
-C Lane,Carmine Lane
-C Lawrence,Colson Lawrence
-C Magee,Cam Magee
-C Martinez,Chase Martinez
-C Matlon,Caden Matlon
-C Muniz,Charlie Muniz
-C Robinson,Cole Robinson
-C Smith,Conner Smith
-C Tallakson,Connor Tallakson
-C Trout,Chaney Trout
-C Valentine,Chase Valentine
-C Vaughan,Casey Vaughan
-C Wallace,Chance Wallace
-C Wheatley,Chas Wheatley
-C Witte,Cameron Witte
-C Yuran,Cam Yuran
-D Aguiar,Drew Aguiar
-D Andiarena,Derick Andiarena
-D Aragon,Diego Aragon
-D Dixon,Devon Dixon
-D Fesperman,Dylan Fesperman
-D Galef,Dan Galef
-D Gardner,Dylan Gardner
-D Girtz,Drew Girtz
-D Hankins,David Hankins
-D Jackson,Darryl Jackson
-D McCall,Dylan McCall
-D Pratt,Davis Pratt
-D Ratfield,Donovan Ratfield
-D Spinoso,Dominick Spinoso
-D Sullivan,Daniel Sullivan
-D Tauken,Daniel Tauken
-D Thomas,David Thomas
-D Wilkinson,Dylan Wilkinson
-E Amundson,Easton Amundson
-E Apodaca,Enzo Apodaca
-E Brown,Ethan Brown
-E Felix,Edrick Felix
-E Good,Elliot Good
-E Hernandez,Esteban Hernandez
-E Langston,Evan Langston
-E Manzo,Efrain Manzo
-E O'Neal,Ethan O'Neal
-E Ott,Ethan Ott
-E Pagani,Edwin Pagani
-E Santos,Esai Santos
-E Sepulveda,Eumir Sepulveda
-E Sim,Eric Sim
-E Underwood,Ethan Underwood
-G Bevacqua,Garrett Bevacqua
-G Brown,Gunnar Brown
-G Ferraro-Nahr,Giuseppe Ferraro-Nahr
-G Garza,Grant Garza
-G Holpuch,Garrett Holpuch
-G Moore,Graham Moore
-G Ostrander,Garret Ostrander
-G Smith,Griffin Smith
-G Vasquez,Gabriel Vasquez
-H Boncal,Hudson Boncal
-H Day,Hunter Day
-H Dodson,Hank Dodson
-H Edwards,Hunter Edwards
-H McLendon,Harper McLendon
-H Mullins,Hayden Mullins
-H Orth,Harry Orth
-I Austin,Ira Austin
-I Lanik,Ian Lanik
-I Nunez,Isaac Nunez
-I Williams,Isaiah Williams
-J Allgeyer,Jake Allgeyer
-J Almeda,J.J. Almeda
-J Ballista,Jose Ballista
-J Begora,Jeremiah Begora
-J Bell,Jack Bell
-J Bickford,Jason Bickford
-J Collura,Jaden Collura
-J Cone,John Cone
-J Covey,Jake Covey
-J Donahue,Jordan Donahue
-J Duarte,Josh Duarte
-J Engman,Jared Engman
-J Fallers,Jake Fallers
-J Garcia,Julian Garcia
-J Garcia,Julio Garcia
-J Giblin,Jonah Giblin
-J Gutierrez,Jacob Gutierrez
-J Hamberg,Jordan Hamberg
-J Harris,Jaden Harris
-J Hasty,Jacob Hasty
-J Jackson,Jaren Jackson
-J Jelic,Jason Jelic
-J Johnson,Justin Johnson
-J Johnson,Josh Johnson
-J Kalafut,Joseph Kalafut
-J Keisel,Janzen Keisel
-J Kelley,Jack Kelley
-J Leerssen,Josh Leerssen
-J Lessman,Jared Lessman
-J Lopez,Josh Lopez
-J Luetzow,Johnny Luetzow
-J Maruskin,Jack Maruskin
-J Mayo,Jackson Mayo
-J McHenry,John McHenry
-J McLaughlin,Joe McLaughlin
-J Millan,Jake Millan
-J Nelson,Jasper Nelson
-J Phillips,Josh Phillips
-J Piatkiewicz,Jeremy Piatkiewicz
-J Ramallo,Jonathan Ramallo
-J Romero,Jordi Romero
-J Rosario,Julio Rosario
-J Sauger,Julian Sauger
-J Schaaf,Jason Schaaf
-J Simmons,Josh Simmons
-J Sisto,Jacob Sisto
-J Skapinetz,Joseph Skapinetz
-J Steele,Jacob Steele
-J Toporek,Jacob Toporek
-J Ybarra,Jeter Ybarra
-K Ashworth,Kyle Ashworth
-K Carlson,Kyle Carlson
-K Ewell,Kendal Ewell
-K Kneip,Kaden Kneip
-K Lewis,Kyle Lewis
-K Linn,Kade Linn
-K Micklus,Kyle Micklus
-K Racculia,Kalean Racculia
-K Schmack,Kyle Schmack
-K Stancato,Kyler Stancato
-K Worek,Kevin Worek
-L Beard,Logan Beard
-L Boesen,Lucas Boesen
-L Burkett,Langston Burkett
-L Hartman,Lucas Hartman
-L Johnstone,Logan Johnstone
-L Meyer,Logan Meyer
-L Riley,Landon Riley
-L Smiddy,Landon Smiddy
-M Ball,Michael Ball
-M Del,Micah Del
-M Dye,Mitch Dye
-M Garrett,Miles Garrett
-M Gonzalez,Miguel Gonzalez
-M Koszewski,Michael Koszewski
-M Lopez,Mark Lopez
-M Matthews,Mateo Matthews
-M Miesse,Maddox Miesse
-M Miller,Max Miller
-M O,Michael O
-M Sanford,Mitchell Sanford
-M Soper,Michael Soper
-M Taubensee,Matthew Taubensee
-M Timmins,Mark Timmins
-N Blythe,Noah Blythe
-N Burns,Nin Burns
-N Cardinal,Nik Cardinal
-N Ficklin,Nolan Ficklin
-N Klemp,Nich Klemp
-N Leehey,Nick Leehey
-N Naccarato,Nate Naccarato
-N Saltaformaggio,Nico Saltaformaggio
-N Vargas,Nate Vargas
-N Varnier,Nate Varnier
-P McMan,Parker McMan
-P Mills,Pat Mills
-R Brito,Rafael Brito
-R Butz,Reed Butz
-R Camacho,Ramon Camacho
-R DuSang,Ryan DuSang
-R Egloff,Riley Egloff
-R Estrada,Robert Estrada
-R Euson,Rijnaldo Euson
-R Humphreys,Ryan Humphreys
-R Kelley,Robert Kelley
-R Mancusso,Ryder Mancusso
-R Nakamura,Raisei Nakamura
-R Petersen,Rayth Petersen
-R Pfeifer,Rane Pfeifer
-R Radkey,Ryan Radkey
-R Skjonsby,Ryan Skjonsby
-R Steinman,Ritter Steinman
-R Velazquez,Ryan Velazquez
-R Wentz,Ryan Wentz
-S Greico,Sebastian Greico
-S Gutierrez,Sergio Gutierrez
-S Lavin,Sam Lavin
-S Lynch,Sean Lynch
-S Murray,Simon Murray
-S Spencer,Seth Spencer
-S Wiese,Sean Wiese
-T Bates,Tyler Bates
-T Cobb,Tremayne Cobb
-T Cruz,Trey Cruz
-T Dooley,Ty Dooley
-T Ganus,Tyler Ganus
-T Gilligan,Tyler Gilligan
-T Gross,Tommy Gross
-T McEvoy,True McEvoy
-T Moore,Tristan Moore
-T Paschal,Treshon Paschal
-T Perry,Tristan Perry
-T Reisinger,Thomas Reisinger
-T Rogers,TJ Rogers
-T Rover,Tommy Rover
-T Specht,Tommy Specht
-T Stone,Tyler Stone
-T Tripoli,Trevor Tripoli
-T Wolf,Tristan Wolf
-T Yukumoto,Ty Yukumoto
-V Cisneros,Valek Cisneros
-V Temesvary,Vincent Temesvary
-W Bermudez,William Bermudez
-W Castillo,Wilton Castillo
-W Grant,Wyatt Grant
-W Maynard,Will Maynard
-W Mitchell,Wesley Mitchell
-W Ponce,William Ponce
-W Rogers,Will Rogers
-X Casserilla,Xavier Casserilla
-Y De,Yency De
-Y Richard,Yordy Richard
-Z Blaszak,Zack Blaszak
-Z Chamizo,Zach Chamizo
-Z Longshore,Zach Longshore
-Z Rose,Zan Rose
-Z Stewart,Zack Stewart
+player_name,season,player_type,full_name,source
+A Barranca,2026,hitter,Antonio Barranca,Baseball-Reference register + current roster
+A Collins,2026,hitter,Andrew Collins,Baseball-Reference register
+A Cootway,2026,hitter,Adam Cootway,Baseball-Reference register + current roster
+A Fernandes,2026,hitter,Alex Fernandes,Baseball-Reference register + current roster
+A Folds,2026,hitter,Austin Folds,Baseball-Reference register + current roster
+A Gauna,2026,hitter,Andrew Gauna,Baseball-Reference register + current roster
+A Kirchner,2026,hitter,Andrew Kirchner,Baseball-Reference register + current roster
+A Manisero,2026,hitter,Anthony Manisero,Baseball-Reference register + current roster
+A Mata,2026,hitter,Anthony Mata,Baseball-Reference register + current roster
+A Redahan,2026,hitter,Aidan Redahan,Baseball-Reference register
+A Shaver,2026,hitter,A.J. Shaver,Baseball-Reference register + current roster
+A Swenda,2026,hitter,Anthony Swenda,Baseball-Reference register + current roster
+B Bishop,2026,hitter,Braylon Bishop,Baseball-Reference register
+B Cannon,2026,hitter,Bryce Cannon,Baseball-Reference register + current roster
+B Capps,2026,hitter,NA,unresolved
+B Cermenelli,2026,hitter,Bryce Cermenelli,Baseball-Reference register + current roster
+B Choi,2026,hitter,NA,unresolved
+B Mayer,2026,hitter,Brock Mayer,Baseball-Reference register + current roster
+B Nigh,2026,hitter,NA,unresolved
+B O'Sullivan,2026,hitter,Brendan O'Sullivan,Baseball-Reference register + current roster
+B Pelle,2026,hitter,Bradley Pelle,Baseball-Reference register + current roster
+B Rosengard,2026,hitter,Ben Rosengard,Baseball-Reference register
+B Vradenburg,2026,hitter,Brock Vradenburg,Baseball-Reference register
+B Wilhoite,2026,hitter,Blake Wilhoite,Baseball-Reference register + current roster
+B Wright,2026,hitter,Bodee Wright,Baseball-Reference register + current roster
+C Bess,2026,hitter,Cuba Bess,Baseball-Reference register + current roster
+C Bowen,2026,hitter,Cameron Bowen,Baseball-Reference register + current roster
+C Bufford,2026,hitter,Cam Bufford,Baseball-Reference register + current roster
+C Calnon,2026,hitter,Cole Calnon,Baseball-Reference register + current roster
+C Campbell,2026,hitter,Chris Campbell,Baseball-Reference register
+C Castaneda,2026,hitter,Christian Castaneda,Baseball-Reference register + current roster
+C Dayton,2026,hitter,Cameron Dayton,Baseball-Reference register + current roster
+C Dean,2026,hitter,Charles (CJ) Dean,Baseball-Reference register + current roster
+C Fellows,2026,hitter,Cole Fellows,Baseball-Reference register
+C Garner,2026,hitter,Carson Garner,Baseball-Reference register + current roster
+C Hext,2026,hitter,Cooper Hext,Baseball-Reference register
+C Hornung,2026,hitter,Carson Hornung,Baseball-Reference register
+C Jordan,2026,hitter,Cole Jordan,Baseball-Reference register + current roster
+C Lane,2026,hitter,Carmine Lane,Baseball-Reference register + current roster
+C Lawrence,2026,hitter,Colson Lawrence,Baseball-Reference register + current roster
+C Magee,2026,hitter,Cam Magee,Baseball-Reference register
+C Matlon,2026,hitter,Caden Matlon,Baseball-Reference register + current roster
+C Muniz,2026,hitter,Charlie Muniz,Baseball-Reference register + current roster
+C Murray,2026,hitter,NA,unresolved
+C Robinson,2026,hitter,Cole Robinson,Baseball-Reference register + current roster
+C Royer,2026,hitter,NA,unresolved
+C Smith,2026,hitter,Conner Smith,Baseball-Reference register + current roster
+C Valentine,2026,hitter,Chase Valentine,Baseball-Reference register + current roster
+C Vaughan,2026,hitter,Casey Vaughan,Baseball-Reference register + current roster
+C Vest,2026,hitter,Cooper Vest,Baseball-Reference register + current roster
+C Yuran,2026,hitter,Cam Yuran,Baseball-Reference register + current roster
+D Andiarena,2026,hitter,Derick Andiarena,Baseball-Reference register
+D Aragon,2026,hitter,Diego Aragon,Baseball-Reference register + current roster
+D Dixon,2026,hitter,Devon Dixon,Baseball-Reference register + current roster
+D Jackson,2026,hitter,Darryl Jackson,Baseball-Reference register + current roster
+D Jimerson,2026,hitter,Demias Jimerson,Baseball-Reference register + current roster
+D Laferriere,2026,hitter,Derek Laferriere,Baseball-Reference register + current roster
+D Murillo,2026,hitter,Diego Murillo,Baseball-Reference register
+D Ratfield,2026,hitter,Donovan Ratfield,Baseball-Reference register
+D Smiley,2026,hitter,DeMarckus Smiley,Baseball-Reference register
+D Stengren,2026,hitter,Drew Stengren,Baseball-Reference register
+D Tauken,2026,hitter,Daniel Tauken,Baseball-Reference register
+D Wilkinson,2026,hitter,Dylan Wilkinson,Baseball-Reference register + current roster
+E Amundson,2026,hitter,Easton Amundson,Baseball-Reference register + current roster
+E Apodaca,2026,hitter,Enzo Apodaca,Baseball-Reference register + current roster
+E Barrera,2026,hitter,NA,unresolved
+E Corona,2026,hitter,Emilio Corona,Baseball-Reference register + current roster
+E Good,2026,hitter,Elliot Good,Baseball-Reference register
+E Lopez,2026,hitter,Ethan Lopez,Baseball-Reference register
+E Manzo,2026,hitter,Efrain Manzo,Baseball-Reference register
+E Ott,2026,hitter,Ethan Ott,Baseball-Reference register + current roster
+E Pelc,2026,hitter,Eddy Pelc,Baseball-Reference register + current roster
+E Santos,2026,hitter,Esai Santos,Baseball-Reference register + current roster
+E Sim,2026,hitter,Eric Sim,Baseball-Reference register
+E Underwood,2026,hitter,Ethan Underwood,Baseball-Reference register + current roster
+G Bevacqua,2026,hitter,Garrett Bevacqua,Baseball-Reference register + current roster
+G Ferraro-Nahr,2026,hitter,Giuseppe Ferraro-Nahr,Baseball-Reference register + current roster
+G Horvat,2026,hitter,Gianni Horvat,Baseball-Reference register
+G Ostrander,2026,hitter,Garret Ostrander,Baseball-Reference register + current roster
+G Vasquez,2026,hitter,Gabriel Vasquez,Baseball-Reference register + current roster
+H Dodson,2026,hitter,Hank Dodson,Baseball-Reference register + current roster
+H Dunhurst,2026,hitter,Hayden Dunhurst,Baseball-Reference register + current roster
+H Nieves,2026,hitter,NA,unresolved
+I Nunez,2026,hitter,Isaac Nunez,Baseball-Reference register
+J Allgeyer,2026,hitter,Jake Allgeyer,Baseball-Reference register + current roster
+J Begora,2026,hitter,Jeremy Begora,Baseball-Reference register
+J Boyd,2026,hitter,Justin Boyd,Baseball-Reference register + current roster
+J Cabuyaban,2026,hitter,NA,unresolved
+J Chavez,2026,hitter,NA,unresolved
+J Collura,2026,hitter,Jaden Collura,Baseball-Reference register + current roster
+J Donahue,2026,hitter,Jordan Donahue,Baseball-Reference register + current roster
+J Duarte,2026,hitter,Josh Duarte,Baseball-Reference register + current roster
+J Edmonds,2026,hitter,Jaylen Edmonds,Baseball-Reference register + current roster
+J Feliciano,2026,hitter,Joskar Feliciano,Baseball-Reference register + current roster
+J Gonzalez Perez,2026,hitter,NA,unresolved
+J Gutierrez,2026,hitter,Jacob Gutierrez,Baseball-Reference register + current roster
+J Harrison-Dudley,2026,hitter,Jordan Harrison-Dudley,Baseball-Reference register
+J Jablonski,2026,hitter,Jacob Jablonski,Baseball-Reference register + current roster
+J Johnson Jr.,2026,hitter,Justin Johnson,Baseball-Reference register
+J Kalafut,2026,hitter,Joey Kalafut,Baseball-Reference register
+J Lojewski,2026,hitter,Jacob Lojewski,Baseball-Reference register + current roster
+J Mayo,2026,hitter,Jackson Mayo,Baseball-Reference register + current roster
+J McHenry,2026,hitter,John McHenry,Baseball-Reference register + current roster
+J McLaughlin,2026,hitter,Joe McLaughlin,Baseball-Reference register + current roster
+J Millan,2026,hitter,Jake Millan,Baseball-Reference register
+J Nehler,2026,hitter,NA,unresolved
+J Phillips,2026,hitter,Josh Phillips,Baseball-Reference register + current roster
+J Piatkiewicz,2026,hitter,Jeremy Piatkiewicz,Baseball-Reference register
+J Sebring,2026,hitter,NA,unresolved
+J Sisto,2026,hitter,Jacob Sisto,Baseball-Reference register + current roster
+J Steele,2026,hitter,Jacob Steele,Baseball-Reference register
+J Trimble,2026,hitter,Justin Trimble,Baseball-Reference register
+J Winters,2026,hitter,NA,unresolved
+J Ybarra,2026,hitter,Jeter Ybarra,Baseball-Reference register + current roster
+K Ashworth,2026,hitter,Kyle Ashworth,Baseball-Reference register + current roster
+K Carlson,2026,hitter,Kyle Carlson,Baseball-Reference register + current roster
+K Frett,2026,hitter,Kishon Frett,Baseball-Reference register
+K Hvidsten,2026,hitter,NA,unresolved
+K Liniak,2026,hitter,Kingston Liniak,Baseball-Reference register + current roster
+K Micklus,2026,hitter,Kyle Micklus,Baseball-Reference register + current roster
+K Schmack,2026,hitter,Kyle Schmack,Baseball-Reference register + current roster
+K Stancato,2026,hitter,Kyler Stancato,Baseball-Reference register + current roster
+L Barry,2026,hitter,Leyton Barry,Baseball-Reference register + current roster
+L Beard,2026,hitter,Logan Beard,Baseball-Reference register + current roster
+L Figueroa,2026,hitter,Leiker Figueroa,Baseball-Reference register + current roster
+L Johnstone,2026,hitter,Logan Johnstone,Baseball-Reference register
+L Meyer,2026,hitter,Logan Meyer,Baseball-Reference register
+L Sutter,2026,hitter,Logan Sutter,Baseball-Reference register + current roster
+L Terilli,2026,hitter,NA,unresolved
+M Bardowell,2026,hitter,Matthew Bardowell,Baseball-Reference register + current roster
+M Haas,2026,hitter,Matthias Haas,Baseball-Reference register
+M Handron,2026,hitter,Max Handron,Baseball-Reference register + current roster
+M Jackson,2026,hitter,NA,unresolved
+M Koszewski,2026,hitter,Mike Koszewski,Baseball-Reference register
+M Miesse,2026,hitter,Maddox Miesse,Baseball-Reference register
+M Mugan,2026,hitter,NA,unresolved
+M O<U+2019>Hara,2026,hitter,NA,unresolved
+M Ortega,2026,hitter,NA,unresolved
+M Sanford,2026,hitter,Mitchell Sanford,Baseball-Reference register
+M Soper,2026,hitter,Michael Soper,Baseball-Reference register + current roster
+M Weaver,2026,hitter,NA,unresolved
+N Blythe,2026,hitter,Noah Blythe,Baseball-Reference register + current roster
+N Burns II,2026,hitter,Nin Burns,Baseball-Reference register
+N Klemp,2026,hitter,Nich Klemp,Baseball-Reference register + current roster
+N Leehey,2026,hitter,Nick Leehey,Baseball-Reference register + current roster
+N Poss,2026,hitter,NA,unresolved
+N Vargas,2026,hitter,Nate Vargas,Baseball-Reference register
+O Johnson,2026,hitter,Osiris Johnson,Baseball-Reference register + current roster
+P Depasquale,2026,hitter,Parker DePasquale,Baseball-Reference register
+P Lester,2026,hitter,Parker Lester,Baseball-Reference register
+P Mills,2026,hitter,Pat Mills,Baseball-Reference register + current roster
+P Roche Jr.,2026,hitter,Patrick Roche Jr.,Baseball-Reference register + current roster
+P Winland Jr.,2026,hitter,NA,unresolved
+"R Clayton, Jr.",2026,hitter,NA,unresolved
+R Lee,2026,hitter,NA,unresolved
+R Morgan,2026,hitter,NA,unresolved
+R Petersen,2026,hitter,Rayth Petersen,Baseball-Reference register + current roster
+R Pitts,2026,hitter,NA,unresolved
+R Quevedo,2026,hitter,NA,unresolved
+R Recio,2026,hitter,Ryan Recio,Baseball-Reference register
+S Canton,2026,hitter,Sam Canton,Baseball-Reference register
+S Coffman,2026,hitter,Spence Coffman,Baseball-Reference register
+S Greico,2026,hitter,Sebastian Greico,Baseball-Reference register + current roster
+S Gutierrez,2026,hitter,Sergio Gutierrez,Baseball-Reference register + current roster
+S Lynch,2026,hitter,Sean Lynch,Baseball-Reference register + current roster
+S Rich,2026,hitter,Spencer Rich,Baseball-Reference register
+T Best,2026,hitter,NA,unresolved
+T Cobb,2026,hitter,Tremayne Cobb,Baseball-Reference register + current roster
+T Collins,2026,hitter,Tyler Collins,Baseball-Reference register + current roster
+T Cruz,2026,hitter,Trey Cruz,Baseball-Reference register + current roster
+T Dooley,2026,hitter,Ty Dooley,Baseball-Reference register + current roster
+T Ganus,2026,hitter,Tyler Ganus,Baseball-Reference register + current roster
+T McCaffrey,2026,hitter,Thomas McCaffrey,Baseball-Reference register + current roster
+T McKenzie,2026,hitter,T.J. McKenzie,Baseball-Reference register
+T Moore,2026,hitter,Tristan Moore,Baseball-Reference register
+T Rogers,2026,hitter,NA,unresolved
+T Rover,2026,hitter,Tommy Rover,Baseball-Reference register + current roster
+T Specht,2026,hitter,Tommy Specht,Baseball-Reference register + current roster
+T Stone,2026,hitter,Tyler Stone,Baseball-Reference register
+T Williams,2026,hitter,Tyler Williams,Baseball-Reference register + current roster
+T Wyatt,2026,hitter,Tyler Wyatt,Baseball-Reference register
+T Yukumoto,2026,hitter,Ty Yukumoto,Baseball-Reference register + current roster
+U Romo,2026,hitter,NA,unresolved
+V Temesvary,2026,hitter,Vincent Temesvary,Baseball-Reference register + current roster
+W Bermudez,2026,hitter,William Bermudez,Baseball-Reference register + current roster
+W Grant,2026,hitter,Wyatt Grant,Baseball-Reference register + current roster
+W Mitchell,2026,hitter,Wesley Mitchell,Baseball-Reference register + current roster
+W Ponce,2026,hitter,William Ponce,Baseball-Reference register + current roster
+W Rogers,2026,hitter,Will Rogers,Baseball-Reference register + current roster
+X Casserilla,2026,hitter,Xavier Casserilla,Baseball-Reference register + current roster
+Z Blaszak,2026,hitter,Zack Blaszak,Baseball-Reference register + current roster
+Z Chamizo,2026,hitter,Zach Chamizo,Baseball-Reference register + current roster
+Z Roos,2026,hitter,Zeb Roos,Baseball-Reference register
+Z Stewart,2026,hitter,Zack Stewart,Baseball-Reference register
+A Baker,2026,pitcher,Andrew Baker,Baseball-Reference register + current roster
+A Balentine,2026,pitcher,Austin Balentine,Baseball-Reference register + current roster
+A Bergeron,2026,pitcher,NA,unresolved
+A Bustamante,2026,pitcher,Alex Bustamante,Baseball-Reference register
+A Christopher,2026,pitcher,NA,unresolved
+A Diaz,2026,pitcher,Anthony Diaz,Baseball-Reference register + current roster
+A Elfering,2026,pitcher,Aidan Elfering,Baseball-Reference register
+A Miranda,2026,pitcher,NA,unresolved
+A Moreno,2026,pitcher,AJ Moreno,Baseball-Reference register
+A Risse,2026,pitcher,Aidan Risse,Baseball-Reference register + current roster
+A Silvas,2026,pitcher,Anthony Silvas,Baseball-Reference register + current roster
+B Barker,2026,pitcher,NA,unresolved
+B Barquin,2026,pitcher,Blake Barquin,Baseball-Reference register
+B Beard,2026,pitcher,Brendan Beard,Baseball-Reference register + current roster
+B Fritcher,2026,pitcher,Blayne Fritcher,Baseball-Reference register
+B Holmes,2026,pitcher,NA,unresolved
+B Huter,2026,pitcher,Blayne Huter,Baseball-Reference register
+B Lambert,2026,pitcher,Brock Lambert,Baseball-Reference register + current roster
+B Mayer,2026,pitcher,Brock Mayer,Baseball-Reference register + current roster
+B Nelson,2026,pitcher,NA,unresolved
+B Smith,2026,pitcher,Blake Smith,Baseball-Reference register + current roster
+B Spencer,2026,pitcher,NA,unresolved
+B Wozniak,2026,pitcher,Brett Wozniak,Baseball-Reference register + current roster
+C Adamson,2026,pitcher,NA,unresolved
+C Anziani,2026,pitcher,Carlos Anziani,Baseball-Reference register + current roster
+C Barker,2026,pitcher,Corbin Barker,Baseball-Reference register + current roster
+C Blowers,2026,pitcher,NA,unresolved
+C Brinson,2026,pitcher,Connor Brinson,Baseball-Reference register + current roster
+C Bunch,2026,pitcher,Caleb Bunch,Baseball-Reference register + current roster
+C Calnon,2026,pitcher,Cole Calnon,Baseball-Reference register + current roster
+C Canada,2026,pitcher,Chris Canada,Baseball-Reference register + current roster
+C Chatman,2026,pitcher,Chase Chatman,Baseball-Reference register + current roster
+C Colyer,2026,pitcher,CJ Colyer,Baseball-Reference register
+C Cressend,2026,pitcher,Cole Cressend,Baseball-Reference register
+C Czerwinski,2026,pitcher,CJ Czerwinski,Baseball-Reference register + current roster
+C Dayton,2026,pitcher,Cam Dayton,Baseball-Reference register
+C Diaz,2026,pitcher,Christian Diaz,Baseball-Reference register
+C Garrison,2026,pitcher,NA,unresolved
+C Goffar,2026,pitcher,Cameron Goffar,Baseball-Reference register + current roster
+C Housley,2026,pitcher,Connor Housley,Baseball-Reference register
+C Hurley,2026,pitcher,Charlie Hurley,Baseball-Reference register + current roster
+C Martinez,2026,pitcher,Chase Martinez,Baseball-Reference register + current roster
+C Murphy,2026,pitcher,NA,unresolved
+C Peguero,2026,pitcher,NA,unresolved
+C Percival,2026,pitcher,Cole Percival,Baseball-Reference register + current roster
+C Talley,2026,pitcher,Corbin Talley,Baseball-Reference register + current roster
+C Tremain,2026,pitcher,Cole Tremain,Baseball-Reference register + current roster
+C Trout,2026,pitcher,Chaney Trout,Baseball-Reference register + current roster
+D Aguiar,2026,pitcher,Drew Aguiar,Baseball-Reference register + current roster
+D Aspinwall,2026,pitcher,NA,unresolved
+D Bower,2026,pitcher,NA,unresolved
+D Cheeley,2026,pitcher,Dylan Cheeley,Baseball-Reference register + current roster
+D Gardner,2026,pitcher,Dylan Gardner,Baseball-Reference register + current roster
+D Hankins,2026,pitcher,David Hankins,Baseball-Reference register + current roster
+D Hernandez,2026,pitcher,Devyn Hernandez,Baseball-Reference register + current roster
+D Jackson,2026,pitcher,Darryl Jackson,Baseball-Reference register + current roster
+D Pratt,2026,pitcher,Davis Pratt,Baseball-Reference register
+D Spinoso,2026,pitcher,Dominick Spinoso,Baseball-Reference register + current roster
+D Thomas,2026,pitcher,David Thomas,Baseball-Reference register
+E Brown,2026,pitcher,Ethan Brown,Baseball-Reference register + current roster
+E Gardner,2026,pitcher,Ethan Gardner,Baseball-Reference register
+E Hernandez,2026,pitcher,Esteban Hernandez,Baseball-Reference register + current roster
+E Langston,2026,pitcher,Evan Langston,Baseball-Reference register
+E Roarke,2026,pitcher,Ethan Roarke,Baseball-Reference register + current roster
+E Sepulveda,2026,pitcher,Eumir Sepulveda,Baseball-Reference register + current roster
+E Thompson,2026,pitcher,NA,unresolved
+G Brown,2026,pitcher,Gunnar Brown,Baseball-Reference register
+G Garza,2026,pitcher,Grant Garza,Baseball-Reference register + current roster
+G Grosjean,2026,pitcher,Gary Grosjean,Baseball-Reference register + current roster
+G Smith,2026,pitcher,Griffin Smith,Baseball-Reference register + current roster
+G Tanner,2026,pitcher,Gabe Tanner,Baseball-Reference register
+G Van Deventer,2026,pitcher,Garrett Van Deventer,Baseball-Reference register + current roster
+H Boncal,2026,pitcher,Hudson Boncal,Baseball-Reference register + current roster
+H Day,2026,pitcher,Hunter Day,Baseball-Reference register + current roster
+H Hargett,2026,pitcher,NA,unresolved
+H Mullins,2026,pitcher,Hayden Mullins,Baseball-Reference register + current roster
+H Orth,2026,pitcher,Harry Orth,Baseball-Reference register
+H Vela,2026,pitcher,NA,unresolved
+I Austin IV,2026,pitcher,Ira Austin,Baseball-Reference register
+I Lanik,2026,pitcher,Ian Lanik,Baseball-Reference register + current roster
+I Williams,2026,pitcher,Isaiah Williams,Baseball-Reference register
+J Abreu,2026,pitcher,NA,unresolved
+J Almeda,2026,pitcher,J.J. Almeda,Baseball-Reference register + current roster
+J Aponte,2026,pitcher,NA,unresolved
+J Ballista,2026,pitcher,Jose Ballista,Baseball-Reference register
+J Bell,2026,pitcher,Jack Bell,Baseball-Reference register + current roster
+J Berenti,2026,pitcher,NA,unresolved
+J Betancourt,2026,pitcher,Jackson Betancourt,Baseball-Reference register
+J Bickford,2026,pitcher,Jason Bickford,Baseball-Reference register + current roster
+J Bingham,2026,pitcher,NA,unresolved
+J Bishop,2026,pitcher,Jaydon Bishop,Baseball-Reference register + current roster
+J Byrd,2026,pitcher,Jaxon Byrd,Baseball-Reference register + current roster
+J Castillo,2026,pitcher,Johan Castillo,Baseball-Reference register + current roster
+J Cone,2026,pitcher,Jack Cone,Baseball-Reference register
+J Covey,2026,pitcher,Jake Covey,Baseball-Reference register
+J De Cardenas,2026,pitcher,NA,unresolved
+J Dixon,2026,pitcher,Jake Dixon,Baseball-Reference register + current roster
+J Garcia,2026,pitcher,Julian Garcia,Baseball-Reference register + current roster
+J Giblin,2026,pitcher,Jonah Giblin,Baseball-Reference register
+J Hamberg,2026,pitcher,Jordan Hamberg,Baseball-Reference register
+J Harris,2026,pitcher,Jaden Harris,Baseball-Reference register + current roster
+J Hasty,2026,pitcher,Jacob Hasty,Baseball-Reference register
+J Hernandez,2026,pitcher,NA,unresolved
+J Hughes,2026,pitcher,Jacob Hughes,Baseball-Reference register
+J Jackson,2026,pitcher,Jaren Jackson,Baseball-Reference register + current roster
+J Jenkins,2026,pitcher,Jonah Jenkins,Baseball-Reference register + current roster
+J Johnson,2026,pitcher,Josh Johnson,Baseball-Reference register + current roster
+J Kozasky,2026,pitcher,Jonathan Kozasky,Baseball-Reference register + current roster
+J Leerssen,2026,pitcher,Josh Leerssen,Baseball-Reference register + current roster
+J Martin,2026,pitcher,Jack Martin,Baseball-Reference register + current roster
+J Maruskin,2026,pitcher,Jack Maruskin,Baseball-Reference register
+J Ramallo,2026,pitcher,Jonathan Ramallo,Baseball-Reference register
+J Rosario,2026,pitcher,Julio Rosario,Baseball-Reference register
+J Schaaf,2026,pitcher,Jason Schaaf,Baseball-Reference register + current roster
+J Schaeffer,2026,pitcher,NA,unresolved
+J Skapinetz,2026,pitcher,Joe Skapinetz,Baseball-Reference register
+J Swales,2026,pitcher,NA,unresolved
+J Toporek,2026,pitcher,Jake Toporek,Baseball-Reference register
+K Bow,2026,pitcher,NA,unresolved
+K Kneip,2026,pitcher,Kaden Kneip,Baseball-Reference register + current roster
+K Lewis,2026,pitcher,Kyle Lewis,Baseball-Reference register + current roster
+K Pijaszek,2026,pitcher,NA,unresolved
+K Walker,2026,pitcher,NA,unresolved
+K Worek,2026,pitcher,Kevin Worek,Baseball-Reference register + current roster
+L Alaniz,2026,pitcher,Lucas Alaniz,Baseball-Reference register + current roster
+L Beard,2026,pitcher,Logan Beard,Baseball-Reference register + current roster
+L Bell,2026,pitcher,NA,unresolved
+L Boesen,2026,pitcher,Lucas Boesen,Baseball-Reference register + current roster
+L Burkett,2026,pitcher,Langston Burkett,Baseball-Reference register + current roster
+L Hartman,2026,pitcher,Lucas Hartman,Baseball-Reference register + current roster
+L Riley,2026,pitcher,Landon Riley,Baseball-Reference register + current roster
+L Smiddy,2026,pitcher,Landon Smiddy,Baseball-Reference register + current roster
+L Wade,2026,pitcher,Lance Wade,Baseball-Reference register
+M Binns,2026,pitcher,Malik Binns,Baseball-Reference register
+M Bryant,2026,pitcher,Mason Bryant,Baseball-Reference register
+M Byrne,2026,pitcher,NA,unresolved
+M Collins,2026,pitcher,Mason Collins,Baseball-Reference register
+M Dye,2026,pitcher,Mitch Dye,Baseball-Reference register + current roster
+M Koszewski,2026,pitcher,Michael Koszewski,Baseball-Reference register + current roster
+M Maloney,2026,pitcher,Matthew Maloney,Baseball-Reference register + current roster
+M O'Brien,2026,pitcher,Matthew O'Brien,Baseball-Reference register + current roster
+M Pennington,2026,pitcher,Mason Pennington,Baseball-Reference register
+M Riley,2026,pitcher,Michael Riley,Baseball-Reference register + current roster
+M Taubensee,2026,pitcher,Matt Taubensee,Baseball-Reference register
+M Timmins,2026,pitcher,Mark Timmins,Baseball-Reference register + current roster
+N Bautista,2026,pitcher,Nick Bautista,Baseball-Reference register + current roster
+N Blythe,2026,pitcher,Noah Blythe,Baseball-Reference register + current roster
+N Cardinal,2026,pitcher,Nik Cardinal,Baseball-Reference register + current roster
+N Darden,2026,pitcher,NA,unresolved
+N Hemmerling,2026,pitcher,Nathan Hemmerling,Baseball-Reference register + current roster
+N Naccarato,2026,pitcher,Nate Naccarato,Baseball-Reference register + current roster
+N Roof,2026,pitcher,NA,unresolved
+N Saltaformaggio,2026,pitcher,Nico Saltaformaggio,Baseball-Reference register + current roster
+O Serrano,2026,pitcher,Omar Serrano,Baseball-Reference register + current roster
+P McMan,2026,pitcher,Parker McMan,Baseball-Reference register
+R Abe-Arias,2026,pitcher,NA,unresolved
+R Brito,2026,pitcher,Rafael Brito,Baseball-Reference register + current roster
+R DuSang,2026,pitcher,Ryan DuSang,Baseball-Reference register + current roster
+R Egloff,2026,pitcher,Riley Egloff,Baseball-Reference register + current roster
+R Faulks,2026,pitcher,Ryan Faulks,Baseball-Reference register + current roster
+R Fields,2026,pitcher,Reece Fields,Baseball-Reference register + current roster
+R Hernandez,2026,pitcher,Ray Hernandez,Baseball-Reference register
+R Humphreys,2026,pitcher,Ryan Humphreys,Baseball-Reference register + current roster
+R Inouye,2026,pitcher,Ryan Inouye,Baseball-Reference register
+R Pfeifer,2026,pitcher,Rane Pfeifer,Baseball-Reference register
+R Radkey,2026,pitcher,Ryan Radkey,Baseball-Reference register
+R Steinman,2026,pitcher,Ritter Steinman,Baseball-Reference register + current roster
+R Steinmann,2026,pitcher,Ritter Steinmann,Baseball-Reference register
+R Tibbett,2026,pitcher,Ricky Tibbett,Baseball-Reference register
+R Velazquez,2026,pitcher,Ryan Velazquez,Baseball-Reference register
+R Wentz,2026,pitcher,Ryan Wentz,Baseball-Reference register + current roster
+S Hernandez,2026,pitcher,NA,unresolved
+S Kelby,2026,pitcher,Sean Kelby,Baseball-Reference register
+S Lavin,2026,pitcher,Sam Lavin,Baseball-Reference register + current roster
+S Murray,2026,pitcher,Simon Murray,Baseball-Reference register + current roster
+S Ordorica,2026,pitcher,Steven Ordorica,Baseball-Reference register + current roster
+S Spencer,2026,pitcher,Seth Spencer,Baseball-Reference register + current roster
+S Wiese,2026,pitcher,Sean Wiese,Baseball-Reference register + current roster
+T Bates,2026,pitcher,Tyler Bates,Baseball-Reference register
+T Blankenship,2026,pitcher,NA,unresolved
+T McEvoy,2026,pitcher,True McEvoy,Baseball-Reference register + current roster
+T Reisinger,2026,pitcher,Tom Reisinger,Baseball-Reference register
+T Wolf,2026,pitcher,Tristan Wolf,Baseball-Reference register + current roster
+U Romo,2026,pitcher,NA,unresolved
+V Cisneros,2026,pitcher,Valek Cisneros,Baseball-Reference register + current roster
+W Adams,2026,pitcher,NA,unresolved
+W Bartkoski,2026,pitcher,NA,unresolved
+W Rogers,2026,pitcher,Will Rogers,Baseball-Reference register + current roster
+X Casserilla,2026,pitcher,Xavier Casserilla,Baseball-Reference register + current roster
+Z Addkison,2026,pitcher,NA,unresolved
+Z Longshore,2026,pitcher,Zach Longshore,Baseball-Reference register
+Z Rose,2026,pitcher,Zan Rose,Baseball-Reference register + current roster
+Z Voelker,2026,pitcher,Zach Voelker,Baseball-Reference register + current roster
+A Adams,2025,hitter,Alex Adams,Baseball-Reference register
+A Chouinard,2025,hitter,Austin Chouinard,Baseball-Reference register
+A Fogel,2025,hitter,Adam Fogel,Baseball-Reference register
+A Fritz,2025,hitter,AJ Fritz,Baseball-Reference register
+A MacKenzie,2025,hitter,NA,unresolved
+A Mata,2025,hitter,Anthony Mata,Baseball-Reference register
+A Pimentel,2025,hitter,Alex Pimentel,Baseball-Reference register
+A Shaver,2025,hitter,A.J. Shaver,Baseball-Reference register + current roster
+A Swenda,2025,hitter,Anthony Swenda,Baseball-Reference register + current roster
+B Lada,2025,hitter,Bobby Lada,Baseball-Reference register
+B Pelle,2025,hitter,Bradley Pelle,Baseball-Reference register + current roster
+B Roberts,2025,hitter,Brett Roberts,Baseball-Reference register
+B Rosengard,2025,hitter,Ben Rosengard,Baseball-Reference register
+B Watkins,2025,hitter,Brock Watkins,Baseball-Reference register
+C Almanza,2025,hitter,Christian Almanza,Baseball-Reference register
+C Bagnieski,2025,hitter,Connor Bagnieski,Baseball-Reference register
+C Booth,2025,hitter,Carter Booth,Baseball-Reference register
+C Bowen,2025,hitter,Cameron Bowen,Baseball-Reference register + current roster
+C Bufford,2025,hitter,Cam Bufford,Baseball-Reference register + current roster
+C Castaneda,2025,hitter,Christian Castaneda,Baseball-Reference register
+C Dayton,2025,hitter,Cam Dayton,Baseball-Reference register
+C Gordon,2025,hitter,Colin Gordon,Baseball-Reference register
+C Hall,2025,hitter,Christian Hall,Baseball-Reference register
+C Halvorson,2025,hitter,Calyn Halvorson,Baseball-Reference register
+C Hanson,2025,hitter,Chase Hanson,Baseball-Reference register
+C Hext,2025,hitter,Cooper Hext,Baseball-Reference register
+C Horner,2025,hitter,NA,unresolved
+C Jordan,2025,hitter,Cole Jordan,Baseball-Reference register + current roster
+C Lane,2025,hitter,Carmine Lane,Baseball-Reference register + current roster
+C Perez,2025,hitter,Carlos Perez,Baseball-Reference register
+C Pregent,2025,hitter,NA,unresolved
+C Sargent Jr.,2025,hitter,Chris Sargent,Baseball-Reference register
+C Sorg,2025,hitter,Casey Sorg,Baseball-Reference register
+C Tucker,2025,hitter,NA,unresolved
+C Wilkerson,2025,hitter,Colby Wilkerson,Baseball-Reference register + current roster
+D Blinn,2025,hitter,NA,unresolved
+D Conners,2025,hitter,Dakota Conners,Baseball-Reference register
+D Harris IV,2025,hitter,Daniel Harris,Baseball-Reference register
+D Leach,2025,hitter,Dylan Leach,Baseball-Reference register
+D Leonard,2025,hitter,NA,unresolved
+D Maynard,2025,hitter,Damon Maynard,Baseball-Reference register
+D Ratfield,2025,hitter,Donovan Ratfield,Baseball-Reference register
+D Stone,2025,hitter,Damian Stone,Baseball-Reference register
+D Tatum,2025,hitter,Dillon Tatum,Baseball-Reference register
+D Tofteland,2025,hitter,Dane Tofteland,Baseball-Reference register
+D Wilkinson,2025,hitter,Dylan Wilkinson,Baseball-Reference register + current roster
+D Woodcox,2025,hitter,Drew Woodcox,Baseball-Reference register
+E Berkey,2025,hitter,Evan Berkey,Baseball-Reference register
+E Corona,2025,hitter,Emilio Corona,Baseball-Reference register
+E Good,2025,hitter,Elliot Good,Baseball-Reference register
+E Paton,2025,hitter,Eli Paton,Baseball-Reference register
+E Pelc,2025,hitter,Eddy Pelc,Baseball-Reference register
+E Scavotto,2025,hitter,Evan Scavotto,Baseball-Reference register
+E Sleight,2025,hitter,Evan Sleight,Baseball-Reference register
+E Underwood,2025,hitter,Ethan Underwood,Baseball-Reference register + current roster
+G Brusa,2025,hitter,Gio Brusa,Baseball-Reference register
+G Kueber,2025,hitter,Garrett Kueber,Baseball-Reference register
+G Lora Gonzalez,2025,hitter,NA,unresolved
+G Morgan,2025,hitter,Grady Morgan,Baseball-Reference register
+G Ostrander,2025,hitter,Garret Ostrander,Baseball-Reference register + current roster
+H Hall,2025,hitter,Hylan Hall,Baseball-Reference register
+H Himrich,2025,hitter,Hank Himrich,Baseball-Reference register
+I Nunez,2025,hitter,Isaac Nunez,Baseball-Reference register
+J Allgeyer,2025,hitter,Jake Allgeyer,Baseball-Reference register + current roster
+J Begora,2025,hitter,Jeremy Begora,Baseball-Reference register
+J Duarte,2025,hitter,Josh Duarte,Baseball-Reference register + current roster
+J Feliciano,2025,hitter,NA,unresolved
+J Hjelle,2025,hitter,Jake Hjelle,Baseball-Reference register
+J Jablonski,2025,hitter,Jacob Jablonski,Baseball-Reference register
+J Lee,2025,hitter,Jaylon Lee,Baseball-Reference register
+J Mabry,2025,hitter,JT Mabry,Baseball-Reference register
+J McHenry,2025,hitter,John McHenry,Baseball-Reference register + current roster
+J McLaughlin,2025,hitter,Joe McLaughlin,Baseball-Reference register + current roster
+J O'Dowd,2025,hitter,Jack O'Dowd,Baseball-Reference register
+J Ochoa,2025,hitter,NA,unresolved
+J Pappas,2025,hitter,Johnny Pappas,Baseball-Reference register
+J Shanks,2025,hitter,Jacob Shanks,Baseball-Reference register
+J Smith,2025,hitter,NA,unresolved
+K Clark,2025,hitter,Kellum Clark,Baseball-Reference register
+K Ewell,2025,hitter,Kendal Ewell,Baseball-Reference register
+K Frett,2025,hitter,Kishon Frett,Baseball-Reference register
+K Moody,2025,hitter,Kai Moody,Baseball-Reference register
+K Oyama,2025,hitter,Kenny Oyama,Baseball-Reference register
+K Schmack,2025,hitter,Kyle Schmack,Baseball-Reference register + current roster
+K Stancato,2025,hitter,Kyler Stancato,Baseball-Reference register + current roster
+L Helmig,2025,hitter,Lou Helmig,Baseball-Reference register
+L Moreno,2025,hitter,NA,unresolved
+M Jackson,2025,hitter,NA,unresolved
+M Jung-Goldberg,2025,hitter,Max Jung-Goldberg,Baseball-Reference register
+M Minzey,2025,hitter,Mason Minzey,Baseball-Reference register
+M O'Hara,2025,hitter,Michael O'Hara,Baseball-Reference register
+M Rosario,2025,hitter,Mike Rosario,Baseball-Reference register
+M Sox,2025,hitter,Matthew Sox,Baseball-Reference register
+M Titialii,2025,hitter,NA,unresolved
+N Klemp,2025,hitter,Nich Klemp,Baseball-Reference register + current roster
+N Marcelo,2025,hitter,Noah Marcelo,Baseball-Reference register
+N Poss,2025,hitter,NA,unresolved
+P Coddou,2025,hitter,Parker Coddou,Baseball-Reference register
+P Mills,2025,hitter,Pat Mills,Baseball-Reference register + current roster
+P Myro IV,2025,hitter,Paul Myro,Baseball-Reference register
+P Shelton,2025,hitter,NA,unresolved
+Q Landis,2025,hitter,Quintt Landis,Baseball-Reference register
+R Grabosch,2025,hitter,NA,unresolved
+R Orsak,2025,hitter,River Orsak,Baseball-Reference register
+R Pena,2025,hitter,Roberto Pena,Baseball-Reference register
+S Baumgardt,2025,hitter,Simon Baumgardt,Baseball-Reference register
+S Coffman,2025,hitter,Spence Coffman,Baseball-Reference register
+S Greico,2025,hitter,Sebastian Greico,Baseball-Reference register + current roster
+S Linscott,2025,hitter,Sam Linscott,Baseball-Reference register
+S Lynch,2025,hitter,Sean Lynch,Baseball-Reference register + current roster
+S Rich,2025,hitter,Spencer Rich,Baseball-Reference register
+T Clarkson,2025,hitter,T.J. Clarkson,Baseball-Reference register
+T Cruz,2025,hitter,Trey Cruz,Baseball-Reference register + current roster
+T Darden,2025,hitter,Taylor Darden,Baseball-Reference register
+T Dooley,2025,hitter,Ty Dooley,Baseball-Reference register
+T Fontenot,2025,hitter,True Fontenot,Baseball-Reference register
+T Garcia,2025,hitter,Tristin Garcia,Baseball-Reference register
+T Lozano,2025,hitter,Tyler Lozano,Baseball-Reference register
+T McCaffrey,2025,hitter,Tom McCaffrey,Baseball-Reference register
+T McKenzie,2025,hitter,T.J. McKenzie,Baseball-Reference register
+T Rogers,2025,hitter,Trevor Rogers,Baseball-Reference register
+T Specht,2025,hitter,Tommy Specht,Baseball-Reference register + current roster
+T Wyatt,2025,hitter,Tyler Wyatt,Baseball-Reference register
+Z Denton,2025,hitter,NA,unresolved
+Z Roos,2025,hitter,Zeb Roos,Baseball-Reference register
+A Alger,2025,pitcher,Aydan Alger,Baseball-Reference register
+A Alonso,2025,pitcher,NA,unresolved
+A Alvarez,2025,pitcher,NA,unresolved
+A Armstrong,2025,pitcher,Andrew Armstrong,Baseball-Reference register
+A Bobadilla,2025,pitcher,Albert Bobadilla,Baseball-Reference register
+A Bogosian,2025,pitcher,Adam Bogosian,Baseball-Reference register
+A Coleman,2025,pitcher,Austyn Coleman,Baseball-Reference register
+A Garcia,2025,pitcher,NA,unresolved
+A Rodriguez,2025,pitcher,Alec Rodriguez,Baseball-Reference register
+A Sabouri,2025,pitcher,NA,unresolved
+B Barquin,2025,pitcher,Blake Barquin,Baseball-Reference register
+B Beard,2025,pitcher,Brendan Beard,Baseball-Reference register + current roster
+B Blankenship,2025,pitcher,NA,unresolved
+B Bonner,2025,pitcher,Brayden Bonner,Baseball-Reference register
+B Carmichael,2025,pitcher,Braden Carmichael,Baseball-Reference register
+B Collett,2025,pitcher,NA,unresolved
+B Gillis,2025,pitcher,Brock Gillis,Baseball-Reference register
+B Moody,2025,pitcher,NA,unresolved
+B Wozniak,2025,pitcher,Brett Wozniak,Baseball-Reference register
+C Adamson,2025,pitcher,NA,unresolved
+C Backer Jr.,2025,pitcher,NA,unresolved
+C Butler,2025,pitcher,NA,unresolved
+C Calnon,2025,pitcher,Cole Calnon,Baseball-Reference register + current roster
+C Castaneda,2025,pitcher,Christian Castaneda,Baseball-Reference register
+C Chatman,2025,pitcher,Chase Chatman,Baseball-Reference register + current roster
+C Chimenti,2025,pitcher,NA,unresolved
+C Ciuffetelli,2025,pitcher,NA,unresolved
+C Colyer,2025,pitcher,CJ Colyer,Baseball-Reference register
+C Cook,2025,pitcher,Cole Cook,Baseball-Reference register
+C Cowan,2025,pitcher,NA,unresolved
+C Cressend,2025,pitcher,Cole Cressend,Baseball-Reference register
+C Czerwinski,2025,pitcher,CJ Czerwinski,Baseball-Reference register + current roster
+C Dayton,2025,pitcher,Cam Dayton,Baseball-Reference register
+C Edmonson,2025,pitcher,Cam Edmonson,Baseball-Reference register
+C Franzen,2025,pitcher,Caleb Franzen,Baseball-Reference register
+C Harrison,2025,pitcher,Connor Harrison,Baseball-Reference register
+C Kratz,2025,pitcher,NA,unresolved
+C Martinez,2025,pitcher,Chase Martinez,Baseball-Reference register
+C Richardson,2025,pitcher,Conner Richardson,Baseball-Reference register
+C Scherrer,2025,pitcher,Cregg Scherrer,Baseball-Reference register
+C Stasio,2025,pitcher,Cole Stasio,Baseball-Reference register
+C Sullivan,2025,pitcher,NA,unresolved
+C Trout,2025,pitcher,Chaney Trout,Baseball-Reference register + current roster
+C Womble,2025,pitcher,Christian Womble,Baseball-Reference register
+D Batcher,2025,pitcher,Daniel Batcher,Baseball-Reference register
+D Beckman,2025,pitcher,NA,unresolved
+D Benton,2025,pitcher,NA,unresolved
+D Day,2025,pitcher,Dawson Day,Baseball-Reference register
+D Delvecchio,2025,pitcher,NA,unresolved
+D Foster,2025,pitcher,Daniel Foster,Baseball-Reference register
+D Fox,2025,pitcher,NA,unresolved
+D Galvan,2025,pitcher,Danny Galvan,Baseball-Reference register
+D Matsuoka,2025,pitcher,NA,unresolved
+D Pratt,2025,pitcher,Davis Pratt,Baseball-Reference register
+E Armstrong III,2025,pitcher,Eldridge Armstrong,Baseball-Reference register
+E Bates,2025,pitcher,Ethan Bates,Baseball-Reference register
+E Blum,2025,pitcher,Evan Blum,Baseball-Reference register
+E Brown,2025,pitcher,Ethan Brown,Baseball-Reference register
+E Elliott,2025,pitcher,NA,unresolved
+E Johnson,2025,pitcher,NA,unresolved
+E Kowalski,2025,pitcher,Evan Kowalski,Baseball-Reference register
+E Massie,2025,pitcher,Evan Massie,Baseball-Reference register
+E Ross,2025,pitcher,NA,unresolved
+G Blackman,2025,pitcher,Greg Blackman,Baseball-Reference register
+G Brasosky,2025,pitcher,NA,unresolved
+G Courtright,2025,pitcher,NA,unresolved
+G Edwards,2025,pitcher,Graham Edwards,Baseball-Reference register
+G Grosjean,2025,pitcher,Gary Grosjean,Baseball-Reference register
+G Pacheco,2025,pitcher,NA,unresolved
+G Tanner,2025,pitcher,Gabe Tanner,Baseball-Reference register
+G Taylor,2025,pitcher,Grant Taylor,Baseball-Reference register
+G Van Deventer,2025,pitcher,NA,unresolved
+H Belton,2025,pitcher,Hunter Belton,Baseball-Reference register
+H Boncal,2025,pitcher,Hudson Boncal,Baseball-Reference register + current roster
+H Bryan,2025,pitcher,Hunter Bryan,Baseball-Reference register
+J Acosta,2025,pitcher,Jaykob Acosta,Baseball-Reference register
+J Allgeyer,2025,pitcher,Jake Allgeyer,Baseball-Reference register + current roster
+J Bollman,2025,pitcher,NA,unresolved
+J Bradley,2025,pitcher,NA,unresolved
+J Castillo,2025,pitcher,Johan Castillo,Baseball-Reference register
+J Collett,2025,pitcher,NA,unresolved
+J Colyer,2025,pitcher,James Colyer,Baseball-Reference register
+J Coronado,2025,pitcher,NA,unresolved
+J Drake,2025,pitcher,NA,unresolved
+J Engman,2025,pitcher,Jared Engman,Baseball-Reference register
+J Fuson,2025,pitcher,Justin Fuson,Baseball-Reference register
+J Garcia,2025,pitcher,Julian Garcia,Baseball-Reference register + current roster
+J Hasty,2025,pitcher,Jacob Hasty,Baseball-Reference register
+J Hughes,2025,pitcher,Jacob Hughes,Baseball-Reference register
+J Jenkins,2025,pitcher,Jonah Jenkins,Baseball-Reference register
+J Kinsky,2025,pitcher,NA,unresolved
+J Locklear,2025,pitcher,NA,unresolved
+J Ochoa,2025,pitcher,NA,unresolved
+K Anglin,2025,pitcher,Kris Anglin,Baseball-Reference register
+K Bow,2025,pitcher,NA,unresolved
+K Carrillo,2025,pitcher,NA,unresolved
+L Cooper,2025,pitcher,Luke Cooper,Baseball-Reference register
+L Helton,2025,pitcher,NA,unresolved
+L Schafer,2025,pitcher,Luke Schafer,Baseball-Reference register
+L Short,2025,pitcher,Luke Short,Baseball-Reference register
+M Alba,2025,pitcher,NA,unresolved
+M Binns,2025,pitcher,Malik Binns,Baseball-Reference register
+M Bryant,2025,pitcher,Mason Bryant,Baseball-Reference register
+M Byrne,2025,pitcher,NA,unresolved
+M Colucci,2025,pitcher,NA,unresolved
+M Grannan,2025,pitcher,NA,unresolved
+M Hoaglund,2025,pitcher,NA,unresolved
+M Kavanaugh,2025,pitcher,Matt Kavanaugh,Baseball-Reference register
+M Lauria,2025,pitcher,NA,unresolved
+M Lopez,2025,pitcher,Mark Lopez,Baseball-Reference register
+M Peterson,2025,pitcher,Mike Peterson,Baseball-Reference register
+M Sox,2025,pitcher,Matthew Sox,Baseball-Reference register
+M Taubensee,2025,pitcher,Matt Taubensee,Baseball-Reference register
+N Agacki,2025,pitcher,NA,unresolved
+N Bautista,2025,pitcher,Nick Bautista,Baseball-Reference register
+N Boyle,2025,pitcher,Nate Boyle,Baseball-Reference register
+N Cardinal,2025,pitcher,Nik Cardinal,Baseball-Reference register
+N Cole,2025,pitcher,NA,unresolved
+N Hemmerling,2025,pitcher,Nathan Hemmerling,Baseball-Reference register
+N Madej,2025,pitcher,Nate Madej,Baseball-Reference register
+N Marshall,2025,pitcher,Nick Marshall,Baseball-Reference register
+N Millikan,2025,pitcher,Noah Millikan,Baseball-Reference register
+N Parker,2025,pitcher,Nick Parker,Baseball-Reference register
+N Pender,2025,pitcher,NA,unresolved
+N Pinazzi,2025,pitcher,NA,unresolved
+N Powers,2025,pitcher,Nick Powers,Baseball-Reference register
+N Saltaformaggio,2025,pitcher,Nico Saltaformaggio,Baseball-Reference register + current roster
+N Shinn,2025,pitcher,Nathan Shinn,Baseball-Reference register
+N Soto,2025,pitcher,NA,unresolved
+N Zegna,2025,pitcher,Nick Zegna,Baseball-Reference register
+P Bryant,2025,pitcher,NA,unresolved
+Q Waterhouse,2025,pitcher,Quinn Waterhouse,Baseball-Reference register
+R Butenschoen,2025,pitcher,NA,unresolved
+R Butz,2025,pitcher,Reed Butz,Baseball-Reference register + current roster
+R Coronado,2025,pitcher,NA,unresolved
+R Egloff,2025,pitcher,Riley Egloff,Baseball-Reference register
+R Fields,2025,pitcher,Reece Fields,Baseball-Reference register + current roster
+R Gutierrez Rosario,2025,pitcher,NA,unresolved
+R Hughes,2025,pitcher,NA,unresolved
+R Kelley,2025,pitcher,Robert Kelley,Baseball-Reference register + current roster
+R Miller,2025,pitcher,Reese Miller,Baseball-Reference register
+R Supple,2025,pitcher,NA,unresolved
+R Velazquez,2025,pitcher,Ryan Velazquez,Baseball-Reference register
+R Wentz,2025,pitcher,Ryan Wentz,Baseball-Reference register + current roster
+S Bass,2025,pitcher,NA,unresolved
+S Brennan,2025,pitcher,NA,unresolved
+S Drumheller,2025,pitcher,NA,unresolved
+S Ellis,2025,pitcher,NA,unresolved
+S Gustafson,2025,pitcher,Shane Gustafson,Baseball-Reference register
+S Lavin,2025,pitcher,Sam Lavin,Baseball-Reference register + current roster
+S Ordorica,2025,pitcher,Steven Ordorica,Baseball-Reference register
+S Schmitt,2025,pitcher,NA,unresolved
+S Spencer,2025,pitcher,Shane Spencer,Baseball-Reference register
+T Atkins,2025,pitcher,NA,unresolved
+T Bacon,2025,pitcher,NA,unresolved
+T Baker,2025,pitcher,NA,unresolved
+T Bothwell,2025,pitcher,Ty Bothwell,Baseball-Reference register
+T Buckner,2025,pitcher,NA,unresolved
+T Clarkson,2025,pitcher,T.J. Clarkson,Baseball-Reference register
+T Collins,2025,pitcher,NA,unresolved
+T Jones,2025,pitcher,NA,unresolved
+T Morrill,2025,pitcher,Trey Morrill,Baseball-Reference register
+T Peltier,2025,pitcher,Tom Peltier,Baseball-Reference register
+T Wolf,2025,pitcher,Tristan Wolf,Baseball-Reference register
+W Cameron,2025,pitcher,NA,unresolved
+W Tucker,2025,pitcher,NA,unresolved
+Z Lampton,2025,pitcher,Zac Lampton,Baseball-Reference register
+Z St. Pierre,2025,pitcher,Zach St. Pierre,Baseball-Reference register
+Z Zaborowski,2025,pitcher,Zach Zaborowski,Baseball-Reference register
+A Davis,2024,hitter,Austin Davis,Baseball-Reference register
+A Figueredo,2024,hitter,Alejandro Figueredo,Baseball-Reference register
+A Fogel,2024,hitter,Adam Fogel,Baseball-Reference register
+A Fritz,2024,hitter,AJ Fritz,Baseball-Reference register
+A Guadalupe,2024,hitter,Abdel Guadalupe,Baseball-Reference register
+A Mata,2024,hitter,Anthony Mata,Baseball-Reference register
+A Rios,2024,hitter,Andres Rios,Baseball-Reference register
+A Sanchez,2024,hitter,Alec Sanchez,Baseball-Reference register
+A Shumaker,2024,hitter,Austin Shumaker,Baseball-Reference register
+B Barrera,2024,hitter,Brett Barrera,Baseball-Reference register
+B Blackford,2024,hitter,Braedon Blackford,Baseball-Reference register
+B Carson,2024,hitter,Brett Carson,Baseball-Reference register
+B Fitzgerald,2024,hitter,Ben Fitzgerald,Baseball-Reference register
+B Harding,2024,hitter,Brody Harding,Baseball-Reference register
+B Lada,2024,hitter,Bobby Lada,Baseball-Reference register
+B Marine,2024,hitter,Braylin Marine,Baseball-Reference register
+B O'Saben,2024,hitter,NA,unresolved
+B Rosengard,2024,hitter,Ben Rosengard,Baseball-Reference register
+B Ryan,2024,hitter,Brendan Ryan,Baseball-Reference register
+B Skinner,2024,hitter,Brayland Skinner,Baseball-Reference register
+B Trammell,2024,hitter,NA,unresolved
+C Bagnieski,2024,hitter,Connor Bagnieski,Baseball-Reference register
+C Castillo,2024,hitter,Chad Castillo,Baseball-Reference register
+C Chatham,2024,hitter,NA,unresolved
+C Corliss,2024,hitter,NA,unresolved
+C Denning,2024,hitter,Connor Denning,Baseball-Reference register
+C Gordon,2024,hitter,Colin Gordon,Baseball-Reference register
+C Green,2024,hitter,Caden Green,Baseball-Reference register
+C Halvorson,2024,hitter,Calyn Halvorson,Baseball-Reference register
+C Jordan,2024,hitter,Cole Jordan,Baseball-Reference register + current roster
+C Mize,2024,hitter,NA,unresolved
+C Monroe,2024,hitter,Chris Monroe,Baseball-Reference register
+C Perez,2024,hitter,Carlos Perez,Baseball-Reference register
+C Runge,2024,hitter,Collin Runge,Baseball-Reference register
+C Sargent,2024,hitter,Chris Sargent,Baseball-Reference register
+D Brutcher,2024,hitter,Drew Brutcher,Baseball-Reference register
+D Crenshaw,2024,hitter,NA,unresolved
+D Glancy,2024,hitter,David Glancy,Baseball-Reference register
+D Gomez,2024,hitter,Dario Gomez,Baseball-Reference register
+D Hubbard,2024,hitter,Dondrei Hubbard,Baseball-Reference register
+D Landis,2024,hitter,Dutch Landis,Baseball-Reference register
+D Leach,2024,hitter,Dylan Leach,Baseball-Reference register
+D Matthews,2024,hitter,Dave Matthews,Baseball-Reference register
+D Poteet,2024,hitter,D.J. Poteet,Baseball-Reference register
+D Rivera,2024,hitter,NA,unresolved
+D Stuart,2024,hitter,Daunte Stuart,Baseball-Reference register
+D Tofteland,2024,hitter,Dane Tofteland,Baseball-Reference register
+E Bates,2024,hitter,Ethan Bates,Baseball-Reference register
+E Blum,2024,hitter,Evan Blum,Baseball-Reference register
+E Diaz,2024,hitter,Euro Diaz,Baseball-Reference register
+E Good,2024,hitter,Elliot Good,Baseball-Reference register
+E Niemann,2024,hitter,Ed Niemann,Baseball-Reference register
+E Yake,2024,hitter,Ernie Yake,Baseball-Reference register
+F Rojas Jr.,2024,hitter,Freddy Rojas,Baseball-Reference register
+G DiGiacomo,2024,hitter,Gio DiGiacomo,Baseball-Reference register
+G Howell,2024,hitter,Gabe Howell,Baseball-Reference register
+G Lora,2024,hitter,Gary Lora,Baseball-Reference register
+G Miller,2024,hitter,Glenn Miller,Baseball-Reference register
+G Morgan,2024,hitter,Grady Morgan,Baseball-Reference register
+H George,2024,hitter,Henry George,Baseball-Reference register
+H Hall,2024,hitter,Hylan Hall,Baseball-Reference register
+H Yanez,2024,hitter,Hernan Yanez,Baseball-Reference register
+J Cone,2024,hitter,Jack Cone,Baseball-Reference register
+J Coutts,2024,hitter,Jackson Coutts,Baseball-Reference register
+J Daly,2024,hitter,John Daly,Baseball-Reference register
+J Day,2024,hitter,Joshua Day,Baseball-Reference register
+J Gates,2024,hitter,J.P. Gates,Baseball-Reference register
+J Gonzalez,2024,hitter,Jose Gonzalez,Baseball-Reference register
+J Kirby,2024,hitter,NA,unresolved
+J Lee,2024,hitter,Jaylon Lee,Baseball-Reference register
+J Nicol,2024,hitter,NA,unresolved
+J Rooks,2024,hitter,Jason Rooks,Baseball-Reference register
+J Shanks,2024,hitter,Jacob Shanks,Baseball-Reference register
+K Byrne,2024,hitter,Kurtis Byrne,Baseball-Reference register
+K Dugan,2024,hitter,Kelly Dugan,Baseball-Reference register
+K Jenkins,2024,hitter,NA,unresolved
+K Jimenez,2024,hitter,Kevin Jimenez,Baseball-Reference register
+K Johnson,2024,hitter,NA,unresolved
+K Kaler,2024,hitter,Kole Kaler,Baseball-Reference register
+K Liniak,2024,hitter,Kingston Liniak,Baseball-Reference register
+K Willman,2024,hitter,Kamron Willman,Baseball-Reference register
+L Barns,2024,hitter,Landen Barns,Baseball-Reference register
+L Navarro,2024,hitter,Luis Navarro,Baseball-Reference register
+L Navigato,2024,hitter,Luke Navigato,Baseball-Reference register
+L Williams,2024,hitter,Logan Williams,Baseball-Reference register
+M Backstrom,2024,hitter,Mahki Backstrom,Baseball-Reference register
+M Dinesen,2024,hitter,Mason Dinesen,Baseball-Reference register
+M Jefferson,2024,hitter,Myles Jefferson,Baseball-Reference register
+M Rosario,2024,hitter,Mike Rosario,Baseball-Reference register
+M Sykes,2024,hitter,Mason Sykes,Baseball-Reference register
+M Yonamine,2024,hitter,Micah Yonamine,Baseball-Reference register
+N Adgar,2024,hitter,NA,unresolved
+N Klemp,2024,hitter,Nich Klemp,Baseball-Reference register
+N Martinez,2024,hitter,Noah Martinez,Baseball-Reference register
+N Ultsch,2024,hitter,Nick Ultsch,Baseball-Reference register
+O Serratos Jr.,2024,hitter,Oscar Serratos,Baseball-Reference register
+P Chung,2024,hitter,Patrick Chung,Baseball-Reference register
+P Harden,2024,hitter,Payton Harden,Baseball-Reference register
+P Howard,2024,hitter,Pearce Howard,Baseball-Reference register
+P Mills,2024,hitter,Pat Mills,Baseball-Reference register + current roster
+R Gil,2024,hitter,Ray Gil,Baseball-Reference register
+R Gonzalez,2024,hitter,Roberto Gonzalez,Baseball-Reference register
+R Holgate,2024,hitter,Ryan Holgate,Baseball-Reference register
+R Major,2024,hitter,Ryan Major,Baseball-Reference register
+R McCarthy,2024,hitter,Ryan McCarthy,Baseball-Reference register
+R Mccarthy,2024,hitter,Ryan McCarthy,Baseball-Reference register
+R Orsak,2024,hitter,River Orsak,Baseball-Reference register
+R Pena,2024,hitter,Roberto Pena,Baseball-Reference register
+S Kuchinski,2024,hitter,Sam Kuchinski,Baseball-Reference register
+S Rivas,2024,hitter,Steven Rivas,Baseball-Reference register
+S Thompson,2024,hitter,NA,unresolved
+S Wilmer,2024,hitter,Stephen Wilmer,Baseball-Reference register
+T Best,2024,hitter,NA,unresolved
+T Clark,2024,hitter,Tripp Clark,Baseball-Reference register
+T Clark-Chiapparelli,2024,hitter,NA,unresolved
+T Davis,2024,hitter,NA,unresolved
+T Halsema,2024,hitter,Trevor Halsema,Baseball-Reference register
+T Hardy,2024,hitter,Theo Hardy,Baseball-Reference register
+T Lomack,2024,hitter,Taylor Lomack,Baseball-Reference register
+T Rogers,2024,hitter,Trevor Rogers,Baseball-Reference register
+T Viola,2024,hitter,Troy Viola,Baseball-Reference register
+T Weldon,2024,hitter,NA,unresolved
+T Wyatt,2024,hitter,Tyler Wyatt,Baseball-Reference register
+W Fuenning,2024,hitter,NA,unresolved
+X Washington,2024,hitter,Xane Washington,Baseball-Reference register
+A Alger,2024,pitcher,Aydan Alger,Baseball-Reference register
+A Atwood,2024,pitcher,Andy Atwood,Baseball-Reference register
+A Baker,2024,pitcher,Andrew Baker,Baseball-Reference register
+A Coleman,2024,pitcher,Austyn Coleman,Baseball-Reference register
+A Cuello-Batista,2024,pitcher,NA,unresolved
+A De Leon,2024,pitcher,NA,unresolved
+A Edwards,2024,pitcher,Andrew Edwards,Baseball-Reference register
+A Garcia,2024,pitcher,NA,unresolved
+A McEvoy,2024,pitcher,NA,unresolved
+A Santa Cruz,2024,pitcher,NA,unresolved
+A Villa,2024,pitcher,Alfredo Villa,Baseball-Reference register
+B Bagshaw,2024,pitcher,NA,unresolved
+B Blackford,2024,pitcher,Braedon Blackford,Baseball-Reference register
+B Bohning,2024,pitcher,Brandon Bohning,Baseball-Reference register
+B Bonner,2024,pitcher,Brayden Bonner,Baseball-Reference register
+B Burdett,2024,pitcher,NA,unresolved
+B Carson,2024,pitcher,Brett Carson,Baseball-Reference register
+B Eglite,2024,pitcher,Brody Eglite,Baseball-Reference register
+B Ferrer,2024,pitcher,Ben Ferrer,Baseball-Reference register
+B Held,2024,pitcher,Brady Held,Baseball-Reference register
+B Knoll,2024,pitcher,Brendan Knoll,Baseball-Reference register
+B McPherson,2024,pitcher,Brandon McPherson,Baseball-Reference register
+B Medoro,2024,pitcher,Brendan Medoro,Baseball-Reference register
+B Mitchell,2024,pitcher,Brandon Mitchell,Baseball-Reference register
+B Ross,2024,pitcher,Brandon Ross,Baseball-Reference register
+B Spagnuolo,2024,pitcher,NA,unresolved
+B Spears,2024,pitcher,Brayden Spears,Baseball-Reference register
+B Williams,2024,pitcher,Brian Williams,Baseball-Reference register
+C Angeroth,2024,pitcher,NA,unresolved
+C Barton,2024,pitcher,Connor Barton,Baseball-Reference register
+C Benson,2024,pitcher,Cooper Benson,Baseball-Reference register
+C Butler,2024,pitcher,NA,unresolved
+C Caporale,2024,pitcher,NA,unresolved
+C Chatham,2024,pitcher,NA,unresolved
+C Ciuffetelli,2024,pitcher,NA,unresolved
+C Corliss,2024,pitcher,NA,unresolved
+C Cosby,2024,pitcher,Christian Cosby,Baseball-Reference register
+C Cowan,2024,pitcher,NA,unresolved
+C Czerwinski,2024,pitcher,CJ Czerwinski,Baseball-Reference register + current roster
+C David,2024,pitcher,Chandler David,Baseball-Reference register
+C Day,2024,pitcher,Christian Day,Baseball-Reference register
+C Dayton,2024,pitcher,Cam Dayton,Baseball-Reference register
+C Dykstra,2024,pitcher,NA,unresolved
+C Gearing,2024,pitcher,Chase Gearing,Baseball-Reference register
+C Griffin,2024,pitcher,Christian Griffin,Baseball-Reference register
+C Harrison,2024,pitcher,Connor Harrison,Baseball-Reference register
+C Jessee,2024,pitcher,Chase Jessee,Baseball-Reference register
+C Kafka,2024,pitcher,Cullen Kafka,Baseball-Reference register
+C Lambert,2024,pitcher,Carson Lambert,Baseball-Reference register
+C Langrell,2024,pitcher,Connor Langrell,Baseball-Reference register
+C Linton,2024,pitcher,Carter Linton,Baseball-Reference register
+C Lomeli,2024,pitcher,Carlos Lomeli,Baseball-Reference register
+C Macca,2024,pitcher,Chris Macca,Baseball-Reference register
+C Minchey,2024,pitcher,Casey Minchey,Baseball-Reference register
+C Repetti,2024,pitcher,Cameron Repetti,Baseball-Reference register
+C Reyes,2024,pitcher,Caleb Reyes,Baseball-Reference register
+C Richardson,2024,pitcher,Conner Richardson,Baseball-Reference register
+D Baird,2024,pitcher,Dusty Baird,Baseball-Reference register
+D Cherry,2024,pitcher,Derrick Cherry,Baseball-Reference register
+D Clark,2024,pitcher,NA,unresolved
+D Day,2024,pitcher,Dawson Day,Baseball-Reference register
+D Galvan,2024,pitcher,Danny Galvan,Baseball-Reference register
+D Landis,2024,pitcher,Dutch Landis,Baseball-Reference register
+D Lane,2024,pitcher,NA,unresolved
+D Nunan,2024,pitcher,Daniel Nunan,Baseball-Reference register
+D Reinoso,2024,pitcher,NA,unresolved
+D Ross,2024,pitcher,Dalton Ross,Baseball-Reference register
+D Schorie,2024,pitcher,NA,unresolved
+D Willie,2024,pitcher,NA,unresolved
+E Alfonzo,2024,pitcher,NA,unresolved
+E Bates,2024,pitcher,Ethan Bates,Baseball-Reference register
+E Blum,2024,pitcher,Evan Blum,Baseball-Reference register
+E Brown,2024,pitcher,Ethan Brown,Baseball-Reference register
+E Elliott,2024,pitcher,NA,unresolved
+E Gill,2024,pitcher,Elijah Gill,Baseball-Reference register
+E Kowalski,2024,pitcher,Evan Kowalski,Baseball-Reference register
+E Massie,2024,pitcher,Evan Massie,Baseball-Reference register
+E McRae,2024,pitcher,Ethan McRae,Baseball-Reference register
+E Swanson,2024,pitcher,Ethan Swanson,Baseball-Reference register
+G Blackman,2024,pitcher,Greg Blackman,Baseball-Reference register
+G Crowley,2024,pitcher,Garrett Crowley,Baseball-Reference register
+G Cuevas,2024,pitcher,NA,unresolved
+G Grosjean,2024,pitcher,Gary Grosjean,Baseball-Reference register
+G Pacheco,2024,pitcher,NA,unresolved
+G Taylor,2024,pitcher,Grant Taylor,Baseball-Reference register
+H Bryan,2024,pitcher,Hunter Bryan,Baseball-Reference register
+I Campa,2024,pitcher,NA,unresolved
+I Mendez,2024,pitcher,Isaac Mendez,Baseball-Reference register
+J Ariza,2024,pitcher,JC Ariza,Baseball-Reference register
+J Baez,2024,pitcher,NA,unresolved
+J Bollman,2024,pitcher,NA,unresolved
+J Bradshaw,2024,pitcher,NA,unresolved
+J Clark,2024,pitcher,Jonathan Clark,Baseball-Reference register
+J Coleman,2024,pitcher,Justin Coleman,Baseball-Reference register
+J Cone,2024,pitcher,NA,unresolved
+J Czeslawski,2024,pitcher,NA,unresolved
+J Dahle,2024,pitcher,Jake Dahle,Baseball-Reference register
+J Fuson,2024,pitcher,Justin Fuson,Baseball-Reference register
+J Haab,2024,pitcher,Jonathan Haab,Baseball-Reference register
+J Huntzinger,2024,pitcher,Jerry Huntzinger,Baseball-Reference register
+J Jones,2024,pitcher,Jestin Jones,Baseball-Reference register
+J Kleinsorge,2024,pitcher,Justin Kleinsorge,Baseball-Reference register
+J Lynch,2024,pitcher,NA,unresolved
+J McCaskey,2024,pitcher,NA,unresolved
+J O'Neal,2024,pitcher,NA,unresolved
+J Pineda,2024,pitcher,Jason Pineda,Baseball-Reference register
+J Zalasky,2024,pitcher,Jack Zalasky,Baseball-Reference register
+K Anglin,2024,pitcher,Kris Anglin,Baseball-Reference register
+K Carattini,2024,pitcher,NA,unresolved
+K Carrillo,2024,pitcher,NA,unresolved
+K Pijaszek,2024,pitcher,NA,unresolved
+K Sophy,2024,pitcher,Kaleb Sophy,Baseball-Reference register
+K Ward,2024,pitcher,Kelsey Ward,Baseball-Reference register
+L Barns,2024,pitcher,Landen Barns,Baseball-Reference register
+L Cooper,2024,pitcher,Luke Cooper,Baseball-Reference register
+L Hempel,2024,pitcher,NA,unresolved
+L Malone,2024,pitcher,Luke Malone,Baseball-Reference register
+L Rettig,2024,pitcher,NA,unresolved
+L Schafer,2024,pitcher,Luke Schafer,Baseball-Reference register
+L Trueman,2024,pitcher,Luke Trueman,Baseball-Reference register
+M Austin,2024,pitcher,NA,unresolved
+M Bathauer,2024,pitcher,NA,unresolved
+M Bono,2024,pitcher,NA,unresolved
+M Bryant,2024,pitcher,Mason Bryant,Baseball-Reference register
+M Castillo,2024,pitcher,NA,unresolved
+M Hess,2024,pitcher,Matt Hess,Baseball-Reference register
+M Peterson,2024,pitcher,Mike Peterson,Baseball-Reference register
+M Quigley,2024,pitcher,Montana Quigley,Baseball-Reference register
+M Stone,2024,pitcher,Mitch Stone,Baseball-Reference register
+M Timmins,2024,pitcher,Mark Timmins,Baseball-Reference register + current roster
+M Tindall,2024,pitcher,Mark Tindall,Baseball-Reference register
+N Daniels,2024,pitcher,NA,unresolved
+N Draves,2024,pitcher,Nathan Draves,Baseball-Reference register
+N Madej,2024,pitcher,Nate Madej,Baseball-Reference register
+N Marshall,2024,pitcher,Nick Marshall,Baseball-Reference register
+N Parker,2024,pitcher,Nick Parker,Baseball-Reference register
+N Powers,2024,pitcher,Nick Powers,Baseball-Reference register
+N Saltaformaggio,2024,pitcher,Nico Saltaformaggio,Baseball-Reference register + current roster
+N Zegna,2024,pitcher,Nick Zegna,Baseball-Reference register
+O Sharts,2024,pitcher,Owen Sharts,Baseball-Reference register
+P Maybach,2024,pitcher,Pat Maybach,Baseball-Reference register
+P Wicklander,2024,pitcher,Patrick Wicklander,Baseball-Reference register
+Q Waterhouse,2024,pitcher,Quinn Waterhouse,Baseball-Reference register
+R Adams,2024,pitcher,Robb Adams,Baseball-Reference register
+R Bost,2024,pitcher,NA,unresolved
+R Brown,2024,pitcher,Robbie Brown,Baseball-Reference register
+R Butz,2024,pitcher,Reed Butz,Baseball-Reference register + current roster
+R Cloude,2024,pitcher,NA,unresolved
+R Cortez,2024,pitcher,NA,unresolved
+R Dudzinski,2024,pitcher,Robbie Dudzinski,Baseball-Reference register
+R Fields,2024,pitcher,Reece Fields,Baseball-Reference register + current roster
+R Garland,2024,pitcher,Reed Garland,Baseball-Reference register
+R Vazquez,2024,pitcher,Rafi Vazquez,Baseball-Reference register
+S Brinkley,2024,pitcher,NA,unresolved
+S Gustafson,2024,pitcher,Shane Gustafson,Baseball-Reference register
+S Ordorica,2024,pitcher,Steven Ordorica,Baseball-Reference register
+S Spencer,2024,pitcher,NA,unresolved
+S Still,2024,pitcher,Stephen Still,Baseball-Reference register
+S Triplett,2024,pitcher,NA,unresolved
+S Washilewski,2024,pitcher,Steve Washilewski,Baseball-Reference register
+T Anderson,2024,pitcher,NA,unresolved
+T Baker,2024,pitcher,NA,unresolved
+T Bothwell,2024,pitcher,Ty Bothwell,Baseball-Reference register
+T Buckner,2024,pitcher,NA,unresolved
+T Clayton,2024,pitcher,NA,unresolved
+T Cunningham,2024,pitcher,NA,unresolved
+T Curtis,2024,pitcher,Tyler Curtis,Baseball-Reference register
+T Czyz,2024,pitcher,NA,unresolved
+T Davis,2024,pitcher,NA,unresolved
+T Dyball,2024,pitcher,NA,unresolved
+T Jackson,2024,pitcher,Trevor Jackson,Baseball-Reference register
+T Morrill,2024,pitcher,Trey Morrill,Baseball-Reference register
+T Naumann,2024,pitcher,Tyler Naumann,Baseball-Reference register
+T Robertson,2024,pitcher,NA,unresolved
+W Buraconak,2024,pitcher,Will Buraconak,Baseball-Reference register
+Z Ottinger,2024,pitcher,Zach Ottinger,Baseball-Reference register
+Z St. Pierre,2024,pitcher,Zach St. Pierre,Baseball-Reference register
+A Baeza,2023,hitter,Alex Baeza,Baseball-Reference register
+A Bernard,2023,hitter,Austin Bernard,Baseball-Reference register
+A Chouinard,2023,hitter,Austin Chouinard,Baseball-Reference register
+A Figueredo,2023,hitter,Alejandro Figueredo,Baseball-Reference register
+A Guadalupe,2023,hitter,Abdel Guadalupe,Baseball-Reference register
+A Herron Jr.,2023,hitter,Anthony Herron,Baseball-Reference register
+A Meggs,2023,hitter,Andrew Meggs,Baseball-Reference register
+A Nielsen,2023,hitter,Alex Nielsen,Baseball-Reference register
+A Ray,2023,hitter,Anthony Ray,Baseball-Reference register
+A Rios,2023,hitter,Andres Rios,Baseball-Reference register
+A Shumaker,2023,hitter,Austin Shumaker,Baseball-Reference register
+B Brown,2023,hitter,Bryce Brown,Baseball-Reference register
+B Carson,2023,hitter,Brett Carson,Baseball-Reference register
+B Crosby,2023,hitter,Brandon Crosby,Baseball-Reference register
+B Donovan,2023,hitter,Bryce Donovan,Baseball-Reference register
+B Evans,2023,hitter,Blake Evans,Baseball-Reference register
+B Fitzgerald,2023,hitter,Ben Fitzgerald,Baseball-Reference register
+B Held,2023,hitter,Brady Held,Baseball-Reference register
+B Huber,2023,hitter,NA,unresolved
+B McPherson,2023,hitter,Brandon McPherson,Baseball-Reference register
+B Reyes,2023,hitter,NA,unresolved
+B Ryan,2023,hitter,Brendan Ryan,Baseball-Reference register
+B Trammell,2023,hitter,NA,unresolved
+C Bocchino,2023,hitter,NA,unresolved
+C De Guzman,2023,hitter,NA,unresolved
+C Denning,2023,hitter,Connor Denning,Baseball-Reference register
+C Dunn Jr.,2023,hitter,CJ Dunn,Baseball-Reference register
+C Gordon,2023,hitter,Colin Gordon,Baseball-Reference register
+C Horner,2023,hitter,NA,unresolved
+C Kirtley,2023,hitter,Christian Kirtley,Baseball-Reference register
+C Monroe,2023,hitter,Chris Monroe,Baseball-Reference register
+C Petersen,2023,hitter,Casey Petersen,Baseball-Reference register
+C Phelts,2023,hitter,Cam Phelts,Baseball-Reference register
+C Taylor,2023,hitter,Crews Taylor,Baseball-Reference register
+C Thompson,2023,hitter,NA,unresolved
+D Conners,2023,hitter,Dakota Conners,Baseball-Reference register
+D Henderson,2023,hitter,Damian Henderson,Baseball-Reference register
+D Hubbard,2023,hitter,Dondrei Hubbard,Baseball-Reference register
+D Maiben,2023,hitter,Derek Maiben,Baseball-Reference register
+D Matthews,2023,hitter,Dave Matthews,Baseball-Reference register
+D Miller,2023,hitter,Dean Miller,Baseball-Reference register
+D Perez,2023,hitter,Danny Perez,Baseball-Reference register
+D Poteet,2023,hitter,D.J. Poteet,Baseball-Reference register
+D Stroup,2023,hitter,Dusty Stroup,Baseball-Reference register
+D Williams,2023,hitter,Drew Williams,Baseball-Reference register
+E Acosta,2023,hitter,Eduardo Acosta,Baseball-Reference register
+E Americaan,2023,hitter,Edmond Americaan,Baseball-Reference register
+E Diaz,2023,hitter,Euro Diaz,Baseball-Reference register
+E Lopez,2023,hitter,Ethan Lopez,Baseball-Reference register
+E McCabe,2023,hitter,Eddie McCabe,Baseball-Reference register
+E Peralta,2023,hitter,Elvis Peralta,Baseball-Reference register
+E Sanchez,2023,hitter,Emmanuel Sanchez,Baseball-Reference register
+E Smith,2023,hitter,Ethan Smith,Baseball-Reference register
+G DiGiacomo,2023,hitter,Gio DiGiacomo,Baseball-Reference register
+G Howell,2023,hitter,Gabe Howell,Baseball-Reference register
+G Wurtz,2023,hitter,Gabe Wurtz,Baseball-Reference register
+H George,2023,hitter,Henry George,Baseball-Reference register
+J Barfield,2023,hitter,Jacob Barfield,Baseball-Reference register
+J Broughton,2023,hitter,Josh Broughton,Baseball-Reference register
+J Coutts,2023,hitter,Jackson Coutts,Baseball-Reference register
+J Cruce,2023,hitter,Jake Cruce,Baseball-Reference register
+J Elvir,2023,hitter,Josh Elvir,Baseball-Reference register
+J Faile,2023,hitter,John Michael Faile,Baseball-Reference register
+J Guenther,2023,hitter,Jake Guenther,Baseball-Reference register
+J Hubbard,2023,hitter,Jaylen Hubbard,Baseball-Reference register
+J Johnson,2023,hitter,Joe Johnson,Baseball-Reference register
+J McMurray,2023,hitter,Jake McMurray,Baseball-Reference register
+J Newman-Dodd,2023,hitter,Jayson Newman-Dodd,Baseball-Reference register
+J Pyle,2023,hitter,NA,unresolved
+J Raper,2023,hitter,Jackson Raper,Baseball-Reference register
+J Smith,2023,hitter,NA,unresolved
+J Soto,2023,hitter,Jonathan Soto,Baseball-Reference register
+J Teixeira,2023,hitter,Juan Teixeira,Baseball-Reference register
+J Urena,2023,hitter,NA,unresolved
+J Williams,2023,hitter,Jaylyn Williams,Baseball-Reference register
+K Figueiredo,2023,hitter,Kokko Figueiredo,Baseball-Reference register
+K Greenwalt,2023,hitter,Keaton Greenwalt,Baseball-Reference register
+K Higgins,2023,hitter,Kevin Higgins,Baseball-Reference register
+K Jimenez,2023,hitter,Kevin Jimenez,Baseball-Reference register
+K O'Brien,2023,hitter,NA,unresolved
+K Oyama,2023,hitter,Kenny Oyama,Baseball-Reference register
+K Willman,2023,hitter,Kamron Willman,Baseball-Reference register
+L Barns,2023,hitter,Landen Barns,Baseball-Reference register
+L Fisher,2023,hitter,Lavoisier Fisher,Baseball-Reference register
+L Navarro,2023,hitter,Luis Navarro,Baseball-Reference register
+L Williams,2023,hitter,Logan Williams,Baseball-Reference register
+M Clayton,2023,hitter,Matt Clayton,Baseball-Reference register
+M Dinesen,2023,hitter,Mason Dinesen,Baseball-Reference register
+M Edie,2023,hitter,Mikey Edie,Baseball-Reference register
+M Golda,2023,hitter,Matt Golda,Baseball-Reference register
+M Herron Jr.,2023,hitter,Mark Herron,Baseball-Reference register
+M Hogan,2023,hitter,Matt Hogan,Baseball-Reference register
+M O'Connor,2023,hitter,McClain O'Connor,Baseball-Reference register
+M Rodriguez,2023,hitter,NA,unresolved
+M Wong,2023,hitter,Matt Wong,Baseball-Reference register
+N Marcelo,2023,hitter,Noah Marcelo,Baseball-Reference register
+N Michaels,2023,hitter,Nick Michaels,Baseball-Reference register
+N Ultsch,2023,hitter,Nick Ultsch,Baseball-Reference register
+O Sanchez,2023,hitter,NA,unresolved
+P Chung,2023,hitter,Patrick Chung,Baseball-Reference register
+P Robertson,2023,hitter,Payton Robertson,Baseball-Reference register
+R Alexiades,2023,hitter,Reese Alexiades,Baseball-Reference register
+R Cash,2023,hitter,Ryan Cash,Baseball-Reference register
+R Jepson,2023,hitter,Riley Jepson,Baseball-Reference register
+R McCarthy,2023,hitter,Ryan McCarthy,Baseball-Reference register
+R Narea,2023,hitter,Rafael Narea,Baseball-Reference register
+R Paller,2023,hitter,Robb Paller,Baseball-Reference register
+R Washington Jr.,2023,hitter,Ron Washington,Baseball-Reference register
+R Yeargain,2023,hitter,NA,unresolved
+S Barmakian,2023,hitter,Steve Barmakian,Baseball-Reference register
+S Cullen,2023,hitter,NA,unresolved
+S Gozzo,2023,hitter,Sal Gozzo,Baseball-Reference register
+S Olsson,2023,hitter,Sam Olsson,Baseball-Reference register
+S Troyer,2023,hitter,Sam Troyer,Baseball-Reference register
+S Wilmer,2023,hitter,Stephen Wilmer,Baseball-Reference register
+T Bouchard,2023,hitter,Tim Bouchard,Baseball-Reference register
+T DeBonville,2023,hitter,Thomas DeBonville,Baseball-Reference register
+T Halsema,2023,hitter,Trevor Halsema,Baseball-Reference register
+T Jeffries,2023,hitter,NA,unresolved
+T Lomack,2023,hitter,Taylor Lomack,Baseball-Reference register
+T Minder,2023,hitter,Trevor Minder,Baseball-Reference register
+T Wyatt,2023,hitter,Tyler Wyatt,Baseball-Reference register
+V Rodriguez,2023,hitter,Victor Rodriguez,Baseball-Reference register
+W Crenshaw,2023,hitter,NA,unresolved
+X Washington,2023,hitter,Xane Washington,Baseball-Reference register
+A Atwood,2023,pitcher,Andy Atwood,Baseball-Reference register
+A Becerra-Lopez,2023,pitcher,Anthony Becerra-Lopez,Baseball-Reference register
+A Bloebaum,2023,pitcher,Adam Bloebaum,Baseball-Reference register
+A Buendia,2023,pitcher,Aldo Buendia,Baseball-Reference register
+A Cedano,2023,pitcher,NA,unresolved
+A Dill,2023,pitcher,Austin Dill,Baseball-Reference register
+A Garcia,2023,pitcher,Andrew Garcia,Baseball-Reference register
+A Schneider,2023,pitcher,Austin Schneider,Baseball-Reference register
+A Smith,2023,pitcher,Alex Smith,Baseball-Reference register
+A Villa,2023,pitcher,Alfredo Villa,Baseball-Reference register
+B Bagshaw,2023,pitcher,NA,unresolved
+B Blessie,2023,pitcher,NA,unresolved
+B Bonner,2023,pitcher,Brayden Bonner,Baseball-Reference register
+B Brown,2023,pitcher,Bryce Brown,Baseball-Reference register
+B Carson,2023,pitcher,Brett Carson,Baseball-Reference register
+B Demco,2023,pitcher,Brad Demco,Baseball-Reference register
+B Donovan,2023,pitcher,Bryce Donovan,Baseball-Reference register
+B Dorman,2023,pitcher,NA,unresolved
+B Gilliam,2023,pitcher,Brock Gilliam,Baseball-Reference register
+B Held,2023,pitcher,Brady Held,Baseball-Reference register
+B Kaminer,2023,pitcher,Brandon Kaminer,Baseball-Reference register
+B Lorah,2023,pitcher,NA,unresolved
+B McCabe,2023,pitcher,Brandon McCabe,Baseball-Reference register
+B McFadden,2023,pitcher,Blake McFadden,Baseball-Reference register + current roster
+B McPherson,2023,pitcher,Brandon McPherson,Baseball-Reference register
+B Pooler,2023,pitcher,Breonn Pooler,Baseball-Reference register
+B Spears,2023,pitcher,Brayden Spears,Baseball-Reference register
+B Traxel,2023,pitcher,NA,unresolved
+B Williams,2023,pitcher,Brian Williams,Baseball-Reference register
+C Allen,2023,pitcher,Chris Allen,Baseball-Reference register
+C Barton,2023,pitcher,Connor Barton,Baseball-Reference register
+C Carver,2023,pitcher,NA,unresolved
+C Day,2023,pitcher,Christian Day,Baseball-Reference register
+C Dykstra,2023,pitcher,NA,unresolved
+C Housley,2023,pitcher,Connor Housley,Baseball-Reference register
+C Jessee,2023,pitcher,Chase Jessee,Baseball-Reference register
+C Linton,2023,pitcher,Carter Linton,Baseball-Reference register
+C Macca,2023,pitcher,Chris Macca,Baseball-Reference register
+C Marley,2023,pitcher,NA,unresolved
+C Minchey,2023,pitcher,Casey Minchey,Baseball-Reference register
+C Repetti,2023,pitcher,Cameron Repetti,Baseball-Reference register
+C Runge,2023,pitcher,Collin Runge,Baseball-Reference register
+C Schultz,2023,pitcher,Connor Schultz,Baseball-Reference register
+C Stratton,2023,pitcher,Chase Stratton,Baseball-Reference register
+C Thompson,2023,pitcher,NA,unresolved
+C Wills,2023,pitcher,Cory Wills,Baseball-Reference register
+C Woods,2023,pitcher,NA,unresolved
+D Baird,2023,pitcher,Dusty Baird,Baseball-Reference register
+D Champagne,2023,pitcher,NA,unresolved
+D Day,2023,pitcher,Dawson Day,Baseball-Reference register
+D Gotto,2023,pitcher,Dylan Gotto,Baseball-Reference register
+D Kubiuk,2023,pitcher,NA,unresolved
+D Landis,2023,pitcher,Dutch Landis,Baseball-Reference register
+D Marrufo,2023,pitcher,Drew Marrufo,Baseball-Reference register
+D Ross,2023,pitcher,Dalton Ross,Baseball-Reference register
+D Silva,2023,pitcher,NA,unresolved
+E Baram,2023,pitcher,Ed Baram,Baseball-Reference register
+E Cuevas,2023,pitcher,NA,unresolved
+E Kowalski,2023,pitcher,Evan Kowalski,Baseball-Reference register
+E McRae,2023,pitcher,Ethan McRae,Baseball-Reference register
+E Swanson,2023,pitcher,Ethan Swanson,Baseball-Reference register
+F Pace,2023,pitcher,Foster Pace,Baseball-Reference register
+F Racioppo,2023,pitcher,Frank Racioppo,Baseball-Reference register
+G Blackman,2023,pitcher,Greg Blackman,Baseball-Reference register
+G Gorrell,2023,pitcher,Gavin Gorrell,Baseball-Reference register
+H Schilperoort,2023,pitcher,Hunter Schilperoort,Baseball-Reference register
+I Fuentes,2023,pitcher,Izzy Fuentes,Baseball-Reference register
+I Oxnevad,2023,pitcher,NA,unresolved
+J Alvarez,2023,pitcher,NA,unresolved
+J Ariza,2023,pitcher,JC Ariza,Baseball-Reference register
+J Armstrong,2023,pitcher,NA,unresolved
+J Bogacz,2023,pitcher,NA,unresolved
+J Cervantes,2023,pitcher,NA,unresolved
+J Clark,2023,pitcher,Jonathan Clark,Baseball-Reference register
+J Coleman,2023,pitcher,Justin Coleman,Baseball-Reference register
+J Coronado,2023,pitcher,NA,unresolved
+J Cunningham,2023,pitcher,Jackson Cunningham,Baseball-Reference register
+J Diaz,2023,pitcher,Jose Diaz,Baseball-Reference register
+J Dicenso,2023,pitcher,Jack Dicenso,Baseball-Reference register
+J Dobrash,2023,pitcher,Jimmy Dobrash,Baseball-Reference register
+J Evans,2023,pitcher,Jalen Evans,Baseball-Reference register
+J Gonzalez,2023,pitcher,Jorge Gonzalez,Baseball-Reference register
+J Kengott,2023,pitcher,NA,unresolved
+J Kleinsorge,2023,pitcher,Justin Kleinsorge,Baseball-Reference register
+J LaRossa,2023,pitcher,NA,unresolved
+J Mullholland,2023,pitcher,NA,unresolved
+J Natoli,2023,pitcher,John Natoli,Baseball-Reference register
+J Pintaro,2023,pitcher,Jonathan Pintaro,Baseball-Reference register
+J Slocum,2023,pitcher,Joe Slocum,Baseball-Reference register
+J Smith,2023,pitcher,NA,unresolved
+J Walker,2023,pitcher,NA,unresolved
+J White,2023,pitcher,Jack White,Baseball-Reference register
+J Zigan,2023,pitcher,NA,unresolved
+K Bartlett,2023,pitcher,Keenan Bartlett,Baseball-Reference register
+K Blum,2023,pitcher,NA,unresolved
+K Dickey,2023,pitcher,NA,unresolved
+K McGinnis,2023,pitcher,Keagan McGinnis,Baseball-Reference register
+K Patel,2023,pitcher,Karan Patel,Baseball-Reference register
+K Pilot,2023,pitcher,Kelvan Pilot,Baseball-Reference register
+K Pindel,2023,pitcher,NA,unresolved
+K Ward,2023,pitcher,Kelsey Ward,Baseball-Reference register
+L Almonte,2023,pitcher,NA,unresolved
+L Barns,2023,pitcher,Landen Barns,Baseball-Reference register
+L Dawson,2023,pitcher,NA,unresolved
+L Fuenmayor,2023,pitcher,Liu Fuenmayor,Baseball-Reference register
+L Malone,2023,pitcher,Luke Malone,Baseball-Reference register
+L Trueman,2023,pitcher,Luke Trueman,Baseball-Reference register
+M Byrne,2023,pitcher,NA,unresolved
+M Cirino,2023,pitcher,Miguel Cirino,Baseball-Reference register
+M DeSanti,2023,pitcher,NA,unresolved
+M Dinesen,2023,pitcher,Mason Dinesen,Baseball-Reference register
+M Guzman,2023,pitcher,Marvin Guzman,Baseball-Reference register
+M Harris,2023,pitcher,McLain Harris,Baseball-Reference register
+M Hess,2023,pitcher,Matt Hess,Baseball-Reference register
+M Peterson,2023,pitcher,Mike Peterson,Baseball-Reference register
+M Quigley,2023,pitcher,Montana Quigley,Baseball-Reference register
+M Shill,2023,pitcher,Marshall Shill,Baseball-Reference register
+M Simon,2023,pitcher,Mark Simon,Baseball-Reference register
+M Sox,2023,pitcher,Matthew Sox,Baseball-Reference register
+M Stone,2023,pitcher,Mitch Stone,Baseball-Reference register
+M Timmins,2023,pitcher,Mark Timmins,Baseball-Reference register + current roster
+M Tindall,2023,pitcher,Mark Tindall,Baseball-Reference register
+M Voelker,2023,pitcher,Matt Voelker,Baseball-Reference register
+N Alexander,2023,pitcher,Nate Alexander,Baseball-Reference register
+N Barros,2023,pitcher,Noah Barros,Baseball-Reference register
+N Boudreau,2023,pitcher,NA,unresolved
+N Boyle,2023,pitcher,Nate Boyle,Baseball-Reference register
+N Draves,2023,pitcher,Nathan Draves,Baseball-Reference register
+N Jenkins,2023,pitcher,Nate Jenkins,Baseball-Reference register
+N McBride,2023,pitcher,NA,unresolved
+N Zeglin,2023,pitcher,Nico Zeglin,Baseball-Reference register
+N Zegna,2023,pitcher,Nick Zegna,Baseball-Reference register
+P Arevalo,2023,pitcher,Pablo Arevalo,Baseball-Reference register
+P Harris,2023,pitcher,Payton Harris,Baseball-Reference register
+P Long,2023,pitcher,Peyton Long,Baseball-Reference register
+P Maybach,2023,pitcher,Pat Maybach,Baseball-Reference register
+P Miner,2023,pitcher,Pat Miner,Baseball-Reference register
+Q Waterhouse,2023,pitcher,Quinn Waterhouse,Baseball-Reference register
+R Baldenebro,2023,pitcher,Roberto Baldenebro,Baseball-Reference register
+R Brown,2023,pitcher,Robbie Brown,Baseball-Reference register
+R Butz,2023,pitcher,Reed Butz,Baseball-Reference register
+R Campbell,2023,pitcher,NA,unresolved
+R Cash,2023,pitcher,Ryan Cash,Baseball-Reference register
+R Cloude,2023,pitcher,NA,unresolved
+R Hamby,2023,pitcher,Rob Hamby,Baseball-Reference register
+R Ottesen,2023,pitcher,Riley Ottesen,Baseball-Reference register
+R Robles,2023,pitcher,NA,unresolved
+R Widell,2023,pitcher,Ryley Widell,Baseball-Reference register
+S Charle,2023,pitcher,NA,unresolved
+S Colon,2023,pitcher,NA,unresolved
+S Gustafson,2023,pitcher,Shane Gustafson,Baseball-Reference register
+T Jackson,2023,pitcher,Trevor Jackson,Baseball-Reference register
+T Johnson,2023,pitcher,Tyler Johnson,Baseball-Reference register
+T Morrill,2023,pitcher,Trey Morrill,Baseball-Reference register
+T Naumann,2023,pitcher,Tyler Naumann,Baseball-Reference register
+T Walker,2023,pitcher,Tom Walker,Baseball-Reference register
+T Wyatt,2023,pitcher,Tyler Wyatt,Baseball-Reference register
+V Rodriguez,2023,pitcher,Victor Rodriguez,Baseball-Reference register
+W Buraconak,2023,pitcher,Will Buraconak,Baseball-Reference register
+Z Ottinger,2023,pitcher,Zach Ottinger,Baseball-Reference register
+Z Penrod,2023,pitcher,Zach Penrod,Baseball-Reference register
+A Atwood,2022,hitter,Andy Atwood,Baseball-Reference register
+A Don,2022,hitter,Andrew Don,Baseball-Reference register
+A Elder,2022,hitter,Austin Elder,Baseball-Reference register
+A Garcia,2022,hitter,Alan Garcia,Baseball-Reference register
+A Guadalupe,2022,hitter,Abdel Guadalupe,Baseball-Reference register
+A Hanson,2022,hitter,NA,unresolved
+A Ludwick,2022,hitter,NA,unresolved
+A Mow,2022,hitter,Abraham Mow,Baseball-Reference register
+A Nielsen,2022,hitter,Alex Nielsen,Baseball-Reference register
+A Noviello,2022,hitter,Andrew Noviello,Baseball-Reference register
+A Ray,2022,hitter,Anthony Ray,Baseball-Reference register
+A Rivero,2022,hitter,NA,unresolved
+A Sequera,2022,hitter,Abraham Sequera,Baseball-Reference register
+B Bohning,2022,hitter,Brandon Bohning,Baseball-Reference register
+B Crosby,2022,hitter,Brandon Crosby,Baseball-Reference register
+B Daniel,2022,hitter,Breydon Daniel,Baseball-Reference register
+B Dansereau,2022,hitter,Brian Dansereau,Baseball-Reference register
+B Demco,2022,hitter,Brad Demco,Baseball-Reference register
+B Hueth,2022,hitter,NA,unresolved
+B McConnell,2022,hitter,Ben McConnell,Baseball-Reference register
+B Perez,2022,hitter,NA,unresolved
+B Pooler,2022,hitter,Breonn Pooler,Baseball-Reference register
+B Riley,2022,hitter,Brandon Riley,Baseball-Reference register
+B Trammell,2022,hitter,NA,unresolved
+B Williams,2022,hitter,Brian Williams,Baseball-Reference register
+C Dunn,2022,hitter,CJ Dunn,Baseball-Reference register
+C Estrada,2022,hitter,NA,unresolved
+C Farmer,2022,hitter,Caleb Farmer,Baseball-Reference register
+C Grant-Debose,2022,hitter,CJ Grant-DeBose,Baseball-Reference register
+C LeBron,2022,hitter,NA,unresolved
+C Lopez,2022,hitter,Cesar Lopez,Baseball-Reference register
+C Middleton,2022,hitter,Charles Middleton,Baseball-Reference register
+C Monroe,2022,hitter,Chris Monroe,Baseball-Reference register
+C Petersen,2022,hitter,Casey Petersen,Baseball-Reference register
+C Phelts,2022,hitter,Cam Phelts,Baseball-Reference register
+C Runge,2022,hitter,Collin Runge,Baseball-Reference register
+C Steele,2022,hitter,NA,unresolved
+C Thompson,2022,hitter,Cameron Thompson,Baseball-Reference register
+D Binder,2022,hitter,Dalys Binder,Baseball-Reference register
+D Connors,2022,hitter,NA,unresolved
+D Day,2022,hitter,Dawson Day,Baseball-Reference register
+D Hernandez,2022,hitter,NA,unresolved
+D Jacob,2022,hitter,NA,unresolved
+D Kolbush,2022,hitter,Derek Kolbush,Baseball-Reference register
+D Macaluso,2022,hitter,Dustyn Macaluso,Baseball-Reference register
+D Miller,2022,hitter,Dean Miller,Baseball-Reference register
+D Molinari,2022,hitter,NA,unresolved
+D Popham,2022,hitter,Dakota Popham,Baseball-Reference register
+D Stroup,2022,hitter,Dusty Stroup,Baseball-Reference register
+E Lopez,2022,hitter,Ethan Lopez,Baseball-Reference register
+E McCabe,2022,hitter,Eddie McCabe,Baseball-Reference register
+F Aberouette,2022,hitter,NA,unresolved
+F Loera,2022,hitter,NA,unresolved
+G Buhner,2022,hitter,NA,unresolved
+G Diaz,2022,hitter,NA,unresolved
+G Howell,2022,hitter,Gabe Howell,Baseball-Reference register
+G Wurtz,2022,hitter,Gabe Wurtz,Baseball-Reference register
+G Young,2022,hitter,NA,unresolved
+H Hisky,2022,hitter,Hunter Hisky,Baseball-Reference register
+H Hudson,2022,hitter,NA,unresolved
+J Agnew,2022,hitter,Josh Agnew,Baseball-Reference register
+J Ajamian,2022,hitter,Jason Ajamian,Baseball-Reference register
+J Akins,2022,hitter,Jared Akins,Baseball-Reference register
+J Barth,2022,hitter,Jordan Barth,Baseball-Reference register
+J Bermudez,2022,hitter,NA,unresolved
+J Broughton,2022,hitter,Josh Broughton,Baseball-Reference register
+J Cruce,2022,hitter,Jake Cruce,Baseball-Reference register
+J Elvir,2022,hitter,Josh Elvir,Baseball-Reference register
+J Esparza,2022,hitter,NA,unresolved
+J Fitzpatrick,2022,hitter,Jordan Fitzpatrick,Baseball-Reference register
+J Fry,2022,hitter,Jared Fry,Baseball-Reference register
+J Garcia,2022,hitter,Jalen Garcia,Baseball-Reference register
+J Hubbard,2022,hitter,Jaylen Hubbard,Baseball-Reference register
+J Johnson,2022,hitter,Joe Johnson,Baseball-Reference register
+J Kline,2022,hitter,Jacob Kline,Baseball-Reference register
+J Lara,2022,hitter,NA,unresolved
+J Malec,2022,hitter,Jake Malec,Baseball-Reference register
+J Newman,2022,hitter,NA,unresolved
+J Raper,2022,hitter,Jackson Raper,Baseball-Reference register
+J Reinhardt,2022,hitter,NA,unresolved
+J Reyes,2022,hitter,NA,unresolved
+J Schulefand,2022,hitter,NA,unresolved
+J Teixeira,2022,hitter,Juan Teixeira,Baseball-Reference register
+J Valdez,2022,hitter,Jesus Valdez,Baseball-Reference register
+K Elefante,2022,hitter,NA,unresolved
+K Greenwalt,2022,hitter,Keaton Greenwalt,Baseball-Reference register
+K Higgins,2022,hitter,Kevin Higgins,Baseball-Reference register
+K Whatley,2022,hitter,Kevin Whatley,Baseball-Reference register
+K Willman,2022,hitter,Kamron Willman,Baseball-Reference register
+L Navarro,2022,hitter,Luis Navarro,Baseball-Reference register
+L Sparks,2022,hitter,Lamar Sparks,Baseball-Reference register
+L Williams,2022,hitter,Logan Williams,Baseball-Reference register
+M Annone,2022,hitter,Mike Annone,Baseball-Reference register
+M Feinstein,2022,hitter,Matt Feinstein,Baseball-Reference register
+M O'Connor,2022,hitter,McClain O'Connor,Baseball-Reference register
+M Piatnik,2022,hitter,Mitch Piatnik,Baseball-Reference register
+M Rich,2022,hitter,Marshall Rich,Baseball-Reference register
+M Warkentin,2022,hitter,NA,unresolved
+N Emanuel,2022,hitter,Nick Emanuel,Baseball-Reference register
+N Gatewood,2022,hitter,Nick Gatewood,Baseball-Reference register
+N Marcelo,2022,hitter,Noah Marcelo,Baseball-Reference register
+N Michaels,2022,hitter,Nick Michaels,Baseball-Reference register
+N Popa,2022,hitter,Nico Popa,Baseball-Reference register
+N Scantlin,2022,hitter,Nate Scantlin,Baseball-Reference register
+P Adams,2022,hitter,Pat Adams,Baseball-Reference register
+P Chung,2022,hitter,Patrick Chung,Baseball-Reference register
+Q Jones,2022,hitter,Quincy Jones,Baseball-Reference register
+R Alexiades,2022,hitter,Reese Alexiades,Baseball-Reference register
+R Cash,2022,hitter,Ryan Cash,Baseball-Reference register
+R Gil,2022,hitter,Ray Gil,Baseball-Reference register
+R Jepson,2022,hitter,Riley Jepson,Baseball-Reference register
+R Phillips,2022,hitter,NA,unresolved
+S Barmakian,2022,hitter,Steve Barmakian,Baseball-Reference register
+S Linscott,2022,hitter,Sam Linscott,Baseball-Reference register
+S Strong,2022,hitter,NA,unresolved
+S Troyer,2022,hitter,Sam Troyer,Baseball-Reference register
+S Ullian,2022,hitter,NA,unresolved
+T Bouchard,2022,hitter,Tim Bouchard,Baseball-Reference register
+T DeBonville,2022,hitter,Thomas DeBonville,Baseball-Reference register
+T Jorgensen,2022,hitter,Tyler Jorgensen,Baseball-Reference register
+T Kelly,2022,hitter,NA,unresolved
+T Krabbe,2022,hitter,NA,unresolved
+T Lewis,2022,hitter,NA,unresolved
+U Cantu,2022,hitter,Ulysses Cantu,Baseball-Reference register
+A Atwood,2022,pitcher,Andy Atwood,Baseball-Reference register
+A Becerra-Lopez,2022,pitcher,Anthony Becerra-Lopez,Baseball-Reference register
+A Cartier,2022,pitcher,NA,unresolved
+A Castro,2022,pitcher,Alexander Castro,Baseball-Reference register
+A Crowson,2022,pitcher,Austin Crowson,Baseball-Reference register
+A Edwards,2022,pitcher,Andrew Edwards,Baseball-Reference register
+A Fishberg,2022,pitcher,NA,unresolved
+A Garcia,2022,pitcher,NA,unresolved
+A Schneider,2022,pitcher,Austin Schneider,Baseball-Reference register
+A Seidel,2022,pitcher,Austen Seidel,Baseball-Reference register
+A Smith,2022,pitcher,Alex Smith,Baseball-Reference register
+A Steinfort,2022,pitcher,Austin Steinfort,Baseball-Reference register
+A Stout,2022,pitcher,Andrew Stout,Baseball-Reference register
+A Valle,2022,pitcher,NA,unresolved
+A Villa,2022,pitcher,Alfredo Villa,Baseball-Reference register
+B Barnett,2022,pitcher,Bret Barnett,Baseball-Reference register
+B Bonvillain,2022,pitcher,Beaux Bonvillain,Baseball-Reference register
+B Davis,2022,pitcher,NA,unresolved
+B Demco,2022,pitcher,Brad Demco,Baseball-Reference register
+B Knoten,2022,pitcher,NA,unresolved
+B McCabe,2022,pitcher,Brandon McCabe,Baseball-Reference register
+B Pooler,2022,pitcher,Breonn Pooler,Baseball-Reference register
+B Smith,2022,pitcher,Byron Smith,Baseball-Reference register
+B Spears,2022,pitcher,Brayden Spears,Baseball-Reference register
+C Allen,2022,pitcher,Chris Allen,Baseball-Reference register
+C Benton,2022,pitcher,Chance Benton,Baseball-Reference register
+C Campbell,2022,pitcher,Chris Campbell,Baseball-Reference register
+C Costello,2022,pitcher,Chase Costello,Baseball-Reference register
+C Day,2022,pitcher,Christian Day,Baseball-Reference register
+C Grant-Debose,2022,pitcher,CJ Grant-DeBose,Baseball-Reference register
+C Griffin,2022,pitcher,Christian Griffin,Baseball-Reference register
+C Schultz,2022,pitcher,Connor Schultz,Baseball-Reference register
+C Spear,2022,pitcher,NA,unresolved
+C Stratton,2022,pitcher,Chase Stratton,Baseball-Reference register
+C Thompson,2022,pitcher,Cody Thompson,Baseball-Reference register
+C Wilkerson,2022,pitcher,Colby Wilkerson,Baseball-Reference register
+C Williams,2022,pitcher,NA,unresolved
+D Baird,2022,pitcher,Dusty Baird,Baseball-Reference register
+D Binder,2022,pitcher,Dalys Binder,Baseball-Reference register
+D Day,2022,pitcher,Dawson Day,Baseball-Reference register
+D Delorefice,2022,pitcher,Davis Delorefice,Baseball-Reference register
+D Pearce,2022,pitcher,Dylan Pearce,Baseball-Reference register
+D Pena,2022,pitcher,Domingo Pena,Baseball-Reference register
+D Ragins,2022,pitcher,Darrien Ragins,Baseball-Reference register
+D Swain,2022,pitcher,Dan Swain,Baseball-Reference register
+E Chavarria,2022,pitcher,NA,unresolved
+E Gill,2022,pitcher,Elijah Gill,Baseball-Reference register
+E McRae,2022,pitcher,Ethan McRae,Baseball-Reference register
+E Rosario,2022,pitcher,NA,unresolved
+F Pace,2022,pitcher,Foster Pace,Baseball-Reference register
+F Rodriguez,2022,pitcher,Felipe Rodriguez,Baseball-Reference register
+G Alvarez,2022,pitcher,NA,unresolved
+G Fletcher,2022,pitcher,NA,unresolved
+G Gorrell,2022,pitcher,Gavin Gorrell,Baseball-Reference register
+G Young,2022,pitcher,NA,unresolved
+H Cruz,2022,pitcher,NA,unresolved
+H DePrimo,2022,pitcher,Hunter DePrimo,Baseball-Reference register
+H Dollander,2022,pitcher,Hunter Dollander,Baseball-Reference register
+I Fuentes,2022,pitcher,Izzy Fuentes,Baseball-Reference register
+I Kahaloa,2022,pitcher,Ian Kahaloa,Baseball-Reference register
+J Agnew,2022,pitcher,Josh Agnew,Baseball-Reference register
+J Ajamian,2022,pitcher,Jason Ajamian,Baseball-Reference register
+J Asa,2022,pitcher,NA,unresolved
+J Baggs,2022,pitcher,NA,unresolved
+J Beuckelaere,2022,pitcher,NA,unresolved
+J Binder,2022,pitcher,NA,unresolved
+J Bolt,2022,pitcher,NA,unresolved
+J Coleman,2022,pitcher,Justin Coleman,Baseball-Reference register
+J Correa,2022,pitcher,Jean Correa,Baseball-Reference register
+J Cunningham,2022,pitcher,Jackson Cunningham,Baseball-Reference register
+J Dicenso,2022,pitcher,Jack Dicenso,Baseball-Reference register
+J Dobrash,2022,pitcher,Jimmy Dobrash,Baseball-Reference register
+J Gainer,2022,pitcher,NA,unresolved
+J Gonzalez,2022,pitcher,NA,unresolved
+J Ibarra,2022,pitcher,Josh Ibarra,Baseball-Reference register
+J Leo,2022,pitcher,Jorge Leo,Baseball-Reference register
+J Nelson,2022,pitcher,Jasper Nelson,Baseball-Reference register
+J Nunnally Jr,2022,pitcher,Jon Nunnally,Baseball-Reference register
+J Parisi,2022,pitcher,NA,unresolved
+J Slocum,2022,pitcher,Joe Slocum,Baseball-Reference register
+J Wesselmann,2022,pitcher,Jacob Wesselmann,Baseball-Reference register
+K Adkins,2022,pitcher,NA,unresolved
+K De La Cruz,2022,pitcher,Kida De La Cruz,Baseball-Reference register
+K Kyle,2022,pitcher,Kevin Kyle,Baseball-Reference register
+K McGinnis,2022,pitcher,Keagan McGinnis,Baseball-Reference register
+K Pilot,2022,pitcher,Kelvan Pilot,Baseball-Reference register
+K Pindel,2022,pitcher,NA,unresolved
+K Serwa,2022,pitcher,Kenny Serwa,Baseball-Reference register
+L Bender,2022,pitcher,NA,unresolved
+L De Paula,2022,pitcher,NA,unresolved
+L Diaz,2022,pitcher,NA,unresolved
+L Vanwey,2022,pitcher,Logan VanWey,Baseball-Reference register
+M Biasiello,2022,pitcher,NA,unresolved
+M Blaise,2022,pitcher,NA,unresolved
+M Bono,2022,pitcher,NA,unresolved
+M Cabeza,2022,pitcher,NA,unresolved
+M Castillo,2022,pitcher,NA,unresolved
+M Cirino,2022,pitcher,Miguel Cirino,Baseball-Reference register
+M Dallas,2022,pitcher,Matt Dallas,Baseball-Reference register
+M Gabbert,2022,pitcher,Matt Gabbert,Baseball-Reference register
+M Harris,2022,pitcher,McLain Harris,Baseball-Reference register
+M Lines,2022,pitcher,Mitch Lines,Baseball-Reference register
+M Peterson,2022,pitcher,Mike Peterson,Baseball-Reference register
+M Pozo,2022,pitcher,NA,unresolved
+M Quigley,2022,pitcher,Montana Quigley,Baseball-Reference register
+M Sparks,2022,pitcher,Mitch Sparks,Baseball-Reference register
+M Thomas,2022,pitcher,NA,unresolved
+M Timmins,2022,pitcher,Mark Timmins,Baseball-Reference register + current roster
+M Townsend,2022,pitcher,Mike Townsend,Baseball-Reference register
+N Alexander,2022,pitcher,Nate Alexander,Baseball-Reference register
+N Barros,2022,pitcher,Noah Barros,Baseball-Reference register
+N Boudreau,2022,pitcher,NA,unresolved
+N Boyle,2022,pitcher,Nate Boyle,Baseball-Reference register
+N Cicci,2022,pitcher,NA,unresolved
+N Draves,2022,pitcher,Nathan Draves,Baseball-Reference register
+N Jenkins,2022,pitcher,Nate Jenkins,Baseball-Reference register
+N McBride,2022,pitcher,NA,unresolved
+N Merkel,2022,pitcher,Nick Merkel,Baseball-Reference register
+P Adams,2022,pitcher,Pat Adams,Baseball-Reference register
+P Alfonseca,2022,pitcher,NA,unresolved
+P Arevalo,2022,pitcher,Pablo Arevalo,Baseball-Reference register
+P Bayer,2022,pitcher,Pete Bayer,Baseball-Reference register
+P Carreno,2022,pitcher,NA,unresolved
+P Chung,2022,pitcher,Patrick Chung,Baseball-Reference register
+P Maybach,2022,pitcher,Pat Maybach,Baseball-Reference register
+P Portela,2022,pitcher,Polo Portela,Baseball-Reference register
+P Snavely,2022,pitcher,Preston Snavely,Baseball-Reference register
+Q Jones,2022,pitcher,Quincy Jones,Baseball-Reference register
+R Baldenebro,2022,pitcher,Roberto Baldenebro,Baseball-Reference register
+R Hamby,2022,pitcher,Rob Hamby,Baseball-Reference register
+R Monsion,2022,pitcher,Rafael Monsion,Baseball-Reference register
+R Orta,2022,pitcher,Ronny Orta,Baseball-Reference register
+R Ottesen,2022,pitcher,Riley Ottesen,Baseball-Reference register
+R Romano,2022,pitcher,NA,unresolved
+S Brewer,2022,pitcher,NA,unresolved
+S Burto,2022,pitcher,NA,unresolved
+S Davis,2022,pitcher,Seth Davis,Baseball-Reference register
+S DePalma,2022,pitcher,NA,unresolved
+S Dexter,2022,pitcher,NA,unresolved
+S Duprey,2022,pitcher,NA,unresolved
+S Hellinger,2022,pitcher,NA,unresolved
+S Kiley,2022,pitcher,Sean Kiley,Baseball-Reference register
+S Kornstad,2022,pitcher,NA,unresolved
+T Brown,2022,pitcher,NA,unresolved
+T Caulfield,2022,pitcher,NA,unresolved
+T Chapman,2022,pitcher,Tyshaun Chapman,Baseball-Reference register
+T Elliott,2022,pitcher,NA,unresolved
+T Naumann,2022,pitcher,Tyler Naumann,Baseball-Reference register
+T Reynolds,2022,pitcher,NA,unresolved
+T Schoeninger,2022,pitcher,NA,unresolved
+T Solomon,2022,pitcher,Tanner Solomon,Baseball-Reference register
+T Walker,2022,pitcher,Tom Walker,Baseball-Reference register
+T Wyatt,2022,pitcher,Tyler Wyatt,Baseball-Reference register
+U Cantu,2022,pitcher,Ulysses Cantu,Baseball-Reference register
+V Buelna,2022,pitcher,NA,unresolved
+V Cole,2022,pitcher,NA,unresolved
+V Rodriguez,2022,pitcher,Victor Rodriguez,Baseball-Reference register
+W Buraconak,2022,pitcher,Will Buraconak,Baseball-Reference register
+Y Laureano,2022,pitcher,NA,unresolved
+Y Perez,2022,pitcher,Yohandry Perez,Baseball-Reference register
+Z Smith,2022,pitcher,NA,unresolved
+A Amicangelo,2021,hitter,Anthony Amicangelo,Baseball-Reference register
+A Armstrong,2021,hitter,Andy Armstrong,Baseball-Reference register
+A Atwood,2021,hitter,Andy Atwood,Baseball-Reference register
+A Bond,2021,hitter,Aaron Bond,Baseball-Reference register
+A Buendia,2021,hitter,Aldo Buendia,Baseball-Reference register
+A Don,2021,hitter,Andrew Don,Baseball-Reference register
+A Eggleston,2021,hitter,NA,unresolved
+A Elder,2021,hitter,Austin Elder,Baseball-Reference register
+A Fishberg,2021,hitter,NA,unresolved
+A Kaufman,2021,hitter,Ari Kaufman,Baseball-Reference register
+A Kern,2021,hitter,Aaron Kern,Baseball-Reference register
+A Monge,2021,hitter,NA,unresolved
+A Nunez,2021,hitter,Aldo Nunez,Baseball-Reference register
+B Broussard,2021,hitter,Brandt Broussard,Baseball-Reference register
+B Daniel,2021,hitter,Breydon Daniel,Baseball-Reference register
+B Norman,2021,hitter,Ben Norman,Baseball-Reference register
+B Parr,2021,hitter,NA,unresolved
+B Perez,2021,hitter,NA,unresolved
+B Riley,2021,hitter,Brandon Riley,Baseball-Reference register
+B Smith,2021,hitter,Byron Smith,Baseball-Reference register
+B West,2021,hitter,Brady West,Baseball-Reference register
+C Caffrey,2021,hitter,Chris Caffrey,Baseball-Reference register
+C Comer,2021,hitter,Cam Comer,Baseball-Reference register
+C Crader,2021,hitter,Cade Crader,Baseball-Reference register
+C Estrada,2021,hitter,NA,unresolved
+C Eusay,2021,hitter,Chris Eusay,Baseball-Reference register
+C Gallardo,2021,hitter,Carlos Gallardo,Baseball-Reference register
+C Mink,2021,hitter,NA,unresolved
+C Sepulveda,2021,hitter,Christian Sepulveda,Baseball-Reference register
+C Silber,2021,hitter,NA,unresolved
+C Stratton,2021,hitter,Chase Stratton,Baseball-Reference register
+C Thompson,2021,hitter,Cameron Thompson,Baseball-Reference register
+C Tirado,2021,hitter,NA,unresolved
+D Abbadessa,2021,hitter,Dom Abbadessa,Baseball-Reference register
+D Cornett,2021,hitter,Dalton Cornett,Baseball-Reference register
+D Delorefice,2021,hitter,Davis Delorefice,Baseball-Reference register
+D Ellis,2021,hitter,Damon Ellis,Baseball-Reference register
+D Hubbard,2021,hitter,Dondrei Hubbard,Baseball-Reference register
+D Maberry,2021,hitter,David Maberry,Baseball-Reference register
+D Mervis,2021,hitter,NA,unresolved
+D Nevarez,2021,hitter,Dean Nevarez,Baseball-Reference register
+D Pearce,2021,hitter,Dylan Pearce,Baseball-Reference register
+E Carrillo,2021,hitter,NA,unresolved
+E Lopez,2021,hitter,Ethan Lopez,Baseball-Reference register
+E Rosales,2021,hitter,NA,unresolved
+F Achecar,2021,hitter,Freddy Achecar,Baseball-Reference register
+F Jezioro,2021,hitter,Frankie Jezioro,Baseball-Reference register
+F Rodriguez,2021,hitter,Felipe Rodriguez,Baseball-Reference register
+G Barnes,2021,hitter,Griffin Barnes,Baseball-Reference register
+G Bautista,2021,hitter,Gerald Bautista,Baseball-Reference register
+G Horton,2021,hitter,NA,unresolved
+G Lyttle,2021,hitter,Grey Lyttle,Baseball-Reference register
+G White,2021,hitter,Greg White,Baseball-Reference register
+H Brown,2021,hitter,NA,unresolved
+H Hisky,2021,hitter,Hunter Hisky,Baseball-Reference register
+J Agnew,2021,hitter,Josh Agnew,Baseball-Reference register
+J Akins,2021,hitter,Jared Akins,Baseball-Reference register
+J Anderson,2021,hitter,Jake Anderson,Baseball-Reference register
+J Azuaje,2021,hitter,Jesus Azuaje,Baseball-Reference register
+J Barfield,2021,hitter,Jacob Barfield,Baseball-Reference register
+J Broughton,2021,hitter,Josh Broughton,Baseball-Reference register
+J Cunningham,2021,hitter,Jackson Cunningham,Baseball-Reference register
+J Elvir,2021,hitter,Josh Elvir,Baseball-Reference register
+J Esparza,2021,hitter,NA,unresolved
+J Garcia,2021,hitter,Jalen Garcia,Baseball-Reference register
+J Goldfarb,2021,hitter,Jakob Goldfarb,Baseball-Reference register
+J Gutierrez,2021,hitter,Jacob Gutierrez,Baseball-Reference register
+J Malec,2021,hitter,Jake Malec,Baseball-Reference register
+J Matthews,2021,hitter,Jason Matthews,Baseball-Reference register
+J Newman,2021,hitter,NA,unresolved
+J Olson,2021,hitter,NA,unresolved
+J Raper,2021,hitter,Jackson Raper,Baseball-Reference register
+J Talamante,2021,hitter,NA,unresolved
+K Crowl,2021,hitter,Kyle Crowl,Baseball-Reference register
+K De La Cruz,2021,hitter,Kida De La Cruz,Baseball-Reference register
+K Hayes,2021,hitter,NA,unresolved
+K Kaufman,2021,hitter,Kyle Kaufman,Baseball-Reference register
+K Maldonado,2021,hitter,Kelvin Maldonado,Baseball-Reference register
+K Quiggle,2021,hitter,Kona Quiggle,Baseball-Reference register
+K Stone,2021,hitter,Kollin Stone,Baseball-Reference register
+L Navigato,2021,hitter,Luke Navigato,Baseball-Reference register
+L Roskam,2021,hitter,Luke Roskam,Baseball-Reference register
+M Annone,2021,hitter,Mike Annone,Baseball-Reference register
+M Deeb,2021,hitter,Michael Deeb,Baseball-Reference register
+M Feinstein,2021,hitter,Matt Feinstein,Baseball-Reference register
+M Harris,2021,hitter,Myles Harris,Baseball-Reference register
+M Miller,2021,hitter,Myles Miller,Baseball-Reference register
+M OConnor,2021,hitter,NA,unresolved
+M Schwellenbach,2021,hitter,Mason Schwellenbach,Baseball-Reference register
+M Skundrich,2021,hitter,Marcus Skundrich,Baseball-Reference register
+M Thomas,2021,hitter,NA,unresolved
+N Emanuel,2021,hitter,Nick Emanuel,Baseball-Reference register
+N Gatewood,2021,hitter,Nick Gatewood,Baseball-Reference register
+N Michaels,2021,hitter,Nick Michaels,Baseball-Reference register
+N Pacheco,2021,hitter,Niko Pacheco,Baseball-Reference register
+N Scantlin,2021,hitter,Nate Scantlin,Baseball-Reference register
+O Taylor,2021,hitter,Owen Taylor,Baseball-Reference register
+P Parks,2021,hitter,Pavin Parks,Baseball-Reference register
+Q Alexander,2021,hitter,Quintin Alexander,Baseball-Reference register
+Q Jones,2021,hitter,Quincy Jones,Baseball-Reference register
+R Alexiades,2021,hitter,Reese Alexiades,Baseball-Reference register
+R Jepson,2021,hitter,Riley Jepson,Baseball-Reference register
+R Martinez,2021,hitter,NA,unresolved
+R Shah,2021,hitter,Raul Shah,Baseball-Reference register
+S Barmakian,2021,hitter,Steve Barmakian,Baseball-Reference register
+S Davis,2021,hitter,Seth Davis,Baseball-Reference register
+S Jabusch,2021,hitter,NA,unresolved
+S Macias,2021,hitter,Sergio Macias,Baseball-Reference register
+S Skelly,2021,hitter,NA,unresolved
+T Brunson,2021,hitter,Tavis Brunson,Baseball-Reference register
+T Budnick,2021,hitter,Tate Budnick,Baseball-Reference register
+T Carranza,2021,hitter,Tristen Carranza,Baseball-Reference register
+T DeBonville,2021,hitter,Thomas DeBonville,Baseball-Reference register
+T Dixon,2021,hitter,Troy Dixon,Baseball-Reference register
+T Jorgensen,2021,hitter,Tyler Jorgensen,Baseball-Reference register
+T Kelly,2021,hitter,NA,unresolved
+T Reynolds,2021,hitter,NA,unresolved
+T Sandoval,2021,hitter,NA,unresolved
+T Tomaka,2021,hitter,Tyler Tomaka,Baseball-Reference register
+T Van Marter,2021,hitter,Tyler Van Marter,Baseball-Reference register
+T Wyatt,2021,hitter,Tyler Wyatt,Baseball-Reference register
+V Esposito,2021,hitter,Vinny Esposito,Baseball-Reference register
+W Little,2021,hitter,Webb Little,Baseball-Reference register
+Z Almond,2021,hitter,Zach Almond,Baseball-Reference register
+Z Zurbrugg,2021,hitter,NA,unresolved
+A Amicangelo,2021,pitcher,Anthony Amicangelo,Baseball-Reference register
+A Armstrong,2021,pitcher,NA,unresolved
+A Atwood,2021,pitcher,Andy Atwood,Baseball-Reference register
+A Becerra,2021,pitcher,NA,unresolved
+A Bond,2021,pitcher,Aaron Bond,Baseball-Reference register
+A Buendia,2021,pitcher,Aldo Buendia,Baseball-Reference register
+A Donatella,2021,pitcher,Anthony Donatella,Baseball-Reference register
+A Eggleston,2021,pitcher,NA,unresolved
+A Fishberg,2021,pitcher,NA,unresolved
+A Guajardo,2021,pitcher,NA,unresolved
+A Herrera,2021,pitcher,NA,unresolved
+A Kaufman,2021,pitcher,Ari Kaufman,Baseball-Reference register
+A Kern,2021,pitcher,Aaron Kern,Baseball-Reference register
+A Leach,2021,pitcher,Alex Leach,Baseball-Reference register
+A Leija,2021,pitcher,NA,unresolved
+A Smith,2021,pitcher,Alex Smith,Baseball-Reference register
+A Solis,2021,pitcher,Aron Solis,Baseball-Reference register
+A Wright,2021,pitcher,NA,unresolved
+B Demco,2021,pitcher,Brad Demco,Baseball-Reference register
+B Matthews,2021,pitcher,Brett Matthews,Baseball-Reference register
+B Norman,2021,pitcher,Ben Norman,Baseball-Reference register
+B Parr,2021,pitcher,NA,unresolved
+B West,2021,pitcher,Brady West,Baseball-Reference register
+C Burica,2021,pitcher,Chris Burica,Baseball-Reference register
+C Caffrey,2021,pitcher,Chris Caffrey,Baseball-Reference register
+C Campbell,2021,pitcher,Chris Campbell,Baseball-Reference register
+C Clark,2021,pitcher,Cody Clark,Baseball-Reference register
+C Cook,2021,pitcher,Cole Cook,Baseball-Reference register
+C Crader,2021,pitcher,Cade Crader,Baseball-Reference register
+C Estrada,2021,pitcher,NA,unresolved
+C Eusay,2021,pitcher,Chris Eusay,Baseball-Reference register
+C Gallardo,2021,pitcher,Carlos Gallardo,Baseball-Reference register
+C Grant-DeBose,2021,pitcher,CJ Grant-DeBose,Baseball-Reference register
+C Kelly,2021,pitcher,Colin Kelly,Baseball-Reference register
+C Mink,2021,pitcher,NA,unresolved
+C Sepulveda,2021,pitcher,Christian Sepulveda,Baseball-Reference register
+C Stratton,2021,pitcher,Chase Stratton,Baseball-Reference register
+D Cornett,2021,pitcher,Dalton Cornett,Baseball-Reference register
+D Delorefice,2021,pitcher,Davis Delorefice,Baseball-Reference register
+D Ellis,2021,pitcher,Damon Ellis,Baseball-Reference register
+D Maberry,2021,pitcher,David Maberry,Baseball-Reference register
+D Mervis,2021,pitcher,NA,unresolved
+D Pearce,2021,pitcher,Dylan Pearce,Baseball-Reference register
+D Pena,2021,pitcher,Domingo Pena,Baseball-Reference register
+D Silva,2021,pitcher,NA,unresolved
+E Carrillo,2021,pitcher,NA,unresolved
+E Rosales,2021,pitcher,NA,unresolved
+F Achecar,2021,pitcher,Freddy Achecar,Baseball-Reference register
+F Jezioro,2021,pitcher,Frankie Jezioro,Baseball-Reference register
+F Rodriguez,2021,pitcher,Felipe Rodriguez,Baseball-Reference register
+G Bautista,2021,pitcher,Gerald Bautista,Baseball-Reference register
+G Bremer,2021,pitcher,NA,unresolved
+G Larson,2021,pitcher,Grant Larson,Baseball-Reference register
+G Lyttle,2021,pitcher,Grey Lyttle,Baseball-Reference register
+G Viney,2021,pitcher,Gaylon Viney,Baseball-Reference register
+G Westberg,2021,pitcher,Garrett Westberg,Baseball-Reference register
+H Dollander,2021,pitcher,Hunter Dollander,Baseball-Reference register
+H Sanchez,2021,pitcher,NA,unresolved
+I Fuentes,2021,pitcher,Izzy Fuentes,Baseball-Reference register
+J Agnew,2021,pitcher,Josh Agnew,Baseball-Reference register
+J Boushelle,2021,pitcher,NA,unresolved
+J Broughton,2021,pitcher,Josh Broughton,Baseball-Reference register
+J Crump,2021,pitcher,NA,unresolved
+J Cunningham,2021,pitcher,Jackson Cunningham,Baseball-Reference register
+J Dobrash,2021,pitcher,Jimmy Dobrash,Baseball-Reference register
+J Esparza,2021,pitcher,NA,unresolved
+J Gomez,2021,pitcher,NA,unresolved
+J Lopez,2021,pitcher,Josh Lopez,Baseball-Reference register
+J Matthews,2021,pitcher,Jason Matthews,Baseball-Reference register
+J Newman,2021,pitcher,NA,unresolved
+J Nunnally,2021,pitcher,Jon Nunnally,Baseball-Reference register
+J Ochoa,2021,pitcher,NA,unresolved
+J Pineda,2021,pitcher,Jason Pineda,Baseball-Reference register
+J Rosario,2021,pitcher,Julio Rosario,Baseball-Reference register
+J Seever,2021,pitcher,Jason Seever,Baseball-Reference register
+J Sigman,2021,pitcher,Jackson Sigman,Baseball-Reference register
+J Slocum,2021,pitcher,Joe Slocum,Baseball-Reference register
+J Talamante,2021,pitcher,NA,unresolved
+J Varela,2021,pitcher,James Varela,Baseball-Reference register
+J Waters,2021,pitcher,Jake Waters,Baseball-Reference register
+K Crowl,2021,pitcher,Kyle Crowl,Baseball-Reference register
+K De La Cruz,2021,pitcher,Kida De La Cruz,Baseball-Reference register
+K Gould,2021,pitcher,Kevin Gould,Baseball-Reference register
+K Hayes,2021,pitcher,NA,unresolved
+K Maldonado,2021,pitcher,Kelvin Maldonado,Baseball-Reference register
+K McGinnis,2021,pitcher,Keagan McGinnis,Baseball-Reference register
+K Pilot,2021,pitcher,Kelvan Pilot,Baseball-Reference register
+K Stone,2021,pitcher,Kollin Stone,Baseball-Reference register
+L Summers,2021,pitcher,NA,unresolved
+M Castillo,2021,pitcher,NA,unresolved
+M Dallas,2021,pitcher,Matt Dallas,Baseball-Reference register
+M Gabbert,2021,pitcher,Matt Gabbert,Baseball-Reference register
+M Geoffrion,2021,pitcher,NA,unresolved
+M Lines,2021,pitcher,Mitch Lines,Baseball-Reference register
+M Miller,2021,pitcher,NA,unresolved
+M Mixon,2021,pitcher,Mark Mixon,Baseball-Reference register
+M Mogollon,2021,pitcher,Matt Mogollon,Baseball-Reference register
+M Schwellenbach,2021,pitcher,Mason Schwellenbach,Baseball-Reference register
+M Simon,2021,pitcher,Mark Simon,Baseball-Reference register
+M Thomas,2021,pitcher,NA,unresolved
+M Townsend,2021,pitcher,Mike Townsend,Baseball-Reference register
+N Diplan,2021,pitcher,Nattino Diplan,Baseball-Reference register
+N Emanuel,2021,pitcher,Nick Emanuel,Baseball-Reference register
+N Floyd,2021,pitcher,Nick Floyd,Baseball-Reference register
+N Jenkins,2021,pitcher,Nate Jenkins,Baseball-Reference register
+N Lang,2021,pitcher,Neil Lang,Baseball-Reference register
+N Tellache,2021,pitcher,Nico Tellache,Baseball-Reference register
+O Farfan,2021,pitcher,NA,unresolved
+O Marcelino,2021,pitcher,NA,unresolved
+P Parks,2021,pitcher,Pavin Parks,Baseball-Reference register
+P Wenzel,2021,pitcher,Palmer Wenzel,Baseball-Reference register
+Q Jones,2021,pitcher,Quincy Jones,Baseball-Reference register
+R Aleaziz,2021,pitcher,Reza Aleaziz,Baseball-Reference register
+R Alexiades,2021,pitcher,Reese Alexiades,Baseball-Reference register
+R Jepson,2021,pitcher,Riley Jepson,Baseball-Reference register
+R Martin,2021,pitcher,Rabon Martin,Baseball-Reference register
+R Mintzer,2021,pitcher,NA,unresolved
+S Barmakian,2021,pitcher,Steve Barmakian,Baseball-Reference register
+S Davis,2021,pitcher,Seth Davis,Baseball-Reference register
+S Gustafson,2021,pitcher,Shane Gustafson,Baseball-Reference register
+S Hupp,2021,pitcher,NA,unresolved
+S Jabusch,2021,pitcher,NA,unresolved
+S Macias,2021,pitcher,Sergio Macias,Baseball-Reference register
+T Budnick,2021,pitcher,Tate Budnick,Baseball-Reference register
+T Chapman,2021,pitcher,Tyshaun Chapman,Baseball-Reference register
+T Dixon,2021,pitcher,Troy Dixon,Baseball-Reference register
+T Johnson,2021,pitcher,Tyler Johnson,Baseball-Reference register
+T Jorgensen,2021,pitcher,Tyler Jorgensen,Baseball-Reference register
+T Reynolds,2021,pitcher,NA,unresolved
+T Tomaka,2021,pitcher,Tyler Tomaka,Baseball-Reference register
+T Whitty,2021,pitcher,NA,unresolved
+V Rodriguez,2021,pitcher,Victor Rodriguez,Baseball-Reference register
+W Freeman,2021,pitcher,NA,unresolved
+Y Laureano,2021,pitcher,NA,unresolved
+Z Penrod,2021,pitcher,Zach Penrod,Baseball-Reference register
