@@ -67,21 +67,24 @@ hitters_features <- hitters_player_level %>%
     0.20 * bb_pct +
     0.15 * k_pct,
 
-  power_grade = rescale(
-    power_score,
-    to = c(20, 80)
-  ),
-
-  discipline_grade = rescale(
-    discipline_score,
-    to = c(20, 80)
-  ),
-
-  scout_grade = rescale(
-    scout_score,
-    to = c(20, 80)
-  )
+  # Small samples are pulled toward the league middle before grading. A
+  # 45-grade is the Pioneer League baseline; 50 requires clearly
+  # above-league production and each 10 points represents one SD.
+  reliability = pa / (pa + 150),
+  power_signal = (power_score - 0.5) * reliability,
+  discipline_signal = (discipline_score - 0.5) * reliability,
+  scout_signal = (scout_score - 0.5) * reliability
 ) %>%
+  group_by(season) %>%
+  mutate(
+    power_z = (power_signal - mean(power_signal, na.rm = TRUE)) / sd(power_signal, na.rm = TRUE),
+    discipline_z = (discipline_signal - mean(discipline_signal, na.rm = TRUE)) / sd(discipline_signal, na.rm = TRUE),
+    scout_z = (scout_signal - mean(scout_signal, na.rm = TRUE)) / sd(scout_signal, na.rm = TRUE),
+    power_grade = pmin(80, pmax(20, 5 * round((45 + 10 * power_z) / 5))),
+    discipline_grade = pmin(80, pmax(20, 5 * round((45 + 10 * discipline_z) / 5))),
+    scout_grade = pmin(80, pmax(20, 5 * round((45 + 10 * scout_z) / 5)))
+) %>%
+  ungroup() %>%
   arrange(desc(scout_grade))
 
 scouting_board <- hitters_features %>%
@@ -135,10 +138,10 @@ pitcher_features <- pitchers_clean %>%
 
   pitcher_features <- pitcher_features %>%
   mutate(
-    era_score = percent_rank(-era),
-    fip_score = percent_rank(-fip),
-    whip_score = percent_rank(-whip),
-    command_score = percent_rank(k_bb_pct),
+    era_score = replace_na(percent_rank(-era), 0.5),
+    fip_score = replace_na(percent_rank(-fip), 0.5),
+    whip_score = replace_na(percent_rank(-whip), 0.5),
+    command_score = replace_na(percent_rank(k_bb_pct), 0.5),
     workload_score = percent_rank(ip)
   )
 
@@ -151,12 +154,18 @@ pitcher_features <- pitchers_clean %>%
   0.20 * command_score +
   0.15 * workload_score,
 
+    # Pitcher samples are more volatile, so their baseline is set at 40 and
+    # the spread is narrower than the hitter scale. A 50 still requires
+    # clearly above-league work; 70+ is reserved for a truly rare outlier.
+    reliability = ip / (ip + 30),
+    pitcher_signal = (pitcher_score_0_1 - 0.5) * reliability
+  ) %>%
+  group_by(season) %>%
+  mutate(
+    pitcher_z = (pitcher_signal - mean(pitcher_signal, na.rm = TRUE)) / sd(pitcher_signal, na.rm = TRUE),
     pitcher_scout_grade = pmin(
       80,
-      pmax(
-        20,
-        20 + 60 * pitcher_score_0_1
-      )
+      pmax(20, 5 * round((40 + 8 * pitcher_z) / 5))
     )
   ) %>%
   ungroup()

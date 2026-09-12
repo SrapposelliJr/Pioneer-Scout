@@ -4,6 +4,7 @@ library(stringr)
 
 # Load broader player-level data
 hitters <- read.csv("data/processed/hitters_player_level.csv")
+scouting_board <- read.csv("data/processed/scouting_board.csv")
 
 alumni <- read.csv("data/raw/pioneer_alumni_raw.csv")
 
@@ -24,21 +25,19 @@ hitters_model <- hitters %>%
     pa > 0
   ) %>%
   mutate(
-    name_key = make_name_key(player_name),
-
-    iso_pct = percent_rank(iso),
-    hr_pct = percent_rank(hr_rate),
-    bb_pct = percent_rank(bb_rate),
-    k_pct = 1 - percent_rank(k_rate),
-
-    power_score = 0.60 * iso_pct + 0.40 * hr_pct,
-    discipline_score = 0.55 * bb_pct + 0.45 * k_pct,
-
-    scout_score = 0.65 * power_score + 0.35 * discipline_score,
-
-    power_grade = rescale(power_score, to = c(20, 80)),
-    discipline_grade = rescale(discipline_score, to = c(20, 80)),
-    scout_grade = rescale(scout_score, to = c(20, 80))
+    name_key = make_name_key(player_name)
+  ) %>%
+  left_join(
+    scouting_board %>%
+      select(
+        player_name,
+        team,
+        season,
+        power_grade,
+        discipline_grade,
+        scout_grade
+      ),
+    by = c("player_name", "team", "season")
   )
 
 alumni_clean <- alumni %>%
