@@ -1726,3 +1726,17 @@ Caused by error in `path_to_connection()`:
 2026-11-11 18:37:27 | Starting 13_player_headshots.R 
 2026-11-11 18:37:29 | Completed 13_player_headshots.R 
 2026-11-11 18:37:29 | Pioneer Scout refresh completed successfully 
+2026-11-12 18:49:18 | Pioneer Scout refresh started 
+2026-11-12 18:49:18 | Starting 01_data_collection.R 
+2026-11-12 18:50:15 | Completed 01_data_collection.R 
+2026-11-12 18:50:15 | Starting 02_data_cleaning.R 
+2026-11-12 18:50:15 | Completed 02_data_cleaning.R 
+2026-11-12 18:50:15 | Starting 03_feature_engineering.R 
+2026-11-12 18:50:16 | Completed 03_feature_engineering.R 
+2026-11-12 18:50:16 | Starting 04_model_training.R 
+2026-11-12 18:50:16 | Completed 04_model_training.R 
+2026-11-12 18:50:16 | Starting 05_model_validation.R 
+2026-11-12 18:50:16 | Completed 05_model_validation.R 
+2026-11-12 18:50:16 | Starting 13_player_headshots.R 
+2026-11-12 18:50:17 | Completed 13_player_headshots.R 
+2026-11-12 18:50:17 | Pioneer Scout refresh completed successfully 
